@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Acompanhamento de Projetos - PPI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Chosen Palette: Calm Harmony -->
+    <!-- Application Structure Plan: The SPA uses a dashboard-style, single-page layout with a fixed sidebar for sector navigation (Portos, Rodovias, Ferrovias, etc.). The main content area initially displays a high-level summary with key metrics across all projects and a chart showing project distribution by sector. Clicking a sector in the sidebar or on the chart dynamically filters and displays a grid of project summary cards for that sector. Each card shows the project name and its current status (visualized with a color-coded indicator). Clicking a card opens a modal window, revealing detailed information: a comprehensive description, a visual timeline of key milestones (Estudos, Leilão, Contrato), current status, next steps, and critical "Pontos de Atenção" (risks). This drill-down architecture was chosen to manage the high information density of the report, allowing users to move from a broad overview to specific project details in an intuitive, hierarchical manner, rather than being confronted with a long, unstructured scroll of text. This promotes exploration and makes complex project tracking more digestible. -->
+    <!-- Visualization & Content Choices: 
+- Report Info: Overall project portfolio status. Goal: Inform. Viz/Method: KPI cards (HTML/Tailwind) and a main Bar Chart (Chart.js) showing project counts per sector. Interaction: Clicking a sector on the chart or sidebar filters the project list. Justification: Provides an immediate high-level overview and entry point for exploration.
+- Report Info: List of projects within each sector. Goal: Organize/Navigate. Viz/Method: A dynamic grid of project cards (HTML/Tailwind). Each card has a color-coded status indicator. Interaction: Filtering via search bar; clicking a card reveals details. Justification: Allows users to quickly scan projects and dive into specifics.
+- Report Info: Project milestones and deadlines (EVTEA, AP, TCU, Edital, Leilão). Goal: Show Change/Process. Viz/Method: A horizontal timeline component built with HTML/CSS and Unicode icons (✅, ⏳). Interaction: Static visual for clarity. Justification: Visually represents the project lifecycle more effectively than a simple text list.
+- Report Info: Physical progress percentages (e.g., FIOL railway). Goal: Inform. Viz/Method: HTML/CSS progress bars. Interaction: Static display. Justification: A standard and instantly understandable way to show completion.
+- Report Info: "Pontos de Atenção" (risks). Goal: Alert/Inform. Viz/Method: A styled callout box with a warning icon. Interaction: Static text. Justification: Visually separates critical risk information from general status updates.
+- Report Info: Financial data (Leilão results, investments). Goal: Inform. Viz/Method: Formatted text in KPI cards within the project detail view. Justification: Clear and direct presentation for key numbers. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        :root {
+            --primary: #2E4E8C; /* azul PPI */
+            --primary-dark: #243B6B;
+            --primary-light: #3E5FA4;
+            --accent-green: #2E7D32;
+            --accent-yellow: #F7B500;
+            --accent-red: #C62828;
+        }
+        body {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #4A4A4A;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Títulos sobre o fundo azul */
+        #section-title { color: #FFFFFF; }
+        #section-subtitle { color: #E5E7EB; }
+
+        /* Harmonização dos utilitários mais usados com a paleta */
+        .text-blue-500 { color: var(--primary) !important; }
+        .text-blue-700 { color: var(--primary-dark) !important; }
+        .bg-blue-100 { background-color: rgba(46, 78, 140, 0.12) !important; }
+        .text-green-500 { color: var(--accent-green) !important; }
+        .bg-green-100 { background-color: rgba(46, 125, 50, 0.12) !important; }
+        .text-yellow-500 { color: var(--accent-yellow) !important; }
+        .bg-yellow-100 { background-color: rgba(247, 181, 0, 0.12) !important; }
+
+        /* Pontos de status alinhados à paleta */
+        .status-dot.bg-blue-500 { background-color: var(--primary) !important; }
+        .status-dot.bg-green-500 { background-color: var(--accent-green) !important; }
+        .status-dot.bg-yellow-500 { background-color: var(--accent-yellow) !important; }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .modal-enter {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        .modal-leave {
+            animation: fadeOut 0.3s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; transform: scale(1); }
+            to { opacity: 0; transform: scale(0.95); }
+        }
+        .status-dot {
+            min-width: 12px;
+            min-height: 12px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 1.25rem;
+            bottom: -1.25rem;
+            width: 2px;
+            background-color: #D1D5DB;
+            transform: translateX(-50%);
+        }
+        .timeline-item:first-child::before {
+             top: 1.25rem;
+             bottom: unset;
+             height: calc(100% - 1.25rem);
+        }
+         .timeline-item:last-child::before {
+             display: none;
+        }
+        .timeline-icon {
+            z-index: 10;
+        }
+        /* Linha do tempo por fases (Estudos -> Assinatura) */
+        .phase-timeline { position: relative; padding-top: 0.5rem; }
+        .phase-line { position: absolute; top: 1.25rem; left: 0.75rem; right: 0.75rem; height: 3px; background: #111827; }
+        .phase-items { display: grid; grid-template-columns: repeat(6, 1fr); align-items: start; gap: 0; }
+        .phase-item { text-align: center; position: relative; }
+        .phase-dot { width: 22px; height: 22px; border-radius: 9999px; background: #FFFFFF; border: 3px solid #111827; margin: 0 auto; position: relative; }
+        .phase-dot.completed { background: var(--accent-green); border-color: var(--accent-green); }
+        .phase-label { margin-top: 0.5rem; font-size: 0.75rem; color: #4B5563; }
+        .phase-meta { margin-top: 0.25rem; font-size: 0.7rem; color: #6B7280; }
+        /* Variante compacta para cards da lista */
+        .phase-timeline--compact .phase-line { top: 0.9rem; height: 2px; }
+        .phase-timeline--compact .phase-dot { width: 14px; height: 14px; border-width: 2px; }
+        .phase-timeline--compact .phase-label { font-size: 0.65rem; }
+        .phase-note { font-size: 0.75rem; color: #4B5563; margin-top: 0.5rem; min-height: 1rem; }
+        /* Variante para modal: rótulos acima dos círculos e linha ajustada */
+        .phase-timeline--modal .phase-line { top: 2.25rem; }
+        .phase-label--top { margin-bottom: 0.5rem; margin-top: 0; }
+        .phase-timeline--modal .phase-items { align-items: center; }
+        .phase-arrow-row { text-align: center; font-size: 0.85rem; color: #374151; margin-bottom: 0.5rem; }
+
+        /* Grade fixa para cards de informação no modal */
+        .modal-info-grid { display: grid; gap: 1rem; }
+        @media (min-width: 1280px) { /* xl */
+            .modal-info-grid {
+                grid-template-columns: 2fr 1.5fr 1.5fr;
+                grid-auto-rows: minmax(140px, auto);
+                grid-template-areas:
+                    'descricao situacao mapa'
+                    'proximos deliberacao mapa'
+                    'progresso  riscos      mapa';
+            }
+            .card--descricao { grid-area: descricao; }
+            .card--situacao { grid-area: situacao; }
+            .card--proximos { grid-area: proximos; }
+            .card--deliberacao { grid-area: deliberacao; }
+            .card--mapa { grid-area: mapa; }
+            .card--riscos { grid-area: riscos; }
+            .card--progresso { grid-area: progresso; }
+        }
+
+        /* Cartões da grade com borda */
+        .project-card { border: 1px solid #E5E7EB; }
+        .project-card:hover { border-color: var(--primary); }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+
+    <aside class="w-64 bg-white shadow-lg flex-shrink-0 overflow-y-auto">
+        <div class="p-6 border-b">
+            <h1 class="text-2xl font-bold text-gray-800">Projetos PPI</h1>
+            <p class="text-sm text-gray-500">Acompanhamento 2025</p>
+        </div>
+        <nav id="sidebar-nav" class="p-4">
+        </nav>
+    </aside>
+
+    <main class="flex-1 overflow-y-auto p-6 md:p-10">
+        <div id="overview-section">
+        </div>
+        
+        <div class="mt-8">
+            <h2 id="section-title" class="text-3xl font-bold text-gray-700 mb-2">Visão Geral</h2>
+            <p id="section-subtitle" class="text-gray-500 mb-6">Explore os projetos de infraestrutura do Brasil.</p>
+            <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">
+            </div>
+        </div>
+    </main>
+
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4 z-50">
+        <div id="modal-content" class="bg-white rounded-2xl shadow-2xl w-[95vw] max-w-7xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+            <div id="modal-body" class="p-8 md:p-12">
+            </div>
+        </div>
+    </div>
+
+<script>
+const DEFAULT_PROJECT_DATA = [
+    {
+        id: 'tunel-santos',
+        sector: 'Portos',
+        name: 'Túnel Santos-Guarujá',
+        status: 'Leilão Realizado',
+        statusColor: 'bg-green-500', 
+        details: {
+            description: "Parceria Público-Privada (PPP) entre o Governo Federal e o Estado de São Paulo para a construção e operação de um túnel submerso ligando as cidades de Santos e Guarujá.",
+            currentSituation: "Leilão realizado em 05 de Setembro de 2025.",
+            nextSteps: "Criação da conta para o aporte da União e consultas à SEST e ao Tesouro Nacional.",
+            risks: [
+                "Abertura da conta aporte pela Autoridade Portuária de Santos (APS).",
+                "Questões sobre a titularidade do túnel e seus impactos no orçamento da União e nos resultados da APS."
+            ],
+            timeline: [
+                { milestone: 'Leilão', date: '05/set/2025', status: 'completed' },
+            ]
+        }
+    },
+    {
+        id: 'porto-parangua',
+        sector: 'Portos',
+        name: 'Porto de Paranaguá',
+        status: 'Aguardando Edital',
+        statusColor: 'bg-yellow-500',
+        details: {
+            description: "Concessão do Canal de Acesso Aquaviário por 25 anos para modernização e operação.",
+            currentSituation: "Aguardando retorno do relator para publicação do edital. A Resolução CPPI já definiu as condições da desestatização.",
+            nextSteps: "Publicação do edital e inclusão do projeto no Plano Nacional de Desestatização (PND).",
+            risks: [
+                "É necessária a publicação do Decreto de inclusão no PND antes da publicação do edital."
+            ],
+            timeline: [
+                { milestone: 'Edital', date: 'set/2025', status: 'pending' },
+                { milestone: 'Leilão', date: 'nov/25', status: 'pending' },
+            ]
+        }
+    },
+    {
+        id: 'fiol-1',
+        sector: 'Ferrovias',
+        name: 'FIOL 1',
+        status: 'Em Obras',
+        statusColor: 'bg-blue-500',
+        details: {
+            description: "Construção da Ferrovia de Integração Oeste-Leste, Trecho 1, fundamental para o escoamento da produção de grãos e minérios.",
+            currentSituation: "Obras em andamento com 75% de avanço total. Lotes 1F e 2F em execução, Lote 3F concluído, Lote 4F em execução. Início da operação previsto para 2027.",
+            nextSteps: "Contratação de obras remanescentes para os lotes 2F e 4F no segundo semestre de 2025.",
+            risks: [
+                "Gestão dos contratos remanescentes e cumprimento dos prazos para conclusão em 2028."
+            ],
+            progress: 75
+        }
+    },
+    {
+        id: 'transnordestina',
+        sector: 'Ferrovias',
+        name: 'Transnordestina "L Invertido"',
+        status: 'Em Obras',
+        statusColor: 'bg-blue-500',
+        details: {
+            description: "Projeto de construção ferroviária para conectar o interior do Nordeste aos portos de Pecém (CE) e Suape (PE).",
+            currentSituation: "Avanço físico total (Fase I + II) de 62%. Vários lotes em obra, com mobilização e contratações em andamento. Previsão de operação de carga no trecho Paes Landim/PI a Acopiara/CE para o segundo semestre de 2025.",
+            nextSteps: "Contratação dos lotes 9 e 10 até setembro de 2025. Liberação de recursos do FDNE e BNDES.",
+            risks: [
+                "Coordenação da contratação e execução de múltiplos lotes simultaneamente.",
+                "Dependência da liberação de financiamentos para avanço das obras."
+            ],
+            progress: 62
+        }
+    },
+    {
+        id: 'br-040-cristais',
+        sector: 'Rodovias',
+        name: 'BR-040/GO/MG (Rota dos Cristais)',
+        status: 'Contrato Assinado',
+        statusColor: 'bg-green-500',
+        details: {
+            description: "Concessão do trecho rodoviário entre Belo Horizonte/MG e Cristalina/GO.",
+            currentSituation: "Leilão realizado em 26/09/2024. O vencedor foi a Vinci Highways com um desconto de 14,32%. Contrato assinado em 19/12/2024.",
+            nextSteps: "Início das operações e plano de investimentos pela concessionária.",
+            risks: [],
+            timeline: [
+                { milestone: 'Leilão', date: '26/09/2024', status: 'completed' },
+                { milestone: 'Contrato', date: '19/12/2024', status: 'completed' },
+            ]
+        }
+    },
+    {
+        id: 'br-381-mg',
+        sector: 'Rodovias',
+        name: 'BR-381/MG',
+        status: 'Contrato Assinado',
+        statusColor: 'bg-green-500',
+        details: {
+            description: "Concessão do trecho rodoviário entre Belo Horizonte/MG e Governador Valadares/MG.",
+            currentSituation: "Leilão realizado em 29/08/2024. O vencedor foi a 4UM Investimentos com um desconto de 0,94%. Contrato assinado em 02/12/2024.",
+            nextSteps: "Início dos trabalhos iniciais e investimentos previstos no contrato.",
+            risks: [],
+            timeline: [
+                 { milestone: 'Leilão', date: '29/08/2024', status: 'completed' },
+                 { milestone: 'Contrato', date: '02/12/2024', status: 'completed' },
+            ]
+        }
+    },
+    {
+        id: 'leilao-transmissao-2025',
+        sector: 'Energia',
+        name: '1º Leilão de Transmissão de 2025',
+        status: 'Em Análise no TCU',
+        statusColor: 'bg-yellow-500',
+        details: {
+            description: "Contratação de instalações para transmissão de energia elétrica em 13 estados para expansão da rede básica.",
+            currentSituation: "Minuta de Edital aprovada em 24/06/2025 e atualmente em avaliação pelo Tribunal de Contas da União (TCU).",
+            nextSteps: "Aguardando manifestação do TCU (previsão para 24/09/2025) para prosseguir com a publicação do edital.",
+            risks: [
+                "Cumprimento do cronograma dependente da análise e aprovação do TCU."
+            ],
+            timeline: [
+                { milestone: 'Análise TCU', date: '24/09/2025 (Prev.)', status: 'pending' },
+                { milestone: 'Leilão', date: '31/10/2025 (Prev.)', status: 'pending' },
+            ]
+        }
+    },
+     {
+        id: 'oleo-gas-opc5',
+        sector: 'Óleo e Gás',
+        name: '5º Ciclo da Oferta Permanente (Concessão)',
+        status: 'Leilão Realizado',
+        statusColor: 'bg-green-500',
+        details: {
+            description: "Oferta de blocos exploratórios de petróleo e gás sob o regime de concessão.",
+            currentSituation: "Leilão realizado em 17/06/2025, com arrecadação recorde de R$ 989 milhões em bônus e previsão de R$ 1,45 bilhão em investimentos. Foram arrematados 34 blocos por 9 empresas.",
+            nextSteps: "Adjudicação e homologação da licitação em 01/09/2025, com assinatura dos contratos prevista para 28/11/2025.",
+            risks: [],
+            timeline: [
+                { milestone: 'Leilão', date: '17/06/2025', status: 'completed' },
+                { milestone: 'Homologação', date: '01/09/2025', status: 'pending' },
+                { milestone: 'Contratos', date: '28/11/2025', status: 'pending' },
+            ]
+        }
+    },
+    {
+        id: 'hidrovia-paraguai',
+        sector: 'Hidrovias',
+        name: 'Hidrovia do Paraguai',
+        status: 'Em Análise',
+        statusColor: 'bg-yellow-500',
+        details: {
+            description: "Concessão da hidrovia para melhorias na navegação e escoamento de produção.",
+            currentSituation: "Projeto no MPOR para envio ao TCU. Previsão de leilão para 2026.",
+            nextSteps: "Análise pelo TCU e revisão pós-TCU para publicação do edital.",
+            risks: [
+                "Necessidade de qualificação no PPI com MMA/Ibama.",
+                "Mudanças estruturais na modelagem não originadas da Audiência Pública.",
+                "Restrição de participação da principal usuária.",
+                "Falta de consenso sobre quem será o Poder Concedente."
+            ],
+            timeline: [
+                 { milestone: 'Análise TCU', date: '2025', status: 'pending' },
+                 { milestone: 'Leilão', date: '2026 (Prev.)', status: 'pending' },
+            ]
+        }
+    }
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebarNav = document.getElementById('sidebar-nav');
+    const projectsGrid = document.getElementById('projects-grid');
+    const overviewSection = document.getElementById('overview-section');
+    const sectionTitle = document.getElementById('section-title');
+    const sectionSubtitle = document.getElementById('section-subtitle');
+    const modal = document.getElementById('project-modal');
+    const modalContent = document.getElementById('modal-content');
+    const closeModalBtn = document.getElementById('close-modal');
+
+    let projectData = DEFAULT_PROJECT_DATA;
+    let sectors = [];
+    let chartInstance = null;
+    let activeSector = 'Todos';
+
+    async function loadData() {
+        try {
+            const response = await fetch('data/projects.json', { cache: 'no-store' });
+            if (response.ok) {
+                const json = await response.json();
+                if (Array.isArray(json) && json.length > 0) {
+                    projectData = json;
+                }
+            }
+        } catch (e) {
+            // Fallback silently to DEFAULT_PROJECT_DATA
+        }
+        sectors = ['Todos', ...new Set(projectData.map(p => p.sector))];
+    }
+
+    function renderSidebar() {
+        sidebarNav.innerHTML = sectors.map(sector => `
+            <a href="#" data-sector="${sector}" class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors ${sector === activeSector ? 'bg-blue-100 text-blue-700 font-bold' : ''}">
+                <span class="ml-3">${sector}</span>
+            </a>
+        `).join('');
+    }
+
+    function renderKPIs() {
+        const totalProjects = projectData.length;
+        const projectsByStatus = projectData.reduce((acc, p) => {
+            const status = p.status.toLowerCase();
+            if (status.includes('assinado') || status.includes('realizado')) {
+                acc.concluidos = (acc.concluidos || 0) + 1;
+            } else if (status.includes('obras') || status.includes('análise')) {
+                acc.andamento = (acc.andamento || 0) + 1;
+            } else {
+                 acc.planejamento = (acc.planejamento || 0) + 1;
+            }
+            return acc;
+        }, { concluidos: 0, andamento: 0, planejamento: 0 });
+
+        return `
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center">
+                    <div class="bg-blue-100 p-4 rounded-full mr-4"><i class="fas fa-tasks text-blue-500 fa-2x"></i></div>
+                    <div>
+                        <p class="text-3xl font-bold">${totalProjects}</p>
+                        <p class="text-gray-500">Projetos Totais</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center">
+                    <div class="bg-green-100 p-4 rounded-full mr-4"><i class="fas fa-check-circle text-green-500 fa-2x"></i></div>
+                    <div>
+                        <p class="text-3xl font-bold">${projectsByStatus.concluidos}</p>
+                        <p class="text-gray-500">Leilões/Contratos Feitos</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center">
+                    <div class="bg-yellow-100 p-4 rounded-full mr-4"><i class="fas fa-cogs text-yellow-500 fa-2x"></i></div>
+                    <div>
+                        <p class="text-3xl font-bold">${projectsByStatus.andamento}</p>
+                        <p class="text-gray-500">Em Andamento/Análise</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderOverviewChart() {
+        const sectorCounts = projectData.reduce((acc, p) => {
+            acc[p.sector] = (acc[p.sector] || 0) + 1;
+            return acc;
+        }, {});
+
+        overviewSection.innerHTML = `
+            ${renderKPIs()}
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                 <h3 class="text-xl font-bold mb-4">Projetos por Setor</h3>
+                 <div class="chart-container">
+                    <canvas id="overviewChart"></canvas>
+                </div>
+            </div>`;
+        
+        const ctx = document.getElementById('overviewChart').getContext('2d');
+        if(chartInstance) {
+            chartInstance.destroy();
+        }
+        chartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(sectorCounts),
+                datasets: [{
+                    label: 'Nº de Projetos',
+                    data: Object.values(sectorCounts),
+                    backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--primary-light').trim() || '#3E5FA4',
+                    borderColor: getComputedStyle(document.documentElement).getPropertyValue('--primary').trim() || '#2E4E8C',
+                    borderWidth: 1,
+                    borderRadius: 5,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#e5e7eb'
+                        }
+                    },
+                     x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                onClick: (event, elements) => {
+                    if (elements.length > 0) {
+                        const chartElement = elements[0];
+                        const sector = chartInstance.data.labels[chartElement.index];
+                        updateView(sector);
+                    }
+                }
+            }
+        });
+    }
+
+    function renderProjects(sector = 'Todos') {
+        const filteredProjects = sector === 'Todos' ? projectData : projectData.filter(p => p.sector === sector);
+        
+        projectsGrid.innerHTML = filteredProjects.map(project => `
+            <div data-id="${project.id}" class="project-card bg-white rounded-xl shadow-md p-6 border border-gray-200 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">${project.sector}</p>
+                    <h3 class="text-lg font-bold mt-1 text-gray-800">${project.name}</h3>
+                </div>
+                <div class="flex items-center mt-4 pt-4 border-t border-gray-200">
+                    <span class="status-dot ${project.statusColor} mr-2"></span>
+                    <span class="text-sm font-medium text-gray-600">${project.status}</span>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    const PHASES = ['Estudos', 'Consulta Pública', 'TCU', 'Edital', 'Leilão', 'Assinatura do Contrato'];
+    const phaseAliases = {
+        'Análise TCU': 'TCU',
+        'Contrato': 'Assinatura do Contrato',
+        'Assinatura': 'Assinatura do Contrato',
+        'Leilao': 'Leilão',
+        'Consulta Publica': 'Consulta Pública',
+        'EVTEA': 'Estudos',
+    };
+
+    function normalizeMilestone(name) {
+        if (!name) return '';
+        const key = name.normalize('NFD').replace(/\p{Diacritic}/gu, '').trim();
+        const direct = PHASES.find(p => p.normalize('NFD').replace(/\p{Diacritic}/gu, '') === key);
+        if (direct) return direct;
+        for (const [alias, target] of Object.entries(phaseAliases)) {
+            const a = alias.normalize('NFD').replace(/\p{Diacritic}/gu, '');
+            if (a.toLowerCase() === key.toLowerCase()) return target;
+        }
+        // fuzzy contains
+        if (/tcu/i.test(name)) return 'TCU';
+        if (/edital/i.test(name)) return 'Edital';
+        if (/leil(ã|a)o/i.test(name)) return 'Leilão';
+        if (/contrat/i.test(name)) return 'Assinatura do Contrato';
+        if (/consult/i.test(name)) return 'Consulta Pública';
+        if (/estud|evtea/i.test(name)) return 'Estudos';
+        return '';
+    }
+
+    function buildPhaseStates(details) {
+        const completedSet = new Set();
+        if (details && Array.isArray(details.timeline)) {
+            details.timeline.forEach(it => {
+                if (it && (it.status === 'completed' || it.status === 'concluded')) {
+                    const norm = normalizeMilestone(it.milestone);
+                    if (norm) completedSet.add(norm);
+                }
+            });
+        }
+        return PHASES.map(phase => ({
+            name: phase,
+            completed: completedSet.has(phase)
+        }));
+    }
+
+    function renderProjectDetails(projectId) {
+        const project = projectData.find(p => p.id === projectId);
+        if (!project) return;
+        
+        const details = project.details;
+        const phaseStates = buildPhaseStates(details || {});
+        const timelineHTML = `
+            <div class="phase-timeline phase-timeline--compact">
+                <div class="phase-line"></div>
+                <div class="phase-items">
+                    ${phaseStates.map(p => `
+                        <div class="phase-item">
+                            <div class="phase-dot ${p.completed ? 'completed' : ''}"></div>
+                            <div class="phase-label">${p.name}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+
+        const modalBody = document.getElementById('modal-body');
+        modalBody.innerHTML = `
+            <p class="text-sm font-semibold uppercase tracking-wider text-blue-600">${project.sector}</p>
+            <h2 class="text-4xl font-extrabold text-gray-800 mt-2 mb-6">${project.name}</h2>
+            <div class="modal-info-grid items-stretch">
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--descricao">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Descrição do Projeto</h3>
+                    <p class="text-gray-600 leading-relaxed">${details.description || ''}</p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--situacao">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Situação Atual</h3>
+                    <p class="text-gray-600">${details.currentSituation || ''}</p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--proximos">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Próximos Passos</h3>
+                    <p class="text-gray-600">${details.nextSteps || ''}</p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--deliberacao">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Deliberação</h3>
+                    <p class="text-gray-600">${details.deliberation || 'Não informado'}</p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--riscos">
+                    <h3 class="text-lg font-bold text-gray-700 mb-2">Pontos de Atenção</h3>
+                    ${details.risks && details.risks.length > 0 ? `
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            ${details.risks.map(risk => `<li>${risk}</li>`).join('')}
+                        </ul>
+                    ` : `<p class=\"text-gray-600\">Não informado</p>`}
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--progresso">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Avanço Físico</h3>
+                    ${typeof details.progress === 'number' ? `
+                        <div class=\"w-full bg-gray-200 rounded-full h-4\">
+                            <div class=\"h-4 rounded-full\" style=\"background: var(--accent-green); width: ${details.progress}%\"></div>
+                        </div>
+                        <p class=\"text-right font-bold mt-1\">${details.progress}%</p>
+                    ` : `<p class=\"text-gray-600\">Não informado</p>`}
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--mapa">
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Mapa do Projeto</h3>
+                    ${details.mapEmbed ? `
+                        <div class="aspect-video w-full rounded-lg overflow-hidden border border-gray-200">${details.mapEmbed}</div>
+                    ` : details.mapImageUrl ? `
+                        <img src="${details.mapImageUrl}" alt="Mapa do projeto" class="w-full h-48 object-cover rounded-lg border border-gray-200" />
+                    ` : `
+                        <div class="w-full h-48 bg-gray-100 rounded-lg border border-dashed border-gray-300 flex items-center justify-center text-gray-500">Mapa (pequena escala)</div>
+                    `}
+                </div>
+            </div>
+            <div class="mt-4 bg-white border border-gray-200 rounded-xl p-4">
+                <h3 class="text-lg font-bold text-gray-700 mb-2">Meta:</h3>
+                ${timelineHTML}
+                <div class="phase-note">${(details && details.timelineNote) ? details.timelineNote : ''}</div>
+            </div>
+        `;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex', 'modal-enter');
+        modalContent.classList.remove('modal-leave');
+    }
+
+    function hideModal() {
+        modalContent.classList.add('modal-leave');
+        modal.classList.add('modal-leave');
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex', 'modal-enter', 'modal-leave');
+        }, 300);
+    }
+    
+    function updateView(sector) {
+        activeSector = sector;
+        if(sector === 'Todos') {
+            overviewSection.classList.remove('hidden');
+            sectionTitle.textContent = "Visão Geral";
+            sectionSubtitle.textContent = "Explore os projetos de infraestrutura do Brasil.";
+        } else {
+            overviewSection.classList.add('hidden');
+            sectionTitle.textContent = `Setor: ${sector}`;
+            const projectCount = projectData.filter(p => p.sector === sector).length;
+            sectionSubtitle.textContent = `Encontrado(s) ${projectCount} projeto(s).`;
+        }
+        renderSidebar();
+        renderProjects(sector);
+    }
+
+    sidebarNav.addEventListener('click', (e) => {
+        e.preventDefault();
+        const link = e.target.closest('a');
+        if (link && link.dataset.sector) {
+            updateView(link.dataset.sector);
+        }
+    });
+
+    projectsGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.project-card');
+        if (card && card.dataset.id) {
+            renderProjectDetails(card.dataset.id);
+        }
+    });
+    
+    closeModalBtn.addEventListener('click', hideModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            hideModal();
+        }
+    });
+
+    (async () => {
+        // Optional loading state
+        overviewSection.innerHTML = '<div class="bg-white p-6 rounded-xl shadow-md text-gray-500">Carregando dados...</div>';
+        await loadData();
+        renderOverviewChart();
+        updateView('Todos');
+    })();
+});
+</script>
+</body>
+</html>
