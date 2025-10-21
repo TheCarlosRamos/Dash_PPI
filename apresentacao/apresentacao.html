@@ -557,16 +557,34 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const details = project.details;
         const phaseStates = buildPhaseStates(details || {});
+        // Build a map with extra info (date/status) per normalized phase
+        const milestoneInfo = {};
+        if (details && Array.isArray(details.timeline)) {
+            details.timeline.forEach(it => {
+                if (!it) return;
+                const norm = normalizeMilestone(it.milestone);
+                if (!norm) return;
+                milestoneInfo[norm] = {
+                    date: it.date || '',
+                    status: (it.status === 'completed' || it.status === 'concluded') ? 'Concluído' : 'Pendente'
+                };
+            });
+        }
         const timelineHTML = `
             <div class="phase-timeline phase-timeline--compact">
                 <div class="phase-line"></div>
                 <div class="phase-items">
-                    ${phaseStates.map(p => `
+                    ${phaseStates.map(p => {
+                        const info = milestoneInfo[p.name] || {};
+                        const statusText = p.completed ? 'Concluído' : 'Pendente';
+                        const dateText = info.date ? ` | ${info.date}` : '';
+                        const tip = `${p.name} — ${statusText}${dateText}`;
+                        return `
                         <div class="phase-item">
-                            <div class="phase-dot ${p.completed ? 'completed' : ''}"></div>
-                            <div class="phase-label">${p.name}</div>
-                        </div>
-                    `).join('')}
+                            <div class="phase-dot ${p.completed ? 'completed' : ''}" title="${tip}"></div>
+                            <div class="phase-label" title="${tip}">${p.name}</div>
+                        </div>`;
+                    }).join('')}
                 </div>
             </div>
         `;
