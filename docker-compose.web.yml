@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  dash_ppi_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: thecarlosramos/dash_ppi:web-latest
+    container_name: dash_ppi_web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
