@@ -26,13 +26,48 @@ jobs:
         with:
           submodules: false
 
+      - name: Prepare publish directory
+        shell: bash
+        run: |
+          set -e
+          set -x
+          mkdir -p public/data
+          echo "Searching for apresentacao.html..."
+          SRC_HTML=$(find . -type f -name "apresentacao.html" | head -n1 || true)
+          if [ -z "$SRC_HTML" ]; then
+            echo "ERROR: apresentacao.html not found anywhere in repo"; exit 1;
+          fi
+          echo "Using apresentacao.html at: $SRC_HTML"
+          # Publish as root index.html and also keep a copy under apresentacao.html
+          cp "$SRC_HTML" public/index.html
+          cp "$SRC_HTML" public/apresentacao.html
+
+          echo "Searching for data directory..."
+          SRC_DATA=$(find . -type d -name "data" | head -n1 || true)
+          if [ -n "$SRC_DATA" ]; then
+            echo "Copying data from: $SRC_DATA";
+            cp -r "$SRC_DATA"/* public/data/ || true
+          else
+            echo "No data directory found; continuing without it.";
+          fi
+
+          # Optional: keep any custom index as alternate landing
+          if [ -f "index.html" ]; then
+            cp index.html public/landing-alt.html || true
+          fi
+
+          # Prevent Jekyll processing
+          touch public/.nojekyll
+          echo "Contents of public/:"
+          ls -la public || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
