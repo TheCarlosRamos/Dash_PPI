@@ -44,9 +44,9 @@ jobs:
             cp index.html public/index.html
           else
             cat > public/index.html <<'EOF'
-            <!DOCTYPE html>
-            <html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=apresentacao.html"><title>Dash PPI</title></head><body><a href="apresentacao.html">Abrir apresentação</a></body></html>
-            EOF
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=apresentacao.html"><title>Dash PPI</title></head><body><a href="apresentacao.html">Abrir apresentação</a></body></html>
+EOF
           fi
 
           echo "Searching for data directory..."
