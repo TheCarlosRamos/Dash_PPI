@@ -26,48 +26,13 @@ jobs:
         with:
           submodules: false
 
-      - name: Prepare publish directory
-        run: |
-          set -e
-          set -x
-          mkdir -p public/data
-          echo "Repository tree (top-level):"; ls -la || true
-          echo "Copying apresentacao/apresentacao.html to public/apresentacao.html..."
-          if [ -f "apresentacao/apresentacao.html" ]; then
-            cp "apresentacao/apresentacao.html" public/apresentacao.html
-          else
-            echo "ERROR: apresentacao/apresentacao.html not found in repository root; update path or add file."; exit 1;
-          fi
-
-          echo "Preparing index.html..."
-          if [ -f "index.html" ]; then
-            cp index.html public/index.html
-          else
-            cat > public/index.html <<'EOF'
-<!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=apresentacao.html"><title>Dash PPI</title></head><body><a href="apresentacao.html">Abrir apresentação</a></body></html>
-EOF
-          fi
-
-          echo "Searching for data directory..."
-          SRC_DATA=$(find . -type d -name "data" | head -n1 || true)
-          if [ -n "$SRC_DATA" ]; then
-            echo "Copying data from: $SRC_DATA";
-            cp -r "$SRC_DATA"/* public/data/ || true
-          else
-            echo "No data directory found; continuing without it.";
-          fi
-
-          # Prevent Jekyll processing
-          touch public/.nojekyll
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
