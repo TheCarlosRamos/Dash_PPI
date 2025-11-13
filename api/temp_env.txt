@@ -1,0 +1,8 @@
+# Configurações da API SOURCE
+SOURCE_API_URL=https://api.sif-source.org
+SOURCE_API_USER=adminppi.source@presidencia.gov.br
+SOURCE_API_PASS=PPI#source147
+
+# Outras configurações
+NODE_ENV=development
+PORT=3000

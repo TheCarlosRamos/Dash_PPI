@@ -5,8 +5,10 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy site content
-COPY apresentacao.html /usr/share/nginx/html/index.html
+COPY apresentacao/apresentacao.html /usr/share/nginx/html/
 COPY data/ /usr/share/nginx/html/data/
+COPY index.html /usr/share/nginx/html/
 
-# Healthcheck (optional)
-HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://localhost/ || exit 1
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD wget --no-verbose --tries=1 --spider http://localhost/healthz || exit 1
