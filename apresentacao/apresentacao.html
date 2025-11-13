@@ -27,6 +27,85 @@
             --accent-yellow: #F7B500;
             --accent-red: #C62828;
         }
+
+// --- Integração com backend para respostas da SIF-Source ---
+async function fetchProjectQuestions(projectId) {
+    const url = `http://localhost:3001/api/projects/${encodeURIComponent(projectId)}/questions`;
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Falha ao carregar perguntas do projeto');
+    return await res.json();
+}
+
+function formatFieldValue(fieldValue) {
+    if (!fieldValue) return null;
+    // Pode vir como {Type, Value}
+    if (typeof fieldValue === 'object' && 'Value' in fieldValue) {
+        const v = fieldValue.Value;
+        if (v == null) return null;
+        if (typeof v === 'object' && 'Value' in v) return String(v.Value).trim();
+        return String(v).trim();
+    }
+    // Ou texto simples
+    return String(fieldValue).trim();
+}
+
+function getAnswerByCode(answers, code) {
+    if (!Array.isArray(answers)) return null;
+    const item = answers.find(a => a.cod_source === String(code));
+    if (!item) return null;
+    return {
+        raw: item,
+        text: formatFieldValue(item.answer)
+    };
+}
+
+async function enrichProjectWithQuestions(project) {
+    try {
+        const answers = await fetchProjectQuestions(project.id);
+
+        const STATUS_CODE = '2000726';
+        const KEY_ISSUES_CODE = '2000727';
+        const NEXT_STEPS_CODE = '2000728';
+        const STUDIES_START_CODE = '2001216';
+        const TENDER_STATUS_CODE = '2001229';
+
+        const statusAns = getAnswerByCode(answers, STATUS_CODE)?.text;
+        const issuesAns = getAnswerByCode(answers, KEY_ISSUES_CODE)?.text;
+        const nextAns = getAnswerByCode(answers, NEXT_STEPS_CODE)?.text;
+        const studiesStart = getAnswerByCode(answers, STUDIES_START_CODE)?.text;
+        const tenderStatus = getAnswerByCode(answers, TENDER_STATUS_CODE)?.text;
+
+        project.details = project.details || {};
+        if (statusAns) project.details.currentSituation = statusAns;
+        if (nextAns) project.details.deliberation = nextAns;
+        if (issuesAns) {
+            const parts = issuesAns.split(/\r?\n|;|\u2022|\-/).map(s => s.trim()).filter(Boolean);
+            project.details.risks = parts.length ? parts : [issuesAns];
+        }
+
+        // Opcional: refletir algum status de fase a partir de respostas
+        if (studiesStart) {
+            project.details.timeline = project.details.timeline || [];
+            const hasStudies = project.details.timeline.some(t => /Estudos/i.test(t.milestone));
+            if (!hasStudies) {
+                project.details.timeline.push({ milestone: 'Estudos', date: studiesStart, status: 'completed' });
+            }
+        }
+        if (tenderStatus) {
+            project.details.timeline = project.details.timeline || [];
+            const exists = project.details.timeline.some(t => /Licitaç|Licitac|Tender|Edital/i.test(t.milestone));
+            if (!exists) {
+                const normalized = /completed|concluded|conclu/i.test(tenderStatus) ? 'completed' : /progress|in progress|andamento/i.test(tenderStatus) ? 'pending' : 'pending';
+                project.details.timeline.push({ milestone: 'Edital', date: '', status: normalized });
+            }
+        }
+
+        return project;
+    } catch (e) {
+        console.warn('Não foi possível enriquecer o projeto com respostas:', e.message);
+        return project;
+    }
+}
         body {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: #4A4A4A;
@@ -591,23 +670,146 @@ document.addEventListener('DOMContentLoaded', () => {
         if (error) throw error;
     }
 
+async function fetchProjectsFromAPI() {
+    try {
+        const response = await fetch('http://localhost:3001/api/projects');
+        if (!response.ok) {
+            throw new Error('Erro ao buscar projetos da API');
+        }
+        let data = await response.json();
+        
+        // Se a API retornar um array vazio, usar dados de exemplo
+        if (!data || data.length === 0) {
+            console.log('API retornou vazio, usando dados de exemplo...');
+            data = [
+                {
+                    id: 'tunel-santos',
+                    sector: 'Portos',
+                    name: 'Túnel Santos-Guarujá',
+                    status: 'Leilão Realizado',
+                    description: 'Parceria Público-Privada (PPP) entre o Governo Federal e o Estado de São Paulo para a construção e operação de um túnel submerso ligando as cidades de Santos e Guarujá.',
+                    currentSituation: 'Leilão realizado em 05 de Setembro de 2025.',
+                    progress: 0
+                },
+                {
+                    id: 'porto-parangua',
+                    sector: 'Portos',
+                    name: 'Porto de Paranaguá',
+                    status: 'Aguardando Edital',
+                    description: 'Concessão do Canal de Acesso Aquaviário por 25 anos para modernização e operação.',
+                    currentSituation: 'Aguardando retorno do relator para publicação do edital. A Resolução CPPI já definiu as condições da desestatização.',
+                    progress: 0
+                },
+                {
+                    id: 'fiol-1',
+                    sector: 'Ferrovias',
+                    name: 'FIOL 1',
+                    status: 'Em Obras',
+                    description: 'Construção da Ferrovia de Integração Oeste-Leste, Trecho 1, fundamental para o escoamento da produção de grãos e minérios.',
+                    currentSituation: 'Obras em andamento com 75% de avanço total. Lotes 1F e 2F em execução, Lote 3F concluído, Lote 4F em execução. Início da operação previsto para 2027.',
+                    progress: 75
+                }
+            ];
+        }
+        
+        // Mapear os dados para o formato esperado pelo frontend
+        return data.map(project => ({
+            id: project.sourceId || project.id,
+            sector: project.sector || 'Outros',
+            name: project.name || 'Projeto sem nome',
+            status: project.status || 'Em andamento',
+            statusColor: getStatusColor(project.status || 'Em andamento'),
+            details: {
+                description: project.description || 'Descrição não disponível',
+                progress: project.progress || 0,
+                currentSituation: project.currentSituation || 'Situação não informada',
+                // Adicione outros campos conforme necessário
+            }
+        }));
+    } catch (error) {
+        console.error('Erro ao buscar projetos da API, usando dados de exemplo...', error);
+        // Retornar dados de exemplo em caso de erro
+        return [
+            {
+                id: 'tunel-santos',
+                sector: 'Portos',
+                name: 'Túnel Santos-Guarujá',
+                status: 'Leilão Realizado',
+                statusColor: getStatusColor('Leilão Realizado'),
+                details: {
+                    description: 'Parceria Público-Privada (PPP) entre o Governo Federal e o Estado de São Paulo para a construção e operação de um túnel submerso ligando as cidades de Santos e Guarujá.',
+                    progress: 0,
+                    currentSituation: 'Leilão realizado em 05 de Setembro de 2025.'
+                }
+            },
+            {
+                id: 'porto-parangua',
+                sector: 'Portos',
+                name: 'Porto de Paranaguá',
+                status: 'Aguardando Edital',
+                statusColor: getStatusColor('Aguardando Edital'),
+                details: {
+                    description: 'Concessão do Canal de Acesso Aquaviário por 25 anos para modernização e operação.',
+                    progress: 0,
+                    currentSituation: 'Aguardando retorno do relator para publicação do edital. A Resolução CPPI já definiu as condições da desestatização.'
+                }
+            },
+            {
+                id: 'fiol-1',
+                sector: 'Ferrovias',
+                name: 'FIOL 1',
+                status: 'Em Obras',
+                statusColor: getStatusColor('Em Obras'),
+                details: {
+                    description: 'Construção da Ferrovia de Integração Oeste-Leste, Trecho 1, fundamental para o escoamento da produção de grãos e minérios.',
+                    progress: 75,
+                    currentSituation: 'Obras em andamento com 75% de avanço total. Lotes 1F e 2F em execução, Lote 3F concluído, Lote 4F em execução. Início da operação previsto para 2027.'
+                }
+            }
+        ];
+    }
+}
+
+    function getStatusColor(status) {
+        if (!status) return 'gray';
+        
+        const statusLower = status.toLowerCase();
+        if (statusLower.includes('concluído') || statusLower.includes('concluido') || statusLower.includes('assinado')) return 'green';
+        if (statusLower.includes('andamento') || statusLower.includes('em andamento') || statusLower.includes('licitação')) return 'blue';
+        if (statusLower.includes('atrasado') || statusLower.includes('parado') || statusLower.includes('suspenso')) return 'red';
+        if (statusLower.includes('planejamento') || statusLower.includes('estudo')) return 'yellow';
+        return 'gray';
+    }
+
     async function loadData() {
         try {
-            if (supabaseClient) {
-                projectData = await supaLoadProjects();
-            } else {
-                const response = await fetch('data/projects.json', { cache: 'no-store' });
-                if (response.ok) {
-                    const json = await response.json();
-                    if (Array.isArray(json) && json.length > 0) {
-                        projectData = json;
+            // Tenta carregar da API primeiro
+            projectData = await fetchProjectsFromAPI();
+            
+            // Se não retornou projetos da API, tenta carregar do Supabase ou do arquivo JSON
+            if (projectData.length === 0) {
+                if (supabaseClient) {
+                    projectData = await supaLoadProjects();
+                } else {
+                    try {
+                        const response = await fetch('data/projects.json', { cache: 'no-store' });
+                        if (response.ok) {
+                            const json = await response.json();
+                            if (Array.isArray(json) && json.length > 0) {
+                                projectData = json;
+                            }
+                        }
+                    } catch (e) {
+                        console.error('Erro ao carregar projetos do arquivo:', e);
                     }
                 }
                 // Apply local overrides if any (apenas no modo arquivo)
                 loadOverrides();
             }
         } catch (e) {
-            // Fallback silencioso para DEFAULT_PROJECT_DATA
+            console.error('Erro ao carregar dados:', e);
+            // Fallback para os dados padrão
+            projectData = [...DEFAULT_PROJECT_DATA];
         }
         sectors = ['Todos', ...new Set(projectData.map(p => p.sector))];
     }
@@ -1270,10 +1472,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
     }
 
-    function renderProjectDetails(projectId) {
+    async function renderProjectDetails(projectId) {
         const project = projectData.find(p => p.id === projectId);
         if (!project) return;
-        
+
+        // Mostra modal imediatamente com estado de carregamento
+        const modalBody = document.getElementById('modal-body');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex', 'modal-enter');
+        modalContent.classList.remove('modal-leave');
+        modalBody.innerHTML = '<div class="p-8 text-gray-500">Carregando dados do projeto...</div>';
+
+        // Enriquecer dados a partir da API de perguntas
+        await enrichProjectWithQuestions(project);
+
         const details = project.details;
         const phaseStates = buildPhaseStates(details || {});
         const timelineHTML = `
@@ -1290,7 +1502,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        const modalBody = document.getElementById('modal-body');
         modalBody.innerHTML = `
             <p class="text-sm font-semibold uppercase tracking-wider text-blue-600">${project.sector}</p>
             <h2 class="text-4xl font-extrabold text-gray-800 mt-2 mb-6">${project.name}</h2>
@@ -1311,7 +1522,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--riscos">
-                    <h3 class="text-lg font-bold text-gray-700 mb-2">Deliberação</h3>
+                    <h3 class="text-lg font-bold text-gray-700 mb-2">Pontos de Atenção</h3>
                     ${details.risks && details.risks.length > 0 ? `
                         <ul class="list-disc list-inside text-gray-700 space-y-1">
                             ${details.risks.map(risk => `<li>${risk}</li>`).join('')}
