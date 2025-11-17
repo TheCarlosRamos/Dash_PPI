@@ -345,6 +345,9 @@ main {
     </div>
 
 <script>
+// Detecta se está rodando em um ambiente estático (ex.: GitHub Pages)
+const IS_STATIC_ENV = typeof window !== 'undefined' && /github\.io$/i.test(window.location.hostname);
+
 // --- Integração com backend para respostas da SIF-Source ---
 async function fetchProjectQuestions(projectId) {
     // Em modo estático (GitHub Pages), não há backend disponível
@@ -623,9 +626,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('project-modal');
     const modalContent = document.getElementById('modal-content');
     const closeModalBtn = document.getElementById('close-modal');
-
-    // Detecta se está rodando em um ambiente estático (ex.: GitHub Pages)
-    const IS_STATIC_ENV = typeof window !== 'undefined' && /github\.io$/i.test(window.location.hostname);
 
     // Supabase config (preencha via window.SUPABASE_URL / window.SUPABASE_ANON antes de carregar esta página, ou edite aqui)
     const SUPABASE_URL = window.SUPABASE_URL || '';
