@@ -1,0 +1,56 @@
+﻿cod_source,question_id,dsc_type,dsc_title
+100231,,Text,Quem será a Autoridade Contratante?
+400014,,Numerical,Qual é o custo estimado de capital do projeto?
+400115,,Numerical,Qual é o custo estimado médio anual de operação e manutenção?
+140059,,Numerical,Qual distribuição de receitas melhor justifica a gestão de recursos públicos para o projeto?
+2000711,,Numerical,Qual duração?
+2000712,,ChoiceSingle,Subsetor do Projeto (de acordo com a classificação de PPPs):
+2000713,,ChoiceSingle,Qual é a estrutura da PPP?
+2000714,,ChoiceSingle,O projeto é para a PND?
+2000715,,Numerical,Investimento estrangeiro mínimo (USD):
+2000716,,Numerical,Potencial investimento estrangeiro (USD):
+2000717,,Text,Quais serão os critérios de seleção da licitação?
+2000718,,Text,Municípios beneficiários
+2000719,,Text,Benefícios adicionais desse projeto
+2000720,,ChoiceSingle,Qual Subsecretaria do SEPPI é responsável pelo projeto?
+2000721,,Numerical,Status do Projeto PPI
+2000722,,Text,Decreto
+2000723,,Text,Resolução do CPPI
+2000724,,Date,Data da reunião de qualificação do CPPI/CEFP
+2000725,,Date,Data da qualificação em PPI
+2000726,,Date,Status atual do projeto
+2000727,,Text,Questões chave do projeto
+2000923,,Text,Receita máxima
+2000924,,Text,Receita mínima
+2000925,,Text,Tarifa máxima de usuário
+2000926,,Text,Tarifa efetiva de usuário
+2000927,,Text,Tipo de licitação
+2000928,,ChoiceSingle,População beneficiada
+2000943,,Numerical,Empregos diretos (quantidade)
+2000944,,Numerical,Empregos indiretos (quantidade)
+2000945,,ChoiceSingle,Tipo de suporte ao PPI
+2000946,,ChoiceSingle,Publicar no website?
+2000947,,ChoiceSingle,O projeto é de domínio aberto?
+2000948,,Text,Pagamento inicial mínimo
+2000949,,Text,Pagamento inicial efetivo
+2000950,,Text,Taxa anual fixa
+2000951,,Text,Taxa anual efetiva
+2000952,,Text,Taxa anual variável
+2001216,,Numerical,Qual o valor total do contrato de PPP (se aplicável):
+2001217,,Date,Data de início - Estudos
+2001218,,Date,Data de fim - Estudos
+2001219,,ChoiceSingle,Status - Estudos
+2001220,,Date,Data de início - Consulta Pública
+2001221,,Date,Data de fim - Consulta Pública
+2001222,,ChoiceSingle,Status da Consulta Pública
+2001223,,Date,Data de início - Controle Externo
+2001224,,Date,Data de fim - Controle Externo
+2001225,,ChoiceSingle,Status do Controle Externo
+2001226,,Date,Data de publicação - Aviso de Licitação
+2001227,,ChoiceSingle,Status da fase - Aviso de Licitação
+2001228,,Date,Data de início - Licitação
+2001229,,Date,Data de fim - Licitação
+2001230,,ChoiceSingle,Status da fase - Licitação
+2001231,,Text,Situação do Contrato
+2001232,,Date,Data de assinatura do contrato
+2001232,,Text,Informação sobre o projeto (texto a ser publicado na ficha de informações do projeto no website do PPI)

@@ -28,84 +28,7 @@
             --accent-red: #C62828;
         }
 
-// --- Integração com backend para respostas da SIF-Source ---
-async function fetchProjectQuestions(projectId) {
-    const url = `http://localhost:3001/api/projects/${encodeURIComponent(projectId)}/questions`;
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) throw new Error('Falha ao carregar perguntas do projeto');
-    return await res.json();
-}
-
-function formatFieldValue(fieldValue) {
-    if (!fieldValue) return null;
-    // Pode vir como {Type, Value}
-    if (typeof fieldValue === 'object' && 'Value' in fieldValue) {
-        const v = fieldValue.Value;
-        if (v == null) return null;
-        if (typeof v === 'object' && 'Value' in v) return String(v.Value).trim();
-        return String(v).trim();
-    }
-    // Ou texto simples
-    return String(fieldValue).trim();
-}
-
-function getAnswerByCode(answers, code) {
-    if (!Array.isArray(answers)) return null;
-    const item = answers.find(a => a.cod_source === String(code));
-    if (!item) return null;
-    return {
-        raw: item,
-        text: formatFieldValue(item.answer)
-    };
-}
-
-async function enrichProjectWithQuestions(project) {
-    try {
-        const answers = await fetchProjectQuestions(project.id);
-
-        const STATUS_CODE = '2000726';
-        const KEY_ISSUES_CODE = '2000727';
-        const NEXT_STEPS_CODE = '2000728';
-        const STUDIES_START_CODE = '2001216';
-        const TENDER_STATUS_CODE = '2001229';
-
-        const statusAns = getAnswerByCode(answers, STATUS_CODE)?.text;
-        const issuesAns = getAnswerByCode(answers, KEY_ISSUES_CODE)?.text;
-        const nextAns = getAnswerByCode(answers, NEXT_STEPS_CODE)?.text;
-        const studiesStart = getAnswerByCode(answers, STUDIES_START_CODE)?.text;
-        const tenderStatus = getAnswerByCode(answers, TENDER_STATUS_CODE)?.text;
-
-        project.details = project.details || {};
-        if (statusAns) project.details.currentSituation = statusAns;
-        if (nextAns) project.details.deliberation = nextAns;
-        if (issuesAns) {
-            const parts = issuesAns.split(/\r?\n|;|\u2022|\-/).map(s => s.trim()).filter(Boolean);
-            project.details.risks = parts.length ? parts : [issuesAns];
-        }
-
-        // Opcional: refletir algum status de fase a partir de respostas
-        if (studiesStart) {
-            project.details.timeline = project.details.timeline || [];
-            const hasStudies = project.details.timeline.some(t => /Estudos/i.test(t.milestone));
-            if (!hasStudies) {
-                project.details.timeline.push({ milestone: 'Estudos', date: studiesStart, status: 'completed' });
-            }
-        }
-        if (tenderStatus) {
-            project.details.timeline = project.details.timeline || [];
-            const exists = project.details.timeline.some(t => /Licitaç|Licitac|Tender|Edital/i.test(t.milestone));
-            if (!exists) {
-                const normalized = /completed|concluded|conclu/i.test(tenderStatus) ? 'completed' : /progress|in progress|andamento/i.test(tenderStatus) ? 'pending' : 'pending';
-                project.details.timeline.push({ milestone: 'Edital', date: '', status: normalized });
-            }
-        }
-
-        return project;
-    } catch (e) {
-        console.warn('Não foi possível enriquecer o projeto com respostas:', e.message);
-        return project;
-    }
-}
+        
         body {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: #4A4A4A;
@@ -422,6 +345,100 @@ main {
     </div>
 
 <script>
+// --- Integração com backend para respostas da SIF-Source ---
+async function fetchProjectQuestions(projectId) {
+    const url = `/api/projects/${encodeURIComponent(projectId)}/questions`;
+    console.log('[questions] GET', url);
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Falha ao carregar perguntas do projeto');
+    const json = await res.json();
+    console.log('[questions] response for', projectId, json);
+    return json;
+}
+
+function formatFieldValue(fieldValue) {
+    if (!fieldValue) return null;
+    if (typeof fieldValue === 'object' && 'Value' in fieldValue) {
+        const v = fieldValue.Value;
+        if (v == null) return null;
+        if (typeof v === 'object' && 'Value' in v) return String(v.Value).trim();
+        return String(v).trim();
+    }
+    return String(fieldValue).trim();
+}
+
+function getAnswerByCode(answers, code) {
+    if (!Array.isArray(answers)) return null;
+    const item = answers.find(a => a.cod_source === String(code));
+    if (!item) return null;
+    return {
+        raw: item,
+        text: formatFieldValue(item.answer)
+    };
+}
+
+async function enrichProjectWithQuestions(project) {
+    try {
+        const qid = project.sourceId || project.id;
+        if (!qid) {
+            console.warn('[questions] projeto sem id/sourceId. Não será possível buscar perguntas.', project);
+            return project;
+        }
+        // Heurística simples: GUID esperado (8-4-4-4-12)
+        const looksGuid = /[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/.test(String(qid));
+        if (!looksGuid) {
+            console.warn('[questions] id não parece GUID. A SIF-Source pode não retornar valores.', qid);
+        }
+
+        const data = await fetchProjectQuestions(qid);
+
+        project.details = project.details || {};
+
+        // Cards
+        const situacao = (data && data.situacao_atual) ? String(data.situacao_atual) : 'Não informado';
+        const pontos = (data && data.pontos_atencao) ? String(data.pontos_atencao) : 'Não informado';
+        const proximos = (data && data.proximos_passos) ? String(data.proximos_passos) : 'Não informado';
+
+        if (situacao && situacao !== 'Não informado') project.details.currentSituation = situacao;
+        if (proximos && proximos !== 'Não informado') project.details.deliberation = proximos;
+        if (pontos) {
+            const parts = String(pontos).split(/\r?\n|;|\u2022|\-/).map(s => s.trim()).filter(Boolean);
+            project.details.risks = parts.length ? parts : (pontos === 'Não informado' ? [] : [String(pontos)]);
+        }
+
+        // Linha do tempo a partir de etapas
+        const etapas = (data && data.etapas) ? data.etapas : {};
+        const timeline = [];
+
+        const pushIfAny = (milestone, values, status) => {
+            const date = [values.publicacao, values.inicio, values.fim].find(v => v && v !== 'Não informado') || '';
+            const st = status && status !== 'Não informado' ? status : (date ? 'completed' : 'pending');
+            timeline.push({ milestone, date, status: st });
+        };
+
+        if (etapas.estudos) {
+            pushIfAny('Estudos', etapas.estudos, etapas.estudos.status);
+        }
+        if (etapas.consulta_publica) {
+            pushIfAny('Consulta Pública', etapas.consulta_publica, etapas.consulta_publica.status);
+        }
+        if (etapas.tcu) {
+            pushIfAny('Controle Externo / TCU', etapas.tcu, etapas.tcu.status);
+        }
+        if (etapas.edital) {
+            pushIfAny('Edital', etapas.edital, etapas.edital.status);
+        }
+
+        if (timeline.length) {
+            project.details.timeline = timeline;
+        }
+
+        return project;
+    } catch (e) {
+        console.warn('Não foi possível enriquecer o projeto com respostas:', e.message);
+        return project;
+    }
+}
 const DEFAULT_PROJECT_DATA = [
     {
         id: 'tunel-santos',
@@ -612,6 +629,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let chartInstance = null;
     let activeSector = 'Todos';
     let meetingMode = false;
+    // Cache em memória para evitar reprocessar/enriquecer o mesmo projeto várias vezes
+    const enrichedProjectsCache = new Map();
 
     function saveOverrides() {
         try {
@@ -672,12 +691,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchProjectsFromAPI() {
     try {
-        const response = await fetch('http://localhost:3001/api/projects');
+        // Dentro do dash_ppi_web, /api é proxyado para o container ppi_api
+        const response = await fetch('/api/projects');
         if (!response.ok) {
             throw new Error('Erro ao buscar projetos da API');
         }
         let data = await response.json();
-        
+
+        console.log('RAW API DATA:', data);
+
         // Se a API retornar um array vazio, usar dados de exemplo
         if (!data || data.length === 0) {
             console.log('API retornou vazio, usando dados de exemplo...');
@@ -712,24 +734,49 @@ async function fetchProjectsFromAPI() {
             ];
         }
         
-        // Mapear os dados para o formato esperado pelo frontend
-        return data.map(project => ({
-            id: project.sourceId || project.id,
-            sector: project.sector || 'Outros',
-            name: project.name || 'Projeto sem nome',
-            status: project.status || 'Em andamento',
-            statusColor: getStatusColor(project.status || 'Em andamento'),
-            details: {
-                description: project.description || 'Descrição não disponível',
-                progress: project.progress || 0,
-                currentSituation: project.currentSituation || 'Situação não informada',
-                // Adicione outros campos conforme necessário
-            }
-        }));
+        // Mapear os dados para o formato esperado pelo frontend,
+        // aproveitando todos os campos já enviados pelo backend
+        const mappedData = data.map(project => {
+            const normalizedRisks = project.risks
+                ? (Array.isArray(project.risks) ? project.risks : [project.risks])
+                : [];
+
+            const raw = project.rawData || project.raw || {};
+            const descriptionFromRaw = raw.Description || raw.description || null;
+            const completionFromRaw = typeof raw.Completion === 'number' ? raw.Completion : null;
+
+            const progressValue =
+                project.progress !== undefined && project.progress !== null
+                    ? project.progress
+                    : (completionFromRaw !== null ? Math.round(completionFromRaw * 100) : 0);
+
+            return {
+                id: project.sourceId || project.id,
+                sector: project.sector || raw.Sector?.Value || 'Outros',
+                name: project.name || raw.Name || 'Projeto sem nome',
+                status: project.status || raw.CurrentProjectStatus?.Value || 'Em andamento',
+                statusColor: getStatusColor(project.status || raw.CurrentProjectStatus?.Value || 'Em andamento'),
+                details: {
+                    description: project.description || descriptionFromRaw || 'Descrição não disponível',
+                    progress: progressValue,
+                    currentSituation: project.currentSituation || 'Situação não informada',
+                    // O layout atual usa "deliberation" para o card de Próximos Passos
+                    deliberation: project.nextSteps || 'Próximos passos não informados',
+                    nextSteps: project.nextSteps || 'Próximos passos não informados',
+                    risks: normalizedRisks
+                },
+                // Expor tudo que veio da API/backend para uso no frontend
+                rawData: raw,
+                backendProject: project
+            };
+        });
+
+        console.log('MAPPED FRONTEND DATA:', mappedData);
+        return mappedData;
     } catch (error) {
         console.error('Erro ao buscar projetos da API, usando dados de exemplo...', error);
         // Retornar dados de exemplo em caso de erro
-        return [
+        const fallback = [
             {
                 id: 'tunel-santos',
                 sector: 'Portos',
@@ -767,6 +814,8 @@ async function fetchProjectsFromAPI() {
                 }
             }
         ];
+        console.log('MAPPED FRONTEND DATA (fallback):', fallback);
+        return fallback;
     }
 }
 
@@ -1476,17 +1525,18 @@ async function fetchProjectsFromAPI() {
         const project = projectData.find(p => p.id === projectId);
         if (!project) return;
 
-        // Mostra modal imediatamente com estado de carregamento
         const modalBody = document.getElementById('modal-body');
+
+        // Abre o modal imediatamente com os dados já disponíveis
         modal.classList.remove('hidden');
         modal.classList.add('flex', 'modal-enter');
         modalContent.classList.remove('modal-leave');
-        modalBody.innerHTML = '<div class="p-8 text-gray-500">Carregando dados do projeto...</div>';
 
-        // Enriquecer dados a partir da API de perguntas
-        await enrichProjectWithQuestions(project);
+        // Usa versão já enriquecida em cache se existir
+        const cached = enrichedProjectsCache.get(project.id);
+        const baseProject = cached || project;
 
-        const details = project.details;
+        const details = baseProject.details || {};
         const phaseStates = buildPhaseStates(details || {});
         const timelineHTML = `
             <div class="phase-timeline phase-timeline--compact">
@@ -1512,8 +1562,8 @@ async function fetchProjectsFromAPI() {
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--situacao">
-                    <h3 class="text-lg font-bold mb-2 text-gray-700">Pontos de Atenção</h3>
-                    <p class="text-gray-600">${details.currentSituation || ''}</p>
+                    <h3 class="text-lg font-bold mb-2 text-gray-700">Situação Atual</h3>
+                    <p class="text-gray-600">${details.currentSituation || 'Não informado'}</p>
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--deliberacao">
@@ -1556,10 +1606,32 @@ async function fetchProjectsFromAPI() {
                 ${timelineHTML}
                 <div class="phase-note">${(details && details.timelineNote) ? details.timelineNote : ''}</div>
             </div>
+            <div class="mt-4 bg-white border border-gray-200 rounded-xl p-4">
+                <h3 class="text-lg font-bold text-gray-700 mb-2">Detalhes Técnicos da SIF-Source</h3>
+                <p class="text-sm text-gray-500 mb-2">Esta seção mostra os dados completos recebidos da API da SIF-Source e da nossa API local para este projeto.</p>
+                <details class="mt-2">
+                    <summary class="cursor-pointer text-sm text-blue-600 hover:underline">Ver JSON bruto da SIF (rawData)</summary>
+                    <pre class="mt-2 text-xs bg-gray-900 text-gray-100 rounded-lg p-3 overflow-x-auto whitespace-pre-wrap">${baseProject.rawData ? JSON.stringify(baseProject.rawData, null, 2) : 'Sem rawData disponível'}</pre>
+                </details>
+                <details class="mt-2">
+                    <summary class="cursor-pointer text-sm text-blue-600 hover:underline">Ver JSON completo do projeto retornado pela API local</summary>
+                    <pre class="mt-2 text-xs bg-gray-900 text-gray-100 rounded-lg p-3 overflow-x-auto whitespace-pre-wrap">${JSON.stringify(baseProject, null, 2)}</pre>
+                </details>
+            </div>
         `;
-        modal.classList.remove('hidden');
-        modal.classList.add('flex', 'modal-enter');
-        modalContent.classList.remove('modal-leave');
+
+        // Enriquecimento assíncrono: se ainda não estiver em cache, buscar perguntas
+        if (!cached) {
+            (async () => {
+                try {
+                    await enrichProjectWithQuestions(project);
+                    // Atualiza cache com a versão enriquecida
+                    enrichedProjectsCache.set(project.id, project);
+                } catch (err) {
+                    console.warn('Falha ao enriquecer projeto', project.id, err);
+                }
+            })();
+        }
     }
 
     function hideModal() {

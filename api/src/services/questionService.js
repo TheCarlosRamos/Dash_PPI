@@ -16,6 +16,22 @@ class QuestionService {
 
     // Encontra o primeiro caminho que existe
     this.csvFilePath = possiblePaths.find(fs.existsSync);
+
+    // Busca adicional: qualquer CSV dentro da pasta 'tabela_perguntas_ppi'
+    if (!this.csvFilePath) {
+      try {
+        const dirCandidate = path.join(process.cwd(), 'tabela_perguntas_ppi');
+        if (fs.existsSync(dirCandidate)) {
+          const entries = fs.readdirSync(dirCandidate, { withFileTypes: true });
+          const csvEntry = entries.find(e => e.isFile() && e.name.toLowerCase().endsWith('.csv'));
+          if (csvEntry) {
+            this.csvFilePath = path.join(dirCandidate, csvEntry.name);
+          }
+        }
+      } catch (e) {
+        console.warn('Falha ao varrer diretório tabela_perguntas_ppi:', e.message);
+      }
+    }
     
     if (this.csvFilePath) {
       console.log('Arquivo CSV encontrado em:', this.csvFilePath);
@@ -23,7 +39,11 @@ class QuestionService {
       console.error('Arquivo CSV não encontrado em nenhum dos locais:');
       possiblePaths.forEach(p => console.log('  -', p));
       console.log('Diretório atual:', process.cwd());
-      console.log('Conteúdo do diretório:', fs.readdirSync('/usr/src/app'));
+      try {
+        if (fs.existsSync('/usr/src/app')) {
+          console.log('Conteúdo do diretório /usr/src/app:', fs.readdirSync('/usr/src/app'));
+        }
+      } catch {}
     }
   }
 
@@ -134,6 +154,135 @@ class QuestionService {
       console.error('Error in getProjectQuestionAnswers:', error);
       throw error;
     }
+  }
+
+  // Utilitário: obtém valor pelo código (aceita campos 'value' ou 'answer')
+  getValueByCode(answers, code) {
+    const item = answers.find(a => String(a.cod_source) === String(code));
+    const val = item ? (item.value ?? item.answer ?? null) : null;
+    return this.extractText(val);
+  }
+
+  // Utilitário: extrai texto de estruturas da SIF-Source (Value aninhado, arrays, objetos)
+  extractText(input) {
+    if (input === null || input === undefined) return null;
+    // Se for array, junta textos individuais
+    if (Array.isArray(input)) {
+      const parts = input.map(v => this.extractText(v)).filter(Boolean);
+      return parts.length ? parts.join('; ') : null;
+    }
+    // Se for objeto com 'Value', desce recursivamente
+    if (typeof input === 'object') {
+      if ('Value' in input) {
+        return this.extractText(input.Value);
+      }
+      if ('Title' in input && typeof input.Title === 'string') {
+        return input.Title;
+      }
+      if ('Type' in input && 'Value' in input) {
+        return this.extractText(input.Value);
+      }
+      // Tenta pegar propriedades comuns como string
+      const maybe = ['text', 'label', 'name'].map(k => input[k]).find(v => typeof v === 'string' && v.trim());
+      if (maybe) return maybe;
+      return null;
+    }
+    // Primtivo: string/number/boolean
+    if (typeof input === 'string') return input.trim();
+    if (typeof input === 'number' || typeof input === 'boolean') return String(input);
+    return null;
+  }
+
+  // Utilitário: normaliza datas para DD/MM/YYYY quando possível
+  normalizeDate(value) {
+    if (value === null || value === undefined) return 'Não informado';
+    const str = String(value).trim();
+    if (!str) return 'Não informado';
+
+    // Já está no formato DD/MM/YYYY
+    if (/^\d{2}\/\d{2}\/\d{4}$/.test(str)) return str;
+
+    // ISO 8601 ou YYYY-MM-DD
+    const isoMatch = str.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (isoMatch) {
+      const [, y, m, d] = isoMatch;
+      return `${d}/${m}/${y}`;
+    }
+
+    // Tenta parsear com Date
+    const dt = new Date(str);
+    if (!isNaN(dt.getTime())) {
+      const dd = String(dt.getDate()).padStart(2, '0');
+      const mm = String(dt.getMonth() + 1).padStart(2, '0');
+      const yyyy = dt.getFullYear();
+      return `${dd}/${mm}/${yyyy}`;
+    }
+
+    return 'Não informado';
+  }
+
+  // Utilitário: normaliza percentual para "N%" quando numérico simples
+  normalizePercentOrText(value) {
+    if (value === null || value === undefined) return 'Não informado';
+    const str = String(value).trim();
+    if (!str) return 'Não informado';
+    if (/^\d+%$/.test(str)) return str; // já com %
+    if (/^\d+(\.\d+)?$/.test(str)) {
+      // número simples
+      const n = Number(str);
+      if (!isNaN(n)) return `${n}%`;
+    }
+    return str; // texto livre
+  }
+
+  // Heurística simples: identifica se uma string parece data
+  isLikelyDate(value) {
+    if (value === null || value === undefined) return false;
+    const str = String(value).trim();
+    if (!str) return false;
+    if (/^\d{2}\/\d{2}\/\d{4}$/.test(str)) return true;
+    if (/^\d{4}-\d{2}-\d{2}/.test(str)) return true;
+    return false;
+  }
+
+  // Formata a lista de respostas no JSON de cards e linha do tempo
+  formatAnswersForCards(answers) {
+    const get = (code) => this.getValueByCode(answers, code);
+
+    const situacaoRaw = get(2000726);
+    const pontosRaw = get(2000727);
+    const proximosRaw = get(2000728);
+
+    const result = {
+      situacao_atual: this.isLikelyDate(situacaoRaw) ? this.normalizeDate(situacaoRaw) : this.normalizePercentOrText(situacaoRaw),
+      pontos_atencao: (pontosRaw === null || String(pontosRaw).trim() === '') ? 'Não informado' : String(pontosRaw),
+      proximos_passos: (proximosRaw === null || String(proximosRaw).trim() === '') ? 'Não informado' : String(proximosRaw),
+      etapas: {
+        estudos: {
+          inicio: this.normalizeDate(get(2001217)),
+          fim: this.normalizeDate(get(2001218)),
+          status: (this.extractText(get(2001219)) ?? 'Não informado') || 'Não informado'
+        },
+        consulta_publica: {
+          inicio: this.normalizeDate(get(2001220)),
+          fim: this.normalizeDate(get(2001221)),
+          status: (this.extractText(get(2001222)) ?? 'Não informado') || 'Não informado'
+        },
+        tcu: {
+          inicio: this.normalizeDate(get(2001223)),
+          fim: this.normalizeDate(get(2001224)),
+          status: (this.extractText(get(2001225)) ?? 'Não informado') || 'Não informado'
+        },
+        edital: {
+          publicacao: this.normalizeDate(get(2001226)),
+          status: (this.extractText(get(2001227)) ?? 'Não informado') || 'Não informado',
+          inicio: this.normalizeDate(get(2001228)),
+          fim: this.normalizeDate(get(2001229))
+        }
+      }
+    };
+
+    return result;
   }
 
   async getAllQuestions() {
