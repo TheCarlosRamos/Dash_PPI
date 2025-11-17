@@ -21,8 +21,9 @@ const questionController = {
   async getProjectQuestions(req, res) {
     try {
       const { projectId } = req.params;
-      const questions = await questionService.getProjectQuestionAnswers(projectId);
-      res.json(questions);
+      const answers = await questionService.getProjectQuestionAnswers(projectId);
+      const formatted = questionService.formatAnswersForCards(answers);
+      res.json(formatted);
     } catch (error) {
       console.error('Error fetching project questions:', error);
       res.status(500).json({ 

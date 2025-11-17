@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "6f9aadd7-d2b2-4df2-aa37-16a1fa0ec577",
+		"name": "SOURCE",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49438215",
+		"_collection_link": "https://nelsonfmuniz-6387726.postman.co/workspace/SEPPI's-Workspace~2555eeab-8b61-4438-80f2-a88de344007c/collection/49438215-6f9aadd7-d2b2-4df2-aa37-16a1fa0ec577?action=share&source=collection_link&creator=49438215"
+	},
+	"item": [
+		{
+			"name": "GET Projects/Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sif-source.org/projects/test?SPHostUrl=https%3A%2F%2Fwww.sif-source.org&SPLanguage=pt-BR&SPClientTag=0&SPProductNumber=15.0.5023.1005",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"projects",
+						"test"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww.sif-source.org"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "pt-BR"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15.0.5023.1005"
+						}
+					]
+				},
+				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Private Projects",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET Published Projects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sif-source.org/projects/29d17d8c-e6bb-41c9-a685-03f824f81ab3?SPHostUrl=https%3A%2F%2Fwww%2Esif-source%2Eorg&SPLanguage=en-US&SPClientTag=0&SPProductNumber=15%2E0%2E5023%2E1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"projects",
+						"29d17d8c-e6bb-41c9-a685-03f824f81ab3"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww%2Esif-source%2Eorg"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "en-US"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15%2E0%2E5023%2E1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Project Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sif-source.org/projects/870432be-2fa4-4b58-bc96-df5357403831?SPHostUrl=https%3A%2F%2Fwww%2Esif-source%2Eorg&SPLanguage=en-US&SPClientTag=0&SPProductNumber=15%2E0%2E5023%2E1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"projects",
+						"870432be-2fa4-4b58-bc96-df5357403831"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww%2Esif-source%2Eorg"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "en-US"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15%2E0%2E5023%2E1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET data for country, sector, type of projects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sif-source.org/ReferenceData/Territories?SPHostUrl=https%3A%2F%2Fwww.sif-source.org&SPLanguage=pt-BR&SPClientTag=0&SPProductNumber=15.0.5023.1183",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"ReferenceData",
+						"Territories"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww.sif-source.org"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "pt-BR"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15.0.5023.1183"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Project",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Description\": \"Api Test Description\",\r\n  \"IsUnsolicited\": false,\r\n  \"Name\": \"Api test 1\",\r\n  \"Sector\": {\r\n    \"Id\": 4,\r\n    \"Value\": \"Transport\"\r\n  },\r\n  \"SubSector\": {\r\n    \"Id\": 23,\r\n    \"Value\": \"Airport\"\r\n  },\r\n  \"Territories\": [\r\n    {\r\n      \"Id\": 36,\r\n      \"Value\": \"Brazil\"\r\n    }\r\n  ],\r\n  \"ProjectTypes\": [\r\n    {\r\n      \"Id\": 1,\r\n      \"Value\": \"New asset\"\r\n    }\r\n  ],\r\n  \"EstimatedCapitalCost\": 500000.0,\r\n  \"ManagerPermissions\": {\r\n    \"Status\": [\r\n      {\r\n        \"ID\": 302,\r\n        \"Title\": \"Project Definition\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 303,\r\n        \"Title\": \"Project Preparation\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 304,\r\n        \"Title\": \"Tender Process\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 305,\r\n        \"Title\": \"Construction\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 306,\r\n        \"Title\": \"Operation and Maintenance\",\r\n        \"Permission\": \"Write\"\r\n      }\r\n    ]\r\n  },\r\n  \"Stages\": [\r\n    {\r\n      \"StatusID\": 302,\r\n      \"StageNumero\": \"1\",\r\n      \"Title\": \"Project Definition\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"2\",\r\n      \"Title\": \"Project Investigation\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"3\",\r\n      \"Title\": \"Options Appraisal\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"4\",\r\n      \"Title\": \"Business Case\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 304,\r\n      \"StageNumero\": \"5\",\r\n      \"Title\": \"Procurement Process\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 304,\r\n      \"StageNumero\": \"6\",\r\n      \"Title\": \"Financial Process\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 305,\r\n      \"StageNumero\": \"7\",\r\n      \"Title\": \"Work Period\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 306,\r\n      \"StageNumero\": \"8\",\r\n      \"Title\": \"Operation Period\",\r\n      \"Permission\": \"Write\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.sif-source.org/project-requests?SPHostUrl=https%3A%2F%2Fwww%2Esif-source%2Eorg&SPLanguage=en-US&SPClientTag=0&SPProductNumber=15%2E0%2E5023%2E1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"project-requests"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww%2Esif-source%2Eorg"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "en-US"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15%2E0%2E5023%2E1000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST Create Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Description\": \"NAT01 - terminal de graneis sólidos minerais no porto de Natal/RN\",\r\n  \"IsUnsolicited\": false,\r\n  \"Name\": \"NAT01 - terminal de graneis sólidos minerais no porto de Natal/RN\",\r\n  \"Sector\": {\r\n    \"Id\": 12,\r\n    \"Value\": \"Transport\"\r\n  },\r\n  \"SubSector\": {\r\n    \"Id\": 34,\r\n    \"Value\": \"Transport-Hidroway\"\r\n  },\r\n  \"Territories\": [\r\n    {\r\n      \"Id\": 36,\r\n      \"Value\": \"Brazil\"\r\n    }\r\n  ],\r\n  \"ProjectTypes\": [\r\n    {\r\n      \"Id\": 1,\r\n      \"Value\": \"New asset\"\r\n    }\r\n  ],\r\n  \"EstimatedCapitalCost\": 500000.0,\r\n  \"ManagerPermissions\": {\r\n    \"Status\": [\r\n      {\r\n        \"ID\": 302,\r\n        \"Title\": \"Project Definition\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 303,\r\n        \"Title\": \"Project Preparation\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 304,\r\n        \"Title\": \"Tender Process\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 305,\r\n        \"Title\": \"Construction\",\r\n        \"Permission\": \"Write\"\r\n      },\r\n      {\r\n        \"ID\": 306,\r\n        \"Title\": \"Operation and Maintenance\",\r\n        \"Permission\": \"Write\"\r\n      }\r\n    ]\r\n  },\r\n  \"Stages\": [\r\n    {\r\n      \"StatusID\": 302,\r\n      \"StageNumero\": \"1\",\r\n      \"Title\": \"Project Definition\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"2\",\r\n      \"Title\": \"Project Investigation\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"3\",\r\n      \"Title\": \"Options Appraisal\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 303,\r\n      \"StageNumero\": \"4\",\r\n      \"Title\": \"Business Case\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 304,\r\n      \"StageNumero\": \"5\",\r\n      \"Title\": \"Procurement Process\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 304,\r\n      \"StageNumero\": \"6\",\r\n      \"Title\": \"Financial Process\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 305,\r\n      \"StageNumero\": \"7\",\r\n      \"Title\": \"Work Period\",\r\n      \"Permission\": \"Write\"\r\n    },\r\n    {\r\n      \"StatusID\": 306,\r\n      \"StageNumero\": \"8\",\r\n      \"Title\": \"Operation Period\",\r\n      \"Permission\": \"Write\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.sif-source.org/project-requests?SPHostUrl=https%3A%2F%2Fwww%2Esif-source%2Eorg&SPLanguage=en-US&SPClientTag=0&SPProductNumber=15%2E0%2E5023%2E1000",
+							"protocol": "https",
+							"host": [
+								"api",
+								"sif-source",
+								"org"
+							],
+							"path": [
+								"project-requests"
+							],
+							"query": [
+								{
+									"key": "SPHostUrl",
+									"value": "https%3A%2F%2Fwww%2Esif-source%2Eorg"
+								},
+								{
+									"key": "SPLanguage",
+									"value": "en-US"
+								},
+								{
+									"key": "SPClientTag",
+									"value": "0"
+								},
+								{
+									"key": "SPProductNumber",
+									"value": "15%2E0%2E5023%2E1000"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Location",
+							"value": "https://api.sif-source.org/project-requests/5701"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 20:16:43 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "792"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PERSISTENCE-COOKIE=!BiS6Y6BPgQEW5fvML9e4ef67GDCwWjsNBitI1BOryRLdjj40XDmTT0kyrcwCKaggQbIIFM8wqaeP; expires=Thu, 06-Nov-2025 08:16:37 GMT; path=/; Httponly; Secure"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 5701,\n    \"Name\": \"NAT01 - terminal de graneis sólidos minerais no porto de Natal/RN\",\n    \"Description\": \"NAT01 - terminal de graneis sólidos minerais no porto de Natal/RN\",\n    \"Sector\": {\n        \"Id\": 12,\n        \"Value\": \"Transport\"\n    },\n    \"SubSector\": {\n        \"Id\": 34,\n        \"Value\": \"Transport-Hidroway\"\n    },\n    \"Territories\": [\n        {\n            \"Id\": 36,\n            \"Value\": \"Brazil\"\n        }\n    ],\n    \"ProjectTypes\": [\n        {\n            \"Id\": 1,\n            \"Value\": \"New asset\"\n        }\n    ],\n    \"IsUnsolicited\": false,\n    \"EstimatedCapitalCost\": 500000,\n    \"ManagerPermissions\": {\n        \"Reference\": null,\n        \"Status\": [\n            {\n                \"ID\": 302,\n                \"Title\": \"Project Definition\",\n                \"Permission\": \"Write\"\n            },\n            {\n                \"ID\": 303,\n                \"Title\": \"Project Preparation\",\n                \"Permission\": \"Write\"\n            },\n            {\n                \"ID\": 304,\n                \"Title\": \"Tender Process\",\n                \"Permission\": \"Write\"\n            },\n            {\n                \"ID\": 305,\n                \"Title\": \"Construction\",\n                \"Permission\": \"Write\"\n            },\n            {\n                \"ID\": 306,\n                \"Title\": \"Operation and Maintenance\",\n                \"Permission\": \"Write\"\n            }\n        ],\n        \"Stages\": null\n    },\n    \"Status\": \"Initiated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET a Project Question Answer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.sif-source.org/projects/870432be-2fa4-4b58-bc96-df5357403831/questions/search/2000688?SPHostUrl=https%3A%2F%2Fwww.sif-source.org&SPLanguage=pt-BR&SPClientTag=0&SPProductNumber=15.0.5023.1183",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"projects",
+						"870432be-2fa4-4b58-bc96-df5357403831",
+						"questions",
+						"search",
+						"2000688"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww.sif-source.org"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "pt-BR"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15.0.5023.1183"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET verify the answer with ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Replace a question’s answer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PPI#source147",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminppi.source@presidencia.gov.br",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Type\": \"ChoiceSingle\",\r\n        \"Value\": {\r\n            \"Key\": 35,\r\n            \"Value\": \"Transport-Highway\"\r\n        },\r\n        \"Details\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.sif-source.org/projects/22044c07-aa2f-42ee-9331-2628dc64fc6a/questions/1018/answer?SPHostUrl=https%3A%2F%2Fwww.sif-source.org&SPLanguage=pt-BR&SPClientTag=0&SPProductNumber=15.0.5023.1183",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sif-source",
+						"org"
+					],
+					"path": [
+						"projects",
+						"22044c07-aa2f-42ee-9331-2628dc64fc6a",
+						"questions",
+						"1018",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "SPHostUrl",
+							"value": "https%3A%2F%2Fwww.sif-source.org"
+						},
+						{
+							"key": "SPLanguage",
+							"value": "pt-BR"
+						},
+						{
+							"key": "SPClientTag",
+							"value": "0"
+						},
+						{
+							"key": "SPProductNumber",
+							"value": "15.0.5023.1183"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

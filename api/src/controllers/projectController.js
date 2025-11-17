@@ -1,5 +1,6 @@
 const Project = require('../models/Project');
 const sourceApiService = require('../services/sourceApiService');
+const sourceService = require('../services/sourceService');
 
 // Mapeamento de status entre SOURCE e nossa aplicação
 const STATUS_MAPPING = {
@@ -200,10 +201,24 @@ const projectController = {
       let updated = 0;
       let errors = 0;
       
-      // 2. Para cada projeto, criar ou atualizar localmente
+      // 2. Para cada projeto, buscar detalhes na API rica (api.sif-source.org) e criar/atualizar localmente
       for (const sourceProject of sourceProjects) {
         try {
-          const projectData = this.mapSourceToLocalProject(sourceProject);
+          // Alguns campos (como Description, Completion, etc.) só aparecem na API principal (https://api.sif-source.org)
+          let fullProject = sourceProject;
+          try {
+            const guid = sourceProject.Guid ?? sourceProject.guid ?? sourceProject.Id ?? sourceProject.id;
+            if (guid) {
+              const detailed = await sourceService.fetchProjectDetails(guid);
+              if (detailed && typeof detailed === 'object') {
+                fullProject = detailed;
+              }
+            }
+          } catch (detailError) {
+            console.warn(`Não foi possível buscar detalhes completos do projeto ${sourceProject.Id}:`, detailError.message);
+          }
+
+          const projectData = this.mapSourceToLocalProject(fullProject);
           
           // Verifica se o projeto já existe
           const [project, wasCreated] = await Project.upsert(projectData, {
@@ -234,16 +249,23 @@ const projectController = {
 
   // Mapeia um projeto da API SOURCE para o formato local
   mapSourceToLocalProject(sourceProject) {
+    const description = sourceProject.Description || sourceProject.description || '';
+    const completion =
+      typeof sourceProject.Completion === 'number'
+        ? Math.max(0, Math.min(100, Math.round(sourceProject.Completion * 100)))
+        : null;
+
     return {
       sourceId: `source-${sourceProject.Id}`,
-      name: sourceProject.Name || 'Projeto sem nome',
-      description: sourceProject.Description || '',
-      sector: SECTOR_MAPPING[sourceProject.Sector?.Value] || 'Outros',
+      name: sourceProject.Name || sourceProject.name || 'Projeto sem nome',
+      description,
+      sector: SECTOR_MAPPING[sourceProject.Sector?.Value] || sourceProject.Sector?.Value || 'Outros',
       subSector: sourceProject.SubSector?.Value || null,
-      status: STATUS_MAPPING[sourceProject.Status] || 'rascunho',
+      status: STATUS_MAPPING[sourceProject.Status] || sourceProject.Status || 'rascunho',
       estimatedCost: sourceProject.EstimatedCapitalCost || 0,
-      progress: this.calculateProjectProgress(sourceProject),
+      progress: completion !== null ? completion : this.calculateProjectProgress(sourceProject),
       currentSituation: sourceProject.CurrentSituation || '',
+      rawData: sourceProject,
       metadata: JSON.stringify(sourceProject)
     };
   },

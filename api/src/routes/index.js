@@ -25,6 +25,7 @@ router.post('/sync/statuses', syncController.syncStatuses);
 // Rotas de Perguntas
 router.get('/questions', questionController.listQuestions);
 router.post('/questions/import', questionController.importQuestions);
+router.get('/questions/import', questionController.importQuestions);
 router.get('/projects/:projectId/questions', questionController.getProjectQuestions);
 
 // Rotas de Filtros
