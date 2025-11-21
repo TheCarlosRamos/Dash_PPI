@@ -64,20 +64,24 @@ class SourceService {
 
       for (const project of projects) {
         try {
+          // 'details' é o projeto completo vindo de /projects/{GUID}, incluindo Description
           const details = await this.fetchProjectDetails(project.id);
           
           const projectData = {
+            // usa o identificador da SOURCE como chave de origem
             sourceId: project.id,
-            name: project.name || 'Sem nome',
-            description: project.description || '',
-            sector: project.sector?.Value || 'Outros',
-            subSector: project.subSector?.Value || null,
-            status: project.status || 'Desconhecido',
-            estimatedCost: project.estimatedCapitalCost || null,
-            progress: this.calculateProgress(project),
+            name: details.Name || project.name || 'Sem nome',
+            // PEGA A DESCRIÇÃO RICA DIRETAMENTE DO DETALHE DA SIF
+            description: details.Description || project.description || '',
+            sector: details.Sector?.Value || project.sector?.Value || 'Outros',
+            subSector: details.SubSector?.Value || project.subSector?.Value || null,
+            status: details.CurrentProjectStatus?.Value || project.status || 'Desconhecido',
+            estimatedCost: details.EstimatedCapitalCost ?? project.estimatedCapitalCost ?? null,
+            progress: this.calculateProgress(details),
             currentSituation: this.extractCurrentSituation(details),
             nextSteps: this.extractNextSteps(details),
             risks: this.extractRisks(details),
+            // guarda o JSON completo da SIF (com Description) em rawData
             rawData: details,
             lastSyncedAt: new Date()
           };

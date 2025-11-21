@@ -36,8 +36,11 @@ services:
     volumes:
       - ./api/tabela_perguntas_ppi.csv:/usr/src/app/api/tabela_perguntas_ppi.csv:ro
       - ./api/src:/usr/src/app/src
+      - ./api/scripts:/usr/src/app/scripts
       - ./api/package.json:/usr/src/app/package.json
       - ./api/package-lock.json:/usr/src/app/package-lock.json
+      - ./projetos_descricao.json:/usr/src/app/projetos_descricao.json:ro
+      - ./Descrição.txt:/usr/src/app/Descrição.txt:ro
     depends_on:
       db:
         condition: service_healthy

@@ -1,5 +1,6 @@
 const syncService = require('../services/syncService');
 const { Project } = require('../models');
+const projectController = require('./projectController');
 
 const syncController = {
   /**
@@ -30,39 +31,19 @@ const syncController = {
    */
   async syncProjects(req, res) {
     try {
-      console.log('Iniciando sincronização de projetos...');
-      const projects = await syncService.fetchAllProjects();
-      console.log(`Total de projetos encontrados: ${projects.length}`);
-      
-      if (projects.length === 0) {
-        return res.status(404).json({
-          success: false,
-          message: 'Nenhum projeto encontrado para sincronizar',
-          projectsSynced: 0
-        });
-      }
-      
-      // Filtra registros inválidos sem sourceId
-      const valid = projects.filter(p => p && p.sourceId);
-      const dropped = projects.length - valid.length;
-      if (dropped > 0) {
-        console.warn(`Projetos descartados por ausência de sourceId: ${dropped}`);
-      }
+      console.log('Iniciando sincronização de projetos (fluxo rico com descrições manuais)...');
 
-      // Salva os projetos no banco de dados local (confia na unique key de sourceId)
-      const results = await Promise.all(valid.map(project => 
-        Project.upsert(project)
-      ));
-      
-      const upsertedCount = results.filter(r => Array.isArray(r) ? r[1] : false).length; // compat
-      
+      // Usa o fluxo de sincronização do projectController, que já:
+      // - Busca lista de projetos na SIF
+      // - Para cada um, busca detalhes ricos (Description, Completion, etc.)
+      // - Aplica override de descrições manuais usando MANUAL_DESCRIPTIONS_BY_GUID
+      // - Faz upsert no modelo Project com mapSourceToLocalProject
+      const result = await projectController.syncWithSource();
+
       res.json({
         success: true,
         message: 'Projetos sincronizados com sucesso',
-        totalProjects: valid.length,
-        upserted: upsertedCount,
-        updated: valid.length - upsertedCount,
-        dropped
+        ...result
       });
     } catch (error) {
       console.error('Erro ao sincronizar projetos:', error);

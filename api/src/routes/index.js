@@ -3,6 +3,7 @@ const router = express.Router();
 const projectController = require('../controllers/projectController');
 const questionController = require('../controllers/questionController');
 const syncController = require('../controllers/syncController');
+const questionSyncController = require('../controllers/questionSyncController');
 const sourceController = require('../controllers/sourceController');
 
 // Middleware para log de requisições
@@ -21,6 +22,7 @@ router.post('/sync/all', syncController.syncAll);
 router.post('/sync/projects', syncController.syncProjects);
 router.post('/sync/sectors', syncController.syncSectors);
 router.post('/sync/statuses', syncController.syncStatuses);
+router.post('/sync/questions', questionSyncController.syncQuestionsForAllProjects);
 
 // Rotas de Perguntas
 router.get('/questions', questionController.listQuestions);
