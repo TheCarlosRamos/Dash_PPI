@@ -1,6 +1,8 @@
 const Project = require('../models/Project');
 const sourceApiService = require('../services/sourceApiService');
 const sourceService = require('../services/sourceService');
+const fs = require('fs');
+const path = require('path');
 
 // Mapeamento de status entre SOURCE e nossa aplicação
 const STATUS_MAPPING = {
@@ -18,6 +20,28 @@ const SECTOR_MAPPING = {
   'Infrastructure': 'Infraestrutura',
   'Technology': 'Tecnologia'
 };
+
+// Descrições manuais extraídas do Postman (Guid -> { description, name })
+let MANUAL_DESCRIPTIONS_BY_GUID = {};
+
+try {
+  const manualPath = path.join(__dirname, '..', '..', '..', 'projetos_descricao.json');
+  if (fs.existsSync(manualPath)) {
+    const raw = fs.readFileSync(manualPath, 'utf8');
+    const arr = JSON.parse(raw);
+    if (Array.isArray(arr)) {
+      MANUAL_DESCRIPTIONS_BY_GUID = {};
+      for (const item of arr) {
+        if (item.guid) {
+          MANUAL_DESCRIPTIONS_BY_GUID[item.guid] = item;
+        }
+      }
+      console.log('[manual] descrições carregadas no backend:', arr.length);
+    }
+  }
+} catch (e) {
+  console.warn('[manual] falha ao carregar projetos_descricao.json no backend:', e.message);
+}
 
 const projectController = {
   async getAllProjects(req, res) {
@@ -121,13 +145,22 @@ const projectController = {
     try {
       const { id } = req.params;
       const { sync = 'false' } = req.query;
-      
-      let project = await Project.findByPk(id);
-      
-      // Se não encontrou o projeto localmente ou se solicitou sincronização
-      if ((!project || sync === 'true') && id.startsWith('source-')) {
+      let project = null;
+
+      // Se o ID vier com o prefixo 'source-', buscamos diretamente na API SOURCE
+      // sem tentar consultar o banco (evita erro de UUID inválido)
+      if (id.startsWith('source-')) {
         const sourceId = id.replace('source-', '');
         project = await this.getProjectFromSource(sourceId);
+      } else {
+        // ID normal: tenta buscar pelo primary key no banco local
+        project = await Project.findByPk(id);
+
+        // Se não encontrou localmente mas foi solicitado sync explícito,
+        // tenta buscar na SOURCE usando o próprio id como identificador
+        if (!project && sync === 'true') {
+          project = await this.getProjectFromSource(id);
+        }
       }
       
       if (!project) {
@@ -249,7 +282,17 @@ const projectController = {
 
   // Mapeia um projeto da API SOURCE para o formato local
   mapSourceToLocalProject(sourceProject) {
-    const description = sourceProject.Description || sourceProject.description || '';
+    // Tenta usar descrição manual (Postman) com base no Guid
+    const guid = sourceProject.Guid || sourceProject.guid || sourceProject.Id || sourceProject.id;
+    const manual = guid && MANUAL_DESCRIPTIONS_BY_GUID[guid]
+      ? MANUAL_DESCRIPTIONS_BY_GUID[guid]
+      : null;
+
+    const description =
+      (manual && manual.description) ||
+      sourceProject.Description ||
+      sourceProject.description ||
+      '';
     const completion =
       typeof sourceProject.Completion === 'number'
         ? Math.max(0, Math.min(100, Math.round(sourceProject.Completion * 100)))

@@ -112,23 +112,46 @@ class QuestionService {
 
   async getProjectQuestionAnswers(projectId) {
     try {
-      // Buscar todas as perguntas ativas
-      const questions = await Question.findAll({
-        where: { is_active: true },
-        attributes: ['id', 'cod_source', 'question_id', 'dsc_type', 'dsc_title']
-      });
+      // Lista enxuta de códigos relevantes para cards e linha do tempo
+      const codes = [
+        // Situação, pontos, próximos passos, benefícios
+        '2000726', // Project current status
+        '2000727', // Project key issues
+        '2000728', // Project next steps
+        '2000688', // Expected monetary benefits and beneficiaries
 
-      // Para cada pergunta, buscar a resposta na API
+        // Estudos
+        '2001216', // Start date - Studies
+        '2001217', // End date - Studies
+        '2001218', // Status of Studies
+
+        // Consulta pública
+        '2001219', // Start date - Public Consultation
+        '2001220', // End date - Public Consultation
+        '2001221', // Status of Public Consultation
+
+        // Controle externo / TCU
+        '2001222', // Start date - External Control
+        '2001223', // End date - External Control
+        '2001224', // Status of External Control
+
+        // Edital / Tender
+        '2001225', // Date of publication - Tender Notice
+        '2001227', // Start date - Tender
+        '2001228', // End date - Tender
+        '2001229'  // Status of phase 'Tender'
+      ];
+
       const results = [];
-      
-      for (const question of questions) {
+
+      for (const cod of codes) {
         try {
-          const data = await sourceService.fetchQuestionByCode(projectId, question.cod_source);
+          const data = await sourceService.fetchQuestionByCode(projectId, cod);
 
           results.push({
-            question_id: question.id,
-            cod_source: question.cod_source,
-            question: question.dsc_title,
+            question_id: null,
+            cod_source: cod,
+            question: data?.Field?.Title || null,
             answer: data?.FieldValue ?? null,
             status: data?.Status?.Status || null,
             stage: data?.Stage?.Value || null,
@@ -138,12 +161,17 @@ class QuestionService {
             last_updated: new Date()
           });
         } catch (error) {
-          console.error(`Error fetching answer for question ${question.id}:`, error.message);
+          console.error(`Error fetching answer for question code ${cod}:`, error.message);
           results.push({
-            question_id: question.id,
-            cod_source: question.cod_source,
-            question: question.dsc_title,
+            question_id: null,
+            cod_source: cod,
+            question: null,
             answer: null,
+            status: null,
+            stage: null,
+            theme: null,
+            field_type: null,
+            field_title: null,
             error: error.message
           });
         }
@@ -159,8 +187,18 @@ class QuestionService {
   // Utilitário: obtém valor pelo código (aceita campos 'value' ou 'answer')
   getValueByCode(answers, code) {
     const item = answers.find(a => String(a.cod_source) === String(code));
-    const val = item ? (item.value ?? item.answer ?? null) : null;
-    return this.extractText(val);
+    if (!item) return null;
+
+    // Primeiro tenta usar o valor principal (FieldValue mapeado em 'answer' ou 'value')
+    const primary = item.value ?? item.answer ?? null;
+    let text = this.extractText(primary);
+
+    // Se não houver texto, usa o Status.Status da SIF (Pending, Approved, etc.)
+    if (!text && item.status) {
+      text = this.extractText(item.status);
+    }
+
+    return text;
   }
 
   // Utilitário: extrai texto de estruturas da SIF-Source (Value aninhado, arrays, objetos)
@@ -253,31 +291,48 @@ class QuestionService {
     const pontosRaw = get(2000727);
     const proximosRaw = get(2000728);
 
+    // Campos adicionais específicos
+    const dataInicioGeralRaw = get(2001216); // Start date - Studies (visão geral)
+    const questionsBeneficiosRaw = get(2000688); // Expected monetary benefits and beneficiaries
+
     const result = {
+      // Situação geral do projeto (2000726), permitindo também usar Status.Pending/Approved etc.
       situacao_atual: this.isLikelyDate(situacaoRaw) ? this.normalizeDate(situacaoRaw) : this.normalizePercentOrText(situacaoRaw),
+      // Pontos de atenção (2000727) – usa FieldValue ou, se nulo, Status (ex.: Pending)
       pontos_atencao: (pontosRaw === null || String(pontosRaw).trim() === '') ? 'Não informado' : String(pontosRaw),
+      // Próximos passos (2000728)
       proximos_passos: (proximosRaw === null || String(proximosRaw).trim() === '') ? 'Não informado' : String(proximosRaw),
+      // Data de início geral dos estudos (2001216)
+      data_inicio_geral: this.normalizeDate(dataInicioGeralRaw),
+      // Questões / benefícios (2000688)
+      questions_beneficios: (questionsBeneficiosRaw === null || String(questionsBeneficiosRaw).trim() === '') ? 'Não informado' : String(questionsBeneficiosRaw),
+      // Linha do tempo / etapas, seguindo exatamente a convenção de códigos da SIF
       etapas: {
+        // Estudos: 2001216 (Start date - Studies), 2001217 (End date - Studies), 2001218 (Status of Studies)
         estudos: {
-          inicio: this.normalizeDate(get(2001217)),
-          fim: this.normalizeDate(get(2001218)),
-          status: (this.extractText(get(2001219)) ?? 'Não informado') || 'Não informado'
+          inicio: this.normalizeDate(get(2001216)),
+          fim: this.normalizeDate(get(2001217)),
+          status: (get(2001218) && String(get(2001218)).trim()) || 'Não informado'
         },
+        // Consulta pública: 2001219 (Start date - Public Consultation), 2001220 (End date - Public Consultation), 2001221 (Status of Public Consultation)
         consulta_publica: {
-          inicio: this.normalizeDate(get(2001220)),
-          fim: this.normalizeDate(get(2001221)),
-          status: (this.extractText(get(2001222)) ?? 'Não informado') || 'Não informado'
+          inicio: this.normalizeDate(get(2001219)),
+          fim: this.normalizeDate(get(2001220)),
+          status: (get(2001221) && String(get(2001221)).trim()) || 'Não informado'
         },
+        // Controle externo: 2001222 (Start date - External Control), 2001223 (End date - External Control), 2001224 (Status of External Control)
         tcu: {
-          inicio: this.normalizeDate(get(2001223)),
-          fim: this.normalizeDate(get(2001224)),
-          status: (this.extractText(get(2001225)) ?? 'Não informado') || 'Não informado'
+          inicio: this.normalizeDate(get(2001222)),
+          fim: this.normalizeDate(get(2001223)),
+          status: (get(2001224) && String(get(2001224)).trim()) || 'Não informado'
         },
+        // Edital / Tender: 2001225 (Date of publication - Tender Notice),
+        // 2001229 (Status of phase 'Tender'), 2001227 (Start date - Tender), 2001228 (End date - Tender)
         edital: {
-          publicacao: this.normalizeDate(get(2001226)),
-          status: (this.extractText(get(2001227)) ?? 'Não informado') || 'Não informado',
-          inicio: this.normalizeDate(get(2001228)),
-          fim: this.normalizeDate(get(2001229))
+          publicacao: this.normalizeDate(get(2001225)),
+          status: (get(2001229) && String(get(2001229)).trim()) || 'Não informado',
+          inicio: this.normalizeDate(get(2001227)),
+          fim: this.normalizeDate(get(2001228))
         }
       }
     };

@@ -386,67 +386,36 @@ function getAnswerByCode(answers, code) {
 
 async function enrichProjectWithQuestions(project) {
     try {
-        // Em ambiente estático, não tenta buscar perguntas na API
-        if (IS_STATIC_ENV) {
-            return project;
-        }
-        const qid = project.sourceId || project.id;
-        if (!qid) {
-            console.warn('[questions] projeto sem id/sourceId. Não será possível buscar perguntas.', project);
-            return project;
-        }
-        // Heurística simples: GUID esperado (8-4-4-4-12)
-        const looksGuid = /[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/.test(String(qid));
-        if (!looksGuid) {
-            console.warn('[questions] id não parece GUID. A SIF-Source pode não retornar valores.', qid);
-        }
-
-        const data = await fetchProjectQuestions(qid);
+        // Versão estável: não chama mais a SIF-Source no frontend.
+        // Apenas garante que os campos já persistidos no backend/local DB
+        // estejam refletidos em project.details para o modal.
 
         project.details = project.details || {};
 
-        // Cards
-        const situacao = (data && data.situacao_atual) ? String(data.situacao_atual) : 'Não informado';
-        const pontos = (data && data.pontos_atencao) ? String(data.pontos_atencao) : 'Não informado';
-        const proximos = (data && data.proximos_passos) ? String(data.proximos_passos) : 'Não informado';
-
-        if (situacao && situacao !== 'Não informado') project.details.currentSituation = situacao;
-        if (proximos && proximos !== 'Não informado') project.details.deliberation = proximos;
-        if (pontos) {
-            const parts = String(pontos).split(/\r?\n|;|\u2022|\-/).map(s => s.trim()).filter(Boolean);
-            project.details.risks = parts.length ? parts : (pontos === 'Não informado' ? [] : [String(pontos)]);
-        }
-
-        // Linha do tempo a partir de etapas
-        const etapas = (data && data.etapas) ? data.etapas : {};
-        const timeline = [];
-
-        const pushIfAny = (milestone, values, status) => {
-            const date = [values.publicacao, values.inicio, values.fim].find(v => v && v !== 'Não informado') || '';
-            const st = status && status !== 'Não informado' ? status : (date ? 'completed' : 'pending');
-            timeline.push({ milestone, date, status: st });
+        const isMeaningful = (v) => {
+            if (v == null) return false;
+            const s = String(v).trim();
+            if (!s) return false;
+            return s !== 'Não informado' && s !== 'Pending';
         };
 
-        if (etapas.estudos) {
-            pushIfAny('Estudos', etapas.estudos, etapas.estudos.status);
+        if (isMeaningful(project.currentSituation)) {
+            project.details.currentSituation = String(project.currentSituation).trim();
         }
-        if (etapas.consulta_publica) {
-            pushIfAny('Consulta Pública', etapas.consulta_publica, etapas.consulta_publica.status);
+        if (isMeaningful(project.nextSteps)) {
+            project.details.deliberation = String(project.nextSteps).trim();
         }
-        if (etapas.tcu) {
-            pushIfAny('Controle Externo / TCU', etapas.tcu, etapas.tcu.status);
-        }
-        if (etapas.edital) {
-            pushIfAny('Edital', etapas.edital, etapas.edital.status);
+        if (Array.isArray(project.risks) && project.risks.length) {
+            project.details.risks = project.risks.slice();
         }
 
-        if (timeline.length) {
-            project.details.timeline = timeline;
+        if (project.rawData && Array.isArray(project.rawData.QuestionsTimeline)) {
+            project.details.timeline = project.rawData.QuestionsTimeline;
         }
 
         return project;
     } catch (e) {
-        console.warn('Não foi possível enriquecer o projeto com respostas:', e.message);
+        console.warn('Não foi possível sincronizar detalhes de perguntas no projeto:', e.message);
         return project;
     }
 }
@@ -617,7 +586,7 @@ const DEFAULT_PROJECT_DATA = [
     }
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const sidebarNav = document.getElementById('sidebar-nav');
     const projectsGrid = document.getElementById('projects-grid');
     const overviewSection = document.getElementById('overview-section');
@@ -713,8 +682,8 @@ async function fetchProjectsFromAPI() {
             data = await response.json();
             console.log('RAW STATIC DATA (projects.json):', data);
         } else {
-            // Dentro do dash_ppi_web, /api é proxyado para o container ppi_api
-            const response = await fetch('/api/projects');
+            // Ambiente local: chama diretamente a API Node em localhost:3001
+            const response = await fetch('http://localhost:3001/api/projects');
             if (!response.ok) {
                 throw new Error('Erro ao buscar projetos da API');
             }
@@ -772,20 +741,98 @@ async function fetchProjectsFromAPI() {
                     ? project.progress
                     : (completionFromRaw !== null ? Math.round(completionFromRaw * 100) : 0);
 
+            // Campos adicionais úteis para os cards, extraídos do rawData
+            const locationsArr = Array.isArray(raw.Locations)
+                ? raw.Locations
+                : (raw.ManualDetails && Array.isArray(raw.ManualDetails.locations)) ? raw.ManualDetails.locations : [];
+            const territoriesArr = Array.isArray(raw.Territories)
+                ? raw.Territories.map(t => (t && (t.Value || t.value)) || t).filter(Boolean)
+                : (raw.ManualDetails && Array.isArray(raw.ManualDetails.territories)) ? raw.ManualDetails.territories : [];
+            const locationText = locationsArr.length ? locationsArr.join(', ') : null;
+            const territoriesText = territoriesArr.length ? territoriesArr.join(', ') : null;
+
+            const ownerOrg =
+                raw.PMLeaderOrganisation ||
+                (Array.isArray(raw.ProjectOrganizations) && raw.ProjectOrganizations.length > 0
+                    ? (raw.ProjectOrganizations[0].Value || raw.ProjectOrganizations[0].value)
+                    : null) ||
+                (raw.ManualDetails && raw.ManualDetails.ownerOrganisation) ||
+                null;
+
+            const typeOfProjectArr = Array.isArray(raw.TypeOfProject)
+                ? raw.TypeOfProject
+                : (raw.ManualDetails && Array.isArray(raw.ManualDetails.typeOfProject)) ? raw.ManualDetails.typeOfProject : [];
+            const projectTypeText = typeOfProjectArr.length ? typeOfProjectArr.join(', ') : null;
+
+            const currency =
+                (raw.OriginalCurrency && (raw.OriginalCurrency.Value || raw.OriginalCurrency.value)) ||
+                (raw.ManualDetails && raw.ManualDetails.originalCurrency) ||
+                'R$';
+
+            const estimatedCostNumber =
+                (typeof project.estimatedCost === 'number' && project.estimatedCost > 0) ? project.estimatedCost :
+                (typeof raw.EstimatedCapitalCost === 'number' && raw.EstimatedCapitalCost > 0) ? raw.EstimatedCapitalCost :
+                (raw.ManualDetails && typeof raw.ManualDetails.estimatedCapitalCost === 'number' && raw.ManualDetails.estimatedCapitalCost > 0) ? raw.ManualDetails.estimatedCapitalCost :
+                null;
+
+            let estimatedCostText = null;
+            if (typeof estimatedCostNumber === 'number' && !Number.isNaN(estimatedCostNumber) && estimatedCostNumber > 0) {
+                const millions = estimatedCostNumber / 1_000_000;
+                try {
+                    estimatedCostText = `${currency} ${millions.toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi`;
+                } catch {
+                    estimatedCostText = `${currency} ${millions.toFixed(1)} mi`;
+                }
+            }
+
+            // Gera um embed de mapa (OpenStreetMap) sempre que houver coordenadas no rawData
+            let mapEmbed = null;
+            if (Array.isArray(raw.GPSCoordinates) && raw.GPSCoordinates.length > 0) {
+                const first = raw.GPSCoordinates[0] || {};
+                const loc = first.location || {};
+                const lon = parseFloat(loc.x);
+                const lat = parseFloat(loc.y);
+                if (!Number.isNaN(lat) && !Number.isNaN(lon)) {
+                    const delta = 0.05;
+                    const minLon = lon - delta;
+                    const minLat = lat - delta;
+                    const maxLon = lon + delta;
+                    const maxLat = lat + delta;
+                    const src = `https://www.openstreetmap.org/export/embed.html?bbox=${minLon},${minLat},${maxLon},${maxLat}&layer=mapnik&marker=${lat},${lon}`;
+                    mapEmbed = `<iframe class="w-full h-full" src="${src}" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+                }
+            }
+
+            const finalName =
+                project.name ||
+                raw.Name ||
+                'Projeto sem nome';
+
+            const finalDescription =
+                project.description ||
+                descriptionFromRaw ||
+                'Descrição não disponível';
+
             return {
                 id: project.sourceId || project.id,
                 sector: project.sector || raw.Sector?.Value || 'Outros',
-                name: project.name || raw.Name || 'Projeto sem nome',
+                name: finalName,
                 status: project.status || raw.CurrentProjectStatus?.Value || 'Em andamento',
                 statusColor: getStatusColor(project.status || raw.CurrentProjectStatus?.Value || 'Em andamento'),
                 details: {
-                    description: project.description || descriptionFromRaw || 'Descrição não disponível',
+                    description: finalDescription,
                     progress: progressValue,
                     currentSituation: project.currentSituation || 'Situação não informada',
                     // O layout atual usa "deliberation" para o card de Próximos Passos
                     deliberation: project.nextSteps || 'Próximos passos não informados',
                     nextSteps: project.nextSteps || 'Próximos passos não informados',
-                    risks: normalizedRisks
+                    risks: normalizedRisks,
+                    mapEmbed,
+                    location: locationText,
+                    territories: territoriesText,
+                    owner: ownerOrg,
+                    projectType: projectTypeText,
+                    estimatedCostText
                 },
                 // Expor tudo que veio da API/backend para uso no frontend
                 rawData: raw,
@@ -856,6 +903,8 @@ async function fetchProjectsFromAPI() {
         try {
             // Tenta carregar da API primeiro
             projectData = await fetchProjectsFromAPI();
+        // expõe para debug no console do navegador
+        try { window.projectData = projectData; } catch {}
             
             // Se não retornou projetos da API, tenta carregar do Supabase ou do arquivo JSON
             if (projectData.length === 0) {
@@ -1581,6 +1630,14 @@ async function fetchProjectsFromAPI() {
                 <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--descricao">
                     <h3 class="text-lg font-bold mb-2 text-gray-700">Descrição do Projeto</h3>
                     <p class="text-gray-600 leading-relaxed">${details.description || ''}</p>
+                    ${details.location || details.territories || details.owner || details.projectType || details.estimatedCostText ? `
+                        <div class="mt-4 text-sm text-gray-600 space-y-1">
+                            ${details.location || details.territories ? `<p><span class="font-semibold">Localização:</span> ${details.location || details.territories}</p>` : ''}
+                            ${details.owner ? `<p><span class="font-semibold">Responsável:</span> ${details.owner}</p>` : ''}
+                            ${details.projectType ? `<p><span class="font-semibold">Tipo de Projeto:</span> ${details.projectType}</p>` : ''}
+                            ${details.estimatedCostText ? `<p><span class="font-semibold">Investimento estimado:</span> ${details.estimatedCostText}</p>` : ''}
+                        </div>
+                    ` : ''}
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-xl p-4 h-full flex flex-col card--situacao">
