@@ -5,7 +5,9 @@ function isMeaningful(value) {
   if (value == null) return false;
   const s = String(value).trim();
   if (!s) return false;
-  return s !== 'Não informado' && s !== 'Pending';
+  // Não filtramos mais valores como "Pending" ou "Não informado" aqui.
+  // Deixamos para a camada de apresentação decidir como exibir.
+  return true;
 }
 
 function splitRisks(text) {
@@ -63,12 +65,44 @@ async function syncProjectQuestions(project) {
       changed = true;
     }
 
-    // Opcional: guardar um snapshot das etapas em rawData.QuestionsTimeline
+    // Guardar um snapshot das etapas em rawData.QuestionsTimeline
+    // Convertendo o objeto "etapas" em um array que o frontend sabe usar.
     if (formatted.etapas && typeof formatted.etapas === 'object') {
-      const rawData = project.rawData || {};
-      rawData.QuestionsTimeline = formatted.etapas;
-      project.rawData = rawData;
-      changed = true;
+      const etapas = formatted.etapas;
+      const timeline = [];
+
+      const pushPhase = (key, label) => {
+        const e = etapas[key];
+        if (!e || typeof e !== 'object') return;
+
+        // Escolhe uma data representativa: publicação, início ou fim
+        const date =
+          (e.publicacao && String(e.publicacao).trim()) ||
+          (e.inicio && String(e.inicio).trim()) ||
+          (e.fim && String(e.fim).trim()) ||
+          'Não informado';
+
+        const status = (e.status && String(e.status).trim()) || 'Não informado';
+
+        timeline.push({
+          milestone: label,
+          date,
+          status,
+          rawStatus: status
+        });
+      };
+
+      pushPhase('estudos', 'Estudos');
+      pushPhase('consulta_publica', 'Consulta Pública');
+      pushPhase('tcu', 'Controle Externo / TCU');
+      pushPhase('edital', 'Edital');
+
+      if (timeline.length) {
+        const rawData = project.rawData || {};
+        rawData.QuestionsTimeline = timeline;
+        project.rawData = rawData;
+        changed = true;
+      }
     }
   }
 

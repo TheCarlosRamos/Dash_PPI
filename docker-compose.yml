@@ -41,6 +41,7 @@ services:
       - ./api/package-lock.json:/usr/src/app/package-lock.json
       - ./projetos_descricao.json:/usr/src/app/projetos_descricao.json:ro
       - ./Descrição.txt:/usr/src/app/Descrição.txt:ro
+      - ./projects.csv:/usr/src/app/projects.csv:ro
     depends_on:
       db:
         condition: service_healthy

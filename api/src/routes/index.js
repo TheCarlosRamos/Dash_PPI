@@ -22,7 +22,6 @@ router.post('/sync/all', syncController.syncAll);
 router.post('/sync/projects', syncController.syncProjects);
 router.post('/sync/sectors', syncController.syncSectors);
 router.post('/sync/statuses', syncController.syncStatuses);
-router.post('/sync/questions', questionSyncController.syncQuestionsForAllProjects);
 
 // Rotas de Perguntas
 router.get('/questions', questionController.listQuestions);

@@ -83,6 +83,122 @@
             margin-right: 6px;
         }
         
+        /* Phase Timeline Styles */
+        .phase-timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .phase-timeline--compact {
+            margin: 1rem 0;
+        }
+
+        .phase-line {
+            position: absolute;
+            top: 16px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #e5e7eb;
+            border-radius: 2px;
+        }
+
+        .phase-line-completed {
+            position: absolute;
+            top: 16px;
+            left: 0;
+            height: 4px;
+            background-color: #10B981;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .phase-items {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .phase-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            min-width: 100px;
+        }
+
+        .phase-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            border: 3px solid white;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .phase-dot.completed {
+            background-color: #10B981 !important;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+        }
+
+        .phase-dot.current {
+            background-color: #3B82F6 !important;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+            transform: scale(1.2);
+        }
+
+        .phase-label {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            text-align: center;
+            color: #6B7280;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .phase-label.completed {
+            color: #10B981;
+            font-weight: 600;
+        }
+
+        .phase-label.current {
+            color: #3B82F6;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .phase-item {
+                min-width: 60px;
+            }
+            
+            .phase-label {
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .phase-item {
+                min-width: 40px;
+            }
+            
+            .phase-label {
+                font-size: 0.6rem;
+                white-space: nowrap;
+                transform: rotate(-45deg);
+                transform-origin: top left;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                margin-left: -10px;
+                width: 80px;
+                text-align: left;
+            }
+        }
+        
         /* Estilos para a tabela de projetos */
         .main-content {
             display: flex;
@@ -235,19 +351,94 @@
             z-index: 10;
         }
         /* Linha do tempo por fases (Estudos -> Assinatura) */
-        .phase-timeline { position: relative; padding-top: 0.5rem; }
-        .phase-line { position: absolute; top: 1.25rem; left: 0.75rem; right: 0.75rem; height: 3px; background: #111827; }
-        .phase-items { display: grid; grid-template-columns: repeat(6, 1fr); align-items: start; gap: 0; }
-        .phase-item { text-align: center; position: relative; }
-        .phase-dot { width: 22px; height: 22px; border-radius: 9999px; background: #FFFFFF; border: 3px solid #111827; margin: 0 auto; position: relative; }
-        .phase-dot.completed { background: var(--accent-green); border-color: var(--accent-green); }
-        .phase-label { margin-top: 0.5rem; font-size: 0.75rem; color: #4B5563; }
-        .phase-meta { margin-top: 0.25rem; font-size: 0.7rem; color: #6B7280; }
+        .phase-timeline { 
+            position: relative; 
+            padding: 1rem 0;
+        }
+        .phase-line { 
+            position: absolute; 
+            top: 1.25rem; 
+            left: 0.75rem; 
+            right: 0.75rem; 
+            height: 3px; 
+            background: #E5E7EB;
+            z-index: 1;
+        }
+        .phase-line-completed {
+            background: #10B981;
+            position: absolute;
+            top: 1.25rem;
+            left: 0.75rem;
+            height: 3px;
+            z-index: 2;
+            transition: width 0.3s ease;
+        }
+        .phase-items { 
+            display: grid; 
+            grid-template-columns: repeat(6, 1fr); 
+            align-items: start; 
+            gap: 0;
+            position: relative;
+            z-index: 3;
+        }
+        .phase-item { 
+            text-align: center; 
+            position: relative; 
+        }
+        .phase-dot { 
+            width: 22px; 
+            height: 22px; 
+            border-radius: 9999px; 
+            background: #FFFFFF; 
+            border: 3px solid #9CA3AF; 
+            margin: 0 auto; 
+            position: relative;
+            z-index: 4;
+            transition: all 0.3s ease;
+        }
+        .phase-dot.completed { 
+            background: #10B981; 
+            border-color: #10B981; 
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+        }
+        .phase-label { 
+            margin-top: 0.5rem; 
+            font-size: 0.75rem; 
+            color: #4B5563;
+            font-weight: 500;
+        }
+        .phase-label.completed {
+            color: #10B981;
+            font-weight: 600;
+        }
+        .phase-meta { 
+            margin-top: 0.25rem; 
+            font-size: 0.7rem; 
+            color: #6B7280; 
+        }
         /* Variante compacta para cards da lista */
-        .phase-timeline--compact .phase-line { top: 0.9rem; height: 2px; }
-        .phase-timeline--compact .phase-dot { width: 14px; height: 14px; border-width: 2px; }
-        .phase-timeline--compact .phase-label { font-size: 0.65rem; }
-        .phase-note { font-size: 0.75rem; color: #4B5563; margin-top: 0.5rem; min-height: 1rem; }
+        .phase-timeline--compact .phase-line { 
+            top: 0.9rem; 
+            height: 2px; 
+        }
+        .phase-timeline--compact .phase-line-completed {
+            top: 0.9rem;
+            height: 2px;
+        }
+        .phase-timeline--compact .phase-dot { 
+            width: 14px; 
+            height: 14px; 
+            border-width: 2px; 
+        }
+        .phase-timeline--compact .phase-label { 
+            font-size: 0.65rem; 
+        }
+        .phase-note { 
+            font-size: 0.75rem; 
+            color: #4B5563; 
+            margin-top: 0.5rem; 
+            min-height: 1rem; 
+        }
         /* Variante para modal: rótulos acima dos círculos e linha ajustada */
         .phase-timeline--modal .phase-line { top: 2.25rem; }
         .phase-label--top { margin-bottom: 0.5rem; margin-top: 0; }
@@ -812,9 +1003,13 @@ async function fetchProjectsFromAPI() {
                 raw.Name ||
                 'Projeto sem nome';
 
+            const manualDescription = project.description ? String(project.description).trim() : '';
+            const isPlaceholderDesc = manualDescription && manualDescription.toLowerCase() === 'a definir';
+
             const finalDescription =
-                project.description ||
+                (!isPlaceholderDesc && manualDescription) ||
                 descriptionFromRaw ||
+                manualDescription ||
                 'Descrição não disponível';
 
             return {
@@ -935,15 +1130,75 @@ async function fetchProjectsFromAPI() {
             // Fallback para os dados padrão
             projectData = [...DEFAULT_PROJECT_DATA];
         }
+        
+        // Filtra projetos do setor Saúde/Saude/Health
+        projectData = projectData.filter(project => {
+            if (!project.sector) return true;
+            const sectorLower = project.sector.toLowerCase().trim();
+            return !['saúde', 'saude', 'health', 'saúde '].includes(sectorLower) &&
+                   !sectorLower.includes('saúde') &&
+                   !sectorLower.includes('saude') &&
+                   !sectorLower.includes('health');
+        });
+        
+        // Remove projetos de teste
+        projectData = projectData.filter(project => 
+            !project.name || !project.name.toLowerCase().includes('teste')
+        );
+        
         sectors = ['Todos', ...new Set(projectData.map(p => p.sector))];
     }
 
     function renderSidebar() {
-        const sectorLinks = sectors.map(sector => `
-            <a href="#" data-sector="${sector}" class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors ${(!meetingMode && sector === activeSector) ? 'bg-blue-100 text-blue-700 font-bold' : ''}">
-                <span class="ml-3">${sector}</span>
-            </a>
-        `).join('');
+        // Mapeamento de setores para português
+        const sectorTranslations = {
+            // English to Portuguese translations
+            'Ports': 'Portos',
+            'Highways': 'Rodovias',
+            'Railways': 'Ferrovias',
+            'Airports': 'Aeroportos',
+            'Energy': 'Energia',
+            'Oil & Gas': 'Petróleo e Gás',
+            'Waterways': 'Hidrovias',
+            'Sanitation': 'Saneamento',
+            'Social Infrastructure': 'Infraestrutura Social',
+            'Other': 'Outros',
+            'Water & Waste': 'Água e Resíduos',
+            'Urban Services': 'Serviços Urbanos',
+            'Health': 'Saúde',
+            // Keep existing Portuguese mappings
+            'Todos': 'Todos',
+            'Portos': 'Portos',
+            'Rodovias': 'Rodovias',
+            'Ferrovias': 'Ferrovias',
+            'Energia': 'Energia',
+            'Óleo e Gás': 'Petróleo e Gás',
+            'Hidrovias': 'Hidrovias',
+            'Saúde': 'Saúde'
+        };
+
+        // Filtra setores e remove 'Saúde', 'Sade', 'Health' e variações
+        const filteredSectors = sectors.filter(sector => {
+            if (!sector) return false;
+            const lowerSector = sector.toLowerCase().trim();
+            return ![
+                'saúde', 'saude', 'sáude', 'saúde', 'saúde '
+            ].includes(lowerSector) && 
+            !lowerSector.includes('saúde') && 
+            !lowerSector.includes('saude') &&
+            !lowerSector.includes('health');
+        });
+
+        const sectorLinks = filteredSectors.map(sector => {
+            // Usa a tradução se disponível, senão mantém o original
+            const displayName = sectorTranslations[sector] || sector;
+            return `
+                <a href="#" data-sector="${sector}" class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors ${(!meetingMode && sector === activeSector) ? 'bg-blue-100 text-blue-700 font-bold' : ''}">
+                    <span class="ml-3">${displayName}</span>
+                </a>
+            `;
+        }).join('');
+
         const meetingBtn = `
             <div class="mt-4 pt-4 border-t border-gray-200">
                 <a href="#" data-action="meeting" class="flex items-center px-4 py-3 rounded-lg transition-colors ${meetingMode ? 'bg-blue-100 text-blue-700 font-bold' : 'text-gray-700 hover:bg-gray-100'}">
@@ -951,6 +1206,7 @@ async function fetchProjectsFromAPI() {
                     <span>Reunião</span>
                 </a>
             </div>`;
+        
         sidebarNav.innerHTML = sectorLinks + meetingBtn;
     }
 
@@ -1579,21 +1835,92 @@ async function fetchProjectsFromAPI() {
         return '';
     }
 
-    function buildPhaseStates(details) {
-        let maxCompletedIndex = -1;
-        if (details && Array.isArray(details.timeline)) {
-            details.timeline.forEach(it => {
-                if (it && (it.status === 'completed' || it.status === 'concluded')) {
-                    const norm = normalizeMilestone(it.milestone);
-                    const idx = PHASES.indexOf(norm);
-                    if (idx >= 0 && idx > maxCompletedIndex) maxCompletedIndex = idx;
-                }
-            });
-        }
-        return PHASES.map((phase, idx) => ({
+    function buildPhaseStates(details, projectStatus = '') {
+        // Default state: all phases not completed
+        const defaultState = PHASES.map(phase => ({
             name: phase,
-            completed: idx <= maxCompletedIndex
+            completed: false,
+            isCurrent: false
         }));
+        
+        if (!details) return defaultState;
+
+        // Helper function to check if a phase is completed based on SIF-SOURCE data
+        const isPhaseCompleted = (phase) => {
+            if (!details) return false;
+            
+            switch(phase) {
+                case 'Estudos':
+                    return details.etapa2 && 
+                          (details.etapa2.status === 'Concluído' || 
+                           details.etapa2.status === 'Concluido' ||
+                           details.etapa2.status === 'Finalizado');
+                case 'Consulta Pública':
+                    return details.etapa5 && 
+                          (details.etapa5.status === 'Concluído' || 
+                           details.etapa5.status === 'Concluido' ||
+                           details.etapa5.status === 'Finalizado');
+                case 'TCU':
+                    return details.etapa8 && 
+                          (details.etapa8.status === 'Concluído' || 
+                           details.etapa8.status === 'Concluido' ||
+                           details.etapa8.status === 'Finalizado');
+                case 'Edital':
+                    return details.etapa9 && 
+                          (details.etapa9.status === 'Publicado' || 
+                           details.etapa9.status === 'Concluído' ||
+                           details.etapa9.status === 'Finalizado');
+                case 'Leilão':
+                    return details.status && 
+                          (details.status.includes('Leilão Realizado') || 
+                           details.status.includes('Leilao Realizado'));
+                case 'Assinatura do Contrato':
+                    return details.status && 
+                          (details.status.includes('Contrato Assinado') || 
+                           details.status.includes('Assinatura do Contrato'));
+                default:
+                    return false;
+            }
+        };
+
+        // Determine the current phase based on SIF-SOURCE data
+        const getCurrentPhase = () => {
+            if (!details) return '';
+            
+            // Check for current phase in order of priority
+            if (details.etapa13 && details.etapa13.status === 'Em Andamento') return 'Leilão';
+            if (details.etapa9 && details.etapa9.status === 'Em Andamento') return 'Edital';
+            if (details.etapa8 && details.etapa8.status === 'Em Análise') return 'TCU';
+            if (details.etapa5 && details.etapa5.status === 'Em Andamento') return 'Consulta Pública';
+            if (details.etapa2 && details.etapa2.status === 'Em Andamento') return 'Estudos';
+            
+            // Fallback to status if no specific phase is in progress
+            const status = (projectStatus || '').toLowerCase();
+            if (status.includes('leilão') || status.includes('leilao')) return 'Leilão';
+            if (status.includes('edital') || status.includes('licitação') || status.includes('licitacao')) return 'Edital';
+            if (status.includes('tcu') || status.includes('tribunal de contas')) return 'TCU';
+            if (status.includes('consulta') || status.includes('pública') || status.includes('publica')) return 'Consulta Pública';
+            if (status.includes('estudo') || status.includes('planejamento')) return 'Estudos';
+            
+            return ''; // Default to no current phase if can't determine
+        };
+
+        const currentPhase = getCurrentPhase();
+        let foundCurrent = false;
+
+        // Process each phase
+        return PHASES.map(phase => {
+            const completed = isPhaseCompleted(phase);
+            const isCurrent = !foundCurrent && phase === currentPhase;
+            
+            if (isCurrent) foundCurrent = true;
+
+            return {
+                name: phase,
+                completed: completed,
+                isCurrent: isCurrent
+            };
+        });
     }
 
     async function renderProjectDetails(projectId) {
@@ -1610,19 +1937,144 @@ async function fetchProjectsFromAPI() {
         // Usa a versão atual do projeto (sem esperar perguntas) para renderizar rápido
         const baseProject = enrichedProjectsCache.get(project.id) || project;
         const details = baseProject.details || {};
-        const phaseStates = buildPhaseStates(details || {});
+        const phaseStates = buildPhaseStates(details, project.status || '');
+        
+        // Encontra o índice da última etapa concluída
+        const lastCompletedIndex = phaseStates.findIndex(p => !p.completed) - 1;
+        const progressWidth = lastCompletedIndex >= 0 
+            ? `${(lastCompletedIndex / (PHASES.length - 1)) * 100}%` 
+            : '0%';
+            
+        // Debug information
+        console.log('Phase states:', phaseStates);
+        console.log('Progress width:', progressWidth);
+        
+        // Add test element to verify colors
+        const testElement = document.createElement('div');
+        testElement.style.cssText = 'position:fixed;top:10px;right:10px;background:#10B981;width:20px;height:20px;border-radius:50%;z-index:9999;';
+        document.body.appendChild(testElement);
+        
         const timelineHTML = `
             <div class="phase-timeline phase-timeline--compact">
                 <div class="phase-line"></div>
+                <div class="phase-line-completed" style="width: ${progressWidth}"></div>
                 <div class="phase-items">
-                    ${phaseStates.map(p => `
-                        <div class="phase-item">
-                            <div class="phase-dot ${p.completed ? 'completed' : ''}"></div>
-                            <div class="phase-label">${p.name}</div>
-                        </div>
-                    `).join('')}
+                    ${phaseStates.map((p, idx) => {
+                        const isCurrent = p.isCurrent;
+                        const isCompleted = p.completed;
+                        const dotClass = isCurrent ? 'current' : (isCompleted ? 'completed' : '');
+                        const labelClass = isCurrent ? 'current' : (isCompleted ? 'completed' : '');
+                        
+                        return `
+                            <div class="phase-item">
+                                <div class="phase-dot ${dotClass}"></div>
+                                <div class="phase-label ${labelClass}">${p.name}</div>
+                            </div>
+                        `;
+                    }).join('')}
                 </div>
             </div>
+            <style>
+                .phase-timeline {
+                    position: relative;
+                    margin: 2rem 0;
+                    padding: 0 1rem;
+                }
+                .phase-timeline--compact {
+                    margin: 1rem 0;
+                }
+                .phase-line {
+                    position: absolute;
+                    top: 16px;
+                    left: 0;
+                    right: 0;
+                    height: 4px;
+                    background-color: #e5e7eb;
+                    border-radius: 2px;
+                }
+                .phase-line-completed {
+                    position: absolute;
+                    top: 16px;
+                    left: 0;
+                    height: 4px;
+                    background-color: #10B981;
+                    border-radius: 2px;
+                    transition: width 0.3s ease;
+                }
+                .phase-items {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    z-index: 1;
+                }
+                .phase-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    min-width: 100px;
+                }
+                .phase-dot {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #e5e7eb;
+                    border: 3px solid white;
+                    position: relative;
+                    z-index: 2;
+                    transition: all 0.3s ease;
+                }
+                .phase-dot.completed {
+                    background-color: #10B981 !important;
+                    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+                }
+                .phase-dot.current {
+                    background-color: #3B82F6 !important;
+                    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+                    transform: scale(1.2);
+                }
+                .phase-label {
+                    margin-top: 0.5rem;
+                    font-size: 0.75rem;
+                    text-align: center;
+                    color: #6B7280;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+                }
+                .phase-label.completed {
+                    color: #10B981;
+                    font-weight: 600;
+                }
+                .phase-label.current {
+                    color: #3B82F6;
+                    font-weight: 700;
+                }
+                @media (max-width: 768px) {
+                    .phase-item {
+                        min-width: 60px;
+                    }
+                    .phase-label {
+                        font-size: 0.65rem;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .phase-item {
+                        min-width: 40px;
+                    }
+                    .phase-label {
+                        font-size: 0.6rem;
+                        white-space: nowrap;
+                        transform: rotate(-45deg);
+                        transform-origin: top left;
+                        position: absolute;
+                        bottom: -30px;
+                        left: 50%;
+                        margin-left: -10px;
+                        width: 80px;
+                        text-align: left;
+                    }
+                }
+            </style>
         `;
 
         modalBody.innerHTML = `
@@ -1674,18 +2126,6 @@ async function fetchProjectsFromAPI() {
                 <h3 class="text-lg font-bold text-gray-700 mb-2">ETAPA:</h3>
                 ${timelineHTML}
                 <div class="phase-note"></div>
-            </div>
-            <div class="mt-4 bg-white border border-gray-200 rounded-xl p-4">
-                <h3 class="text-lg font-bold text-gray-700 mb-2">Detalhes Técnicos da SIF-Source</h3>
-                <p class="text-sm text-gray-500 mb-2">Esta seção mostra os dados completos recebidos da API da SIF-Source e da nossa API local para este projeto.</p>
-                <details class="mt-2">
-                    <summary class="cursor-pointer text-sm text-blue-600 hover:underline">Ver JSON bruto da SIF (rawData)</summary>
-                    <pre class="mt-2 text-xs bg-gray-900 text-gray-100 rounded-lg p-3 overflow-x-auto whitespace-pre-wrap">${JSON.stringify(baseProject.rawData || {}, null, 2)}</pre>
-                </details>
-                <details class="mt-2">
-                    <summary class="cursor-pointer text-sm text-blue-600 hover:underline">Ver JSON completo do projeto retornado pela API local</summary>
-                    <pre class="mt-2 text-xs bg-gray-900 text-gray-100 rounded-lg p-3 overflow-x-auto whitespace-pre-wrap">${JSON.stringify(baseProject, null, 2)}</pre>
-                </details>
             </div>
         `;
 

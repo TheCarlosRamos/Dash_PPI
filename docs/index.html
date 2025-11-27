@@ -808,9 +808,13 @@ async function fetchProjectsFromAPI() {
                 raw.Name ||
                 'Projeto sem nome';
 
+            const manualDescription = project.description ? String(project.description).trim() : '';
+            const isPlaceholderDesc = manualDescription && manualDescription.toLowerCase() === 'a definir';
+
             const finalDescription =
-                project.description ||
+                (!isPlaceholderDesc && manualDescription) ||
                 descriptionFromRaw ||
+                manualDescription ||
                 'Descrição não disponível';
 
             return {
