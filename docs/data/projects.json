@@ -1,0 +1,166 @@
+[
+  {
+    "id": "tunel-santos",
+    "sector": "Portos",
+    "name": "Túnel Santos-Guarujá",
+    "status": "Leilão Realizado",
+    "statusColor": "bg-green-500",
+    "details": {
+      "description": "Parceria Público-Privada (PPP) entre o Governo Federal e o Estado de São Paulo para a construção e operação de um túnel submerso ligando as cidades de Santos e Guarujá.",
+      "currentSituation": "Leilão realizado em 05 de Setembro de 2025.",
+      "nextSteps": "Criação da conta para o aporte da União e consultas à SEST e ao Tesouro Nacional.",
+      "risks": [
+        "Abertura da conta aporte pela Autoridade Portuária de Santos (APS).",
+        "Questões sobre a titularidade do túnel e seus impactos no orçamento da União e nos resultados da APS."
+      ],
+      "timeline": [
+        { "milestone": "Leilão", "date": "05/set/2025", "status": "completed" }
+      ]
+    }
+  },
+  {
+    "id": "porto-parangua",
+    "sector": "Portos",
+    "name": "Porto de Paranaguá",
+    "status": "Aguardando Edital",
+    "statusColor": "bg-yellow-500",
+    "details": {
+      "description": "Concessão do Canal de Acesso Aquaviário por 25 anos para modernização e operação.",
+      "currentSituation": "Aguardando retorno do relator para publicação do edital. A Resolução CPPI já definiu as condições da desestatização.",
+      "nextSteps": "Publicação do edital e inclusão do projeto no Plano Nacional de Desestatização (PND).",
+      "risks": [
+        "É necessária a publicação do Decreto de inclusão no PND antes da publicação do edital."
+      ],
+      "timeline": [
+        { "milestone": "Edital", "date": "set/2025", "status": "pending" },
+        { "milestone": "Leilão", "date": "nov/25", "status": "pending" }
+      ]
+    }
+  },
+  {
+    "id": "fiol-1",
+    "sector": "Ferrovias",
+    "name": "FIOL 1",
+    "status": "Em Obras",
+    "statusColor": "bg-blue-500",
+    "details": {
+      "description": "Construção da Ferrovia de Integração Oeste-Leste, Trecho 1, fundamental para o escoamento da produção de grãos e minérios.",
+      "currentSituation": "Obras em andamento com 75% de avanço total. Lotes 1F e 2F em execução, Lote 3F concluído, Lote 4F em execução. Início da operação previsto para 2027.",
+      "nextSteps": "Contratação de obras remanescentes para os lotes 2F e 4F no segundo semestre de 2025.",
+      "risks": [
+        "Gestão dos contratos remanescentes e cumprimento dos prazos para conclusão em 2028."
+      ],
+      "progress": 75
+    }
+  },
+  {
+    "id": "transnordestina",
+    "sector": "Ferrovias",
+    "name": "Transnordestina \"L Invertido\"",
+    "status": "Em Obras",
+    "statusColor": "bg-blue-500",
+    "details": {
+      "description": "Projeto de construção ferroviária para conectar o interior do Nordeste aos portos de Pecém (CE) e Suape (PE).",
+      "currentSituation": "Avanço físico total (Fase I + II) de 62%. Vários lotes em obra, com mobilização e contratações em andamento. Previsão de operação de carga no trecho Paes Landim/PI a Acopiara/CE para o segundo semestre de 2025.",
+      "nextSteps": "Contratação dos lotes 9 e 10 até setembro de 2025. Liberação de recursos do FDNE e BNDES.",
+      "risks": [
+        "Coordenação da contratação e execução de múltiplos lotes simultaneamente.",
+        "Dependência da liberação de financiamentos para avanço das obras."
+      ],
+      "progress": 62
+    }
+  },
+  {
+    "id": "br-040-cristais",
+    "sector": "Rodovias",
+    "name": "BR-040/GO/MG (Rota dos Cristais)",
+    "status": "Contrato Assinado",
+    "statusColor": "bg-green-500",
+    "details": {
+      "description": "Concessão do trecho rodoviário entre Belo Horizonte/MG e Cristalina/GO.",
+      "currentSituation": "Leilão realizado em 26/09/2024. O vencedor foi a Vinci Highways com um desconto de 14,32%. Contrato assinado em 19/12/2024.",
+      "nextSteps": "Início das operações e plano de investimentos pela concessionária.",
+      "risks": [],
+      "timeline": [
+        { "milestone": "Leilão", "date": "26/09/2024", "status": "completed" },
+        { "milestone": "Contrato", "date": "19/12/2024", "status": "completed" }
+      ]
+    }
+  },
+  {
+    "id": "br-381-mg",
+    "sector": "Rodovias",
+    "name": "BR-381/MG",
+    "status": "Contrato Assinado",
+    "statusColor": "bg-green-500",
+    "details": {
+      "description": "Concessão do trecho rodoviário entre Belo Horizonte/MG e Governador Valadares/MG.",
+      "currentSituation": "Leilão realizado em 29/08/2024. O vencedor foi a 4UM Investimentos com um desconto de 0,94%. Contrato assinado em 02/12/2024.",
+      "nextSteps": "Início dos trabalhos iniciais e investimentos previstos no contrato.",
+      "risks": [],
+      "timeline": [
+        { "milestone": "Leilão", "date": "29/08/2024", "status": "completed" },
+        { "milestone": "Contrato", "date": "02/12/2024", "status": "completed" }
+      ]
+    }
+  },
+  {
+    "id": "leilao-transmissao-2025",
+    "sector": "Energia",
+    "name": "1º Leilão de Transmissão de 2025",
+    "status": "Em Análise no TCU",
+    "statusColor": "bg-yellow-500",
+    "details": {
+      "description": "Contratação de instalações para transmissão de energia elétrica em 13 estados para expansão da rede básica.",
+      "currentSituation": "Minuta de Edital aprovada em 24/06/2025 e atualmente em avaliação pelo Tribunal de Contas da União (TCU).",
+      "nextSteps": "Aguardando manifestação do TCU (previsão para 24/09/2025) para prosseguir com a publicação do edital.",
+      "risks": [
+        "Cumprimento do cronograma dependente da análise e aprovação do TCU."
+      ],
+      "timeline": [
+        { "milestone": "Análise TCU", "date": "24/09/2025 (Prev.)", "status": "pending" },
+        { "milestone": "Leilão", "date": "31/10/2025 (Prev.)", "status": "pending" }
+      ]
+    }
+  },
+  {
+    "id": "oleo-gas-opc5",
+    "sector": "Óleo e Gás",
+    "name": "5º Ciclo da Oferta Permanente (Concessão)",
+    "status": "Leilão Realizado",
+    "statusColor": "bg-green-500",
+    "details": {
+      "description": "Oferta de blocos exploratórios de petróleo e gás sob o regime de concessão.",
+      "currentSituation": "Leilão realizado em 17/06/2025, com arrecadação recorde de R$ 989 milhões em bônus e previsão de R$ 1,45 bilhão em investimentos. Foram arrematados 34 blocos por 9 empresas.",
+      "nextSteps": "Adjudicação e homologação da licitação em 01/09/2025, com assinatura dos contratos prevista para 28/11/2025.",
+      "risks": [],
+      "timeline": [
+        { "milestone": "Leilão", "date": "17/06/2025", "status": "completed" },
+        { "milestone": "Homologação", "date": "01/09/2025", "status": "pending" },
+        { "milestone": "Contratos", "date": "28/11/2025", "status": "pending" }
+      ]
+    }
+  },
+  {
+    "id": "hidrovia-paraguai",
+    "sector": "Hidrovias",
+    "name": "Hidrovia do Paraguai",
+    "status": "Em Análise",
+    "statusColor": "bg-yellow-500",
+    "details": {
+      "description": "Concessão da hidrovia para melhorias na navegação e escoamento de produção.",
+      "currentSituation": "Projeto no MPOR para envio ao TCU. Previsão de leilão para 2026.",
+      "nextSteps": "Análise pelo TCU e revisão pós-TCU para publicação do edital.",
+      "risks": [
+        "Necessidade de qualificação no PPI com MMA/Ibama.",
+        "Mudanças estruturais na modelagem não originadas da Audiência Pública.",
+        "Restrição de participação da principal usuária.",
+        "Falta de consenso sobre quem será o Poder Concedente."
+      ],
+      "timeline": [
+        { "milestone": "Análise TCU", "date": "2025", "status": "pending" },
+        { "milestone": "Leilão", "date": "2026 (Prev.)", "status": "pending" }
+      ]
+    }
+  }
+]
