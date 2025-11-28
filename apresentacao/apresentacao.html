@@ -578,12 +578,71 @@ function getAnswerByCode(answers, code) {
 
 async function enrichProjectWithQuestions(project) {
     try {
-        // Agora não chamamos mais a SIF-Source no frontend.
-        // Apenas garantimos que os campos vindos do backend/local DB
-        // estejam espelhados em project.details para o modal.
-
         project.details = project.details || {};
 
+        // Map the API responses to the project details
+        const mapApiData = (data) => {
+            if (!data) return null;
+            
+            // If it's already in the correct format, return as is
+            if (data.status || data.dataInicio || data.dataFim || data.dataPublicacao) {
+                return data;
+            }
+
+            // Handle case where data is an array of answers
+            const answers = Array.isArray(data) ? data : (data.answers || []);
+            
+            // Find the answer with the most recent update
+            const latestAnswer = answers.reduce((latest, current) => {
+                if (!latest || new Date(current.updatedAt || 0) > new Date(latest.updatedAt || 0)) {
+                    return current;
+                }
+                return latest;
+            }, null);
+
+            if (!latestAnswer) return null;
+
+            // Map the answer to our standard format
+            return {
+                status: latestAnswer.answer || latestAnswer.status,
+                dataInicio: latestAnswer.startDate || latestAnswer.dataInicio,
+                dataFim: latestAnswer.endDate || latestAnswer.dataFim,
+                dataPublicacao: latestAnswer.publicationDate || latestAnswer.dataPublicacao
+            };
+        };
+
+        // API endpoints mapping
+        const apiEndpoints = {
+            'etapa': '2001216',  // data de inicio-estudos
+            'etapa1': '2001217', // data de fim-estudos
+            'etapa2': '2001218', // status-estudos
+            'etapa3': '2001219', // data de inicio-consulta publica
+            'etapa4': '2001220', // data de fim-consulta publica
+            'etapa5': '2001221', // status-consulta publica
+            'etapa6': '2001222', // data de inicio-controle externo
+            'etapa7': '2001223', // data de fim-controle externo
+            'etapa8': '2001224', // status-controle externo
+            'etapa9': '2001225', // status da fase - aviso de licitação
+            'etapa12': '2001227', // data de inicio - licitação
+            'etapa13': '2001229', // status da fase - licitação
+            'FaseStatus': '2001225' // data de publicação - aviso de licitação
+        };
+
+        // Fetch data for each endpoint
+        for (const [key, questionId] of Object.entries(apiEndpoints)) {
+            try {
+                const response = await fetchProjectQuestions(project.id, questionId);
+                project.details[key] = mapApiData(response);
+                
+                // Log para depuração
+                console.log(`Processed ${key}:`, project.details[key]);
+            } catch (error) {
+                console.warn(`Error fetching data for ${key}:`, error);
+                project.details[key] = null;
+            }
+        }
+
+        // Preserve existing details if they exist
         const isMeaningful = (v) => {
             if (v == null) return false;
             const s = String(v).trim();
@@ -591,26 +650,24 @@ async function enrichProjectWithQuestions(project) {
             return s !== 'Não informado' && s !== 'Pending';
         };
 
-        // Situação atual / próximos passos / riscos já persistidos no backend
         if (isMeaningful(project.currentSituation)) {
             project.details.currentSituation = String(project.currentSituation).trim();
         }
         if (isMeaningful(project.nextSteps)) {
-            // No modal usamos "deliberation" como campo de próximos passos
             project.details.deliberation = String(project.nextSteps).trim();
         }
         if (Array.isArray(project.risks) && project.risks.length) {
             project.details.risks = project.risks.slice();
         }
-
-        // Linha do tempo, se o backend tiver salvo algo derivado das perguntas
         if (project.rawData && Array.isArray(project.rawData.QuestionsTimeline)) {
             project.details.timeline = project.rawData.QuestionsTimeline;
         }
 
+        // Log final para depuração
+        console.log('Final project details:', project.details);
         return project;
     } catch (e) {
-        console.warn('Não foi possível sincronizar detalhes de perguntas no projeto:', e.message);
+        console.warn('Não foi possível enriquecer o projeto com as perguntas:', e);
         return project;
     }
 }
@@ -1166,6 +1223,7 @@ async function fetchProjectsFromAPI() {
             'Water & Waste': 'Água e Resíduos',
             'Urban Services': 'Serviços Urbanos',
             'Health': 'Saúde',
+            'Transport': 'Transporte',
             // Keep existing Portuguese mappings
             'Todos': 'Todos',
             'Portos': 'Portos',
@@ -1174,7 +1232,8 @@ async function fetchProjectsFromAPI() {
             'Energia': 'Energia',
             'Óleo e Gás': 'Petróleo e Gás',
             'Hidrovias': 'Hidrovias',
-            'Saúde': 'Saúde'
+            'Saúde': 'Saúde',
+            'Transporte': 'Transporte'
         };
 
         // Filtra setores e remove 'Saúde', 'Sade', 'Health' e variações
@@ -1318,18 +1377,43 @@ async function fetchProjectsFromAPI() {
     function renderProjects(sector = 'Todos') {
         const filteredProjects = sector === 'Todos' ? projectData : projectData.filter(p => p.sector === sector);
         
-        projectsGrid.innerHTML = filteredProjects.map(project => `
-            <div data-id="${project.id}" class="project-card bg-white rounded-xl shadow-md p-6 border border-gray-200 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <p class="text-sm text-gray-500">${project.sector}</p>
-                    <h3 class="text-lg font-bold mt-1 text-gray-800">${project.name}</h3>
+        projectsGrid.innerHTML = filteredProjects.map(project => {
+            // Get stage status from project details
+            const etapas = [
+                { id: 'etapa2', label: 'Estudos' },
+                { id: 'etapa5', label: 'CP' },
+                { id: 'etapa9', label: 'Edital' },
+                { id: 'etapa13', label: 'Licitação' }
+            ];
+
+            const etapasHtml = etapas.map(etapa => {
+                const isCompleted = project.details?.[etapa.id]?.status === 'Completed';
+                return `
+                    <div class="flex items-center gap-1">
+                        <div class="w-2 h-2 rounded-full ${isCompleted ? 'bg-green-500' : 'bg-gray-300'}"></div>
+                        <span class="text-xs text-gray-600">${etapa.label}</span>
+                    </div>
+                `;
+            }).join('');
+
+            return `
+                <div data-id="${project.id}" class="project-card bg-white rounded-xl shadow-md p-6 border border-gray-200 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500">${project.sector}</p>
+                        <h3 class="text-lg font-bold mt-1 text-gray-800">${project.name}</h3>
+                    </div>
+                    <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-200">
+                        <div class="flex items-center">
+                            <span class="status-dot ${project.statusColor} mr-2"></span>
+                            <span class="text-sm font-medium text-gray-600">${project.status}</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            ${etapasHtml}
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center mt-4 pt-4 border-t border-gray-200">
-                    <span class="status-dot ${project.statusColor} mr-2"></span>
-                    <span class="text-sm font-medium text-gray-600">${project.status}</span>
-                </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     }
 
     // Modo de Gerenciamento de Projetos (Visão em Lista)
@@ -1836,91 +1920,147 @@ async function fetchProjectsFromAPI() {
     }
 
     function buildPhaseStates(details, projectStatus = '') {
+        console.log('buildPhaseStates called with details:', details);
+        
         // Default state: all phases not completed
         const defaultState = PHASES.map(phase => ({
             name: phase,
             completed: false,
-            isCurrent: false
+            isCurrent: false,
+            isDraft: false,
+            status: 'not_started'
         }));
         
-        if (!details) return defaultState;
+        if (!details) {
+            console.log('No details provided, returning default state');
+            return defaultState;
+        }
 
-        // Helper function to check if a phase is completed based on SIF-SOURCE data
-        const isPhaseCompleted = (phase) => {
-            if (!details) return false;
+        console.log('Available details keys:', Object.keys(details));
+        
+        // Map phase names to their corresponding status keys in the details
+        const phaseToKeyMap = {
+            'Estudos': 'etapa2',
+            'Consulta Pública': 'etapa5',
+            'TCU': 'etapa8',
+            'Edital': 'etapa9',
+            'Leilão': 'etapa13',
+            'Assinatura do Contrato': 'etapa14'
+        };
+
+        // Helper function to normalize status values
+        const normalizeStatus = (status) => {
+            if (!status) return 'not_started';
             
-            switch(phase) {
-                case 'Estudos':
-                    return details.etapa2 && 
-                          (details.etapa2.status === 'Concluído' || 
-                           details.etapa2.status === 'Concluido' ||
-                           details.etapa2.status === 'Finalizado');
-                case 'Consulta Pública':
-                    return details.etapa5 && 
-                          (details.etapa5.status === 'Concluído' || 
-                           details.etapa5.status === 'Concluido' ||
-                           details.etapa5.status === 'Finalizado');
-                case 'TCU':
-                    return details.etapa8 && 
-                          (details.etapa8.status === 'Concluído' || 
-                           details.etapa8.status === 'Concluido' ||
-                           details.etapa8.status === 'Finalizado');
-                case 'Edital':
-                    return details.etapa9 && 
-                          (details.etapa9.status === 'Publicado' || 
-                           details.etapa9.status === 'Concluído' ||
-                           details.etapa9.status === 'Finalizado');
-                case 'Leilão':
-                    return details.status && 
-                          (details.status.includes('Leilão Realizado') || 
-                           details.status.includes('Leilao Realizado'));
-                case 'Assinatura do Contrato':
-                    return details.status && 
-                          (details.status.includes('Contrato Assinado') || 
-                           details.status.includes('Assinatura do Contrato'));
-                default:
-                    return false;
+            const statusStr = String(status).toLowerCase().trim();
+            
+            // Check for completed statuses
+            if (['completed', 'concluído', 'concluido', 'finalizado', 'assinado', 'publicado', 
+                 'realizado', 'concluida', 'concluída', 'concluido com sucesso', 'concluída com sucesso'].some(s => statusStr.includes(s))) {
+                return 'completed';
             }
+            
+            // Check for in-progress statuses
+            if (['andamento', 'progress', 'em andamento', 'em análise', 'em licitação', 
+                 'em implantação', 'em revisão', 'em andamento (execução)', 'em andamento - execução', 
+                 'em andamento - análise', 'em andamento - licitação'].some(s => statusStr.includes(s))) {
+                return 'in_progress';
+            }
+            
+            // Check for draft statuses
+            if (statusStr.includes('rascunho') || statusStr.includes('draft') || statusStr.includes('rasc')) {
+                return 'draft';
+            }
+            
+            // Check for error statuses
+            if (statusStr.includes('error') || statusStr.includes('erro') || statusStr.includes('falha')) {
+                return 'error';
+            }
+            
+            // Default to not started
+            return 'not_started';
         };
-
-        // Determine the current phase based on SIF-SOURCE data
-        const getCurrentPhase = () => {
-            if (!details) return '';
-            
-            // Check for current phase in order of priority
-            if (details.etapa13 && details.etapa13.status === 'Em Andamento') return 'Leilão';
-            if (details.etapa9 && details.etapa9.status === 'Em Andamento') return 'Edital';
-            if (details.etapa8 && details.etapa8.status === 'Em Análise') return 'TCU';
-            if (details.etapa5 && details.etapa5.status === 'Em Andamento') return 'Consulta Pública';
-            if (details.etapa2 && details.etapa2.status === 'Em Andamento') return 'Estudos';
-            
-            // Fallback to status if no specific phase is in progress
-            const status = (projectStatus || '').toLowerCase();
-            if (status.includes('leilão') || status.includes('leilao')) return 'Leilão';
-            if (status.includes('edital') || status.includes('licitação') || status.includes('licitacao')) return 'Edital';
-            if (status.includes('tcu') || status.includes('tribunal de contas')) return 'TCU';
-            if (status.includes('consulta') || status.includes('pública') || status.includes('publica')) return 'Consulta Pública';
-            if (status.includes('estudo') || status.includes('planejamento')) return 'Estudos';
-            
-            return ''; // Default to no current phase if can't determine
-        };
-
-        const currentPhase = getCurrentPhase();
-        let foundCurrent = false;
 
         // Process each phase
-        return PHASES.map(phase => {
-            const completed = isPhaseCompleted(phase);
-            const isCurrent = !foundCurrent && phase === currentPhase;
+        const result = PHASES.map(phase => {
+            const phaseKey = phaseToKeyMap[phase];
+            let phaseData = phaseKey && details[phaseKey];
+            let status = 'not_started';
             
-            if (isCurrent) foundCurrent = true;
-
+            // If phase data is not found in the direct properties, try to find it in the timeline array
+            if (!phaseData && details.timeline && Array.isArray(details.timeline)) {
+                const phaseInTimeline = details.timeline.find(item => 
+                    item.milestone && 
+                    phase.toLowerCase().includes(item.milestone.toLowerCase())
+                );
+                if (phaseInTimeline) {
+                    phaseData = phaseInTimeline;
+                    console.log(`Found phase data in timeline for: ${phase}`, phaseData);
+                }
+            }
+            
+            if (phaseData) {
+                if (typeof phaseData === 'object' && phaseData !== null) {
+                    // Check both status and answer fields from API response
+                    status = normalizeStatus(phaseData.status || phaseData.answer || phaseData.estado || '');
+                    
+                    console.log(`Phase: ${phase} (${phaseKey})`, {
+                        phaseData,
+                        normalizedStatus: status
+                    });
+                } else if (typeof phaseData === 'string') {
+                    status = normalizeStatus(phaseData);
+                }
+            } else {
+                console.log(`No data found for phase: ${phase} (${phaseKey})`);
+            }
+            
+            // Special case for Assinatura do Contrato - check project status
+            if (phase === 'Assinatura do Contrato' && projectStatus) {
+                console.log('Checking project status for Assinatura do Contrato:', projectStatus);
+                const lowerStatus = String(projectStatus).toLowerCase();
+                if (lowerStatus.includes('assinado') || lowerStatus.includes('concluído') || 
+                    lowerStatus.includes('finalizado') || lowerStatus.includes('concluido') ||
+                    lowerStatus.includes('concluída') || lowerStatus.includes('concluida')) {
+                    status = 'completed';
+                } else if (lowerStatus.includes('andamento') || lowerStatus.includes('em andamento') ||
+                          lowerStatus.includes('em execução') || lowerStatus.includes('em execucao')) {
+                    status = 'in_progress';
+                } else if (lowerStatus.includes('rascunho') || lowerStatus.includes('draft')) {
+                    status = 'draft';
+                }
+                console.log('Assinatura do Contrato status set to:', status);
+            }
+            
             return {
                 name: phase,
-                completed: completed,
-                isCurrent: isCurrent
+                completed: status === 'completed',
+                isCurrent: status === 'in_progress',
+                isDraft: status === 'draft',
+                status: status
             };
         });
+        
+        // Find the first phase that's not completed to mark it as current
+        let foundCurrent = false;
+        for (let i = 0; i < result.length; i++) {
+            if (!foundCurrent && !result[i].completed) {
+                // Only set as current if it's not already marked as in_progress or draft
+                if (result[i].status === 'not_started') {
+                    result[i].isCurrent = true;
+                    console.log(`Marking phase as current (first incomplete): ${result[i].name}`);
+                    foundCurrent = true;
+                }
+            }
+            
+            // Clear current status for all other phases
+            if (foundCurrent && i > 0) {
+                result[i].isCurrent = false;
+            }
+        }
+        
+        console.log('Final phase states:', JSON.stringify(result, null, 2));
+        return result;
     }
 
     async function renderProjectDetails(projectId) {
@@ -2218,5 +2358,6 @@ async function fetchProjectsFromAPI() {
     })();
 });
 </script>
+    <script src="project_timeline.js"></script>
 </body>
 </html>

@@ -1,0 +1,182 @@
+{
+  "tunel-santos_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:16.722Z",
+    "error": "Request failed with status code 404"
+  },
+  "tunel-santos_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:17.474Z",
+    "error": "Request failed with status code 404"
+  },
+  "tunel-santos_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:18.235Z",
+    "error": "Request failed with status code 404"
+  },
+  "tunel-santos_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:18.972Z",
+    "error": "Request failed with status code 404"
+  },
+  "porto-parangua_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:19.707Z",
+    "error": "Request failed with status code 404"
+  },
+  "porto-parangua_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:20.444Z",
+    "error": "Request failed with status code 404"
+  },
+  "porto-parangua_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:21.187Z",
+    "error": "Request failed with status code 404"
+  },
+  "porto-parangua_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:21.926Z",
+    "error": "Request failed with status code 404"
+  },
+  "fiol-1_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:22.664Z",
+    "error": "Request failed with status code 404"
+  },
+  "fiol-1_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:23.409Z",
+    "error": "Request failed with status code 404"
+  },
+  "fiol-1_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:24.159Z",
+    "error": "Request failed with status code 404"
+  },
+  "fiol-1_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:24.912Z",
+    "error": "Request failed with status code 404"
+  },
+  "transnordestina_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:25.654Z",
+    "error": "Request failed with status code 404"
+  },
+  "transnordestina_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:26.402Z",
+    "error": "Request failed with status code 404"
+  },
+  "transnordestina_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:27.147Z",
+    "error": "Request failed with status code 404"
+  },
+  "transnordestina_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:27.890Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-040-cristais_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:28.636Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-040-cristais_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:29.374Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-040-cristais_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:30.136Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-040-cristais_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:30.876Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-381-mg_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:31.632Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-381-mg_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:32.401Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-381-mg_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:33.149Z",
+    "error": "Request failed with status code 404"
+  },
+  "br-381-mg_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:33.889Z",
+    "error": "Request failed with status code 404"
+  },
+  "leilao-transmissao-2025_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:34.625Z",
+    "error": "Request failed with status code 404"
+  },
+  "leilao-transmissao-2025_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:35.372Z",
+    "error": "Request failed with status code 404"
+  },
+  "leilao-transmissao-2025_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:36.109Z",
+    "error": "Request failed with status code 404"
+  },
+  "leilao-transmissao-2025_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:36.848Z",
+    "error": "Request failed with status code 404"
+  },
+  "oleo-gas-opc5_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:37.602Z",
+    "error": "Request failed with status code 404"
+  },
+  "oleo-gas-opc5_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:38.346Z",
+    "error": "Request failed with status code 404"
+  },
+  "oleo-gas-opc5_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:39.092Z",
+    "error": "Request failed with status code 404"
+  },
+  "oleo-gas-opc5_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:39.835Z",
+    "error": "Request failed with status code 404"
+  },
+  "hidrovia-paraguai_etapa2": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:40.575Z",
+    "error": "Request failed with status code 404"
+  },
+  "hidrovia-paraguai_etapa5": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:41.336Z",
+    "error": "Request failed with status code 404"
+  },
+  "hidrovia-paraguai_etapa9": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:42.105Z",
+    "error": "Request failed with status code 404"
+  },
+  "hidrovia-paraguai_etapa13": {
+    "status": "Error",
+    "lastUpdated": "2025-11-28T11:46:42.846Z",
+    "error": "Request failed with status code 404"
+  }
+}

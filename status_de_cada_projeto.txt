@@ -1,0 +1,5944 @@
+[
+  {
+    "guid": "ecd74fa2-d64d-42ca-bb9a-a6dbe4dbfef5",
+    "name": "2º Leilão de Transmissão de Energia 2026",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:04.427Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:04.431Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:04.432Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:04.448Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:04.659Z"
+  },
+  {
+    "guid": "d9463ed7-caf9-44cf-812f-f9be35dfa3d2",
+    "name": "3º Ciclo de Oferta Permanente no regime de partilha",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:06.181Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:06.181Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:06.183Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:06.185Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:06.388Z"
+  },
+  {
+    "guid": "c5dd423a-0cfd-4e36-8fd9-03bb18dc250e",
+    "name": "Aeroporto Internacional de Viracopos, em Campinas/SP (relicitação)",
+    "description": "O empreendimento foi qualificado na 13&#170; reuni&#227;o do Conselho do PPI, por meio da&#160;Resolu&#231;&#227;o n&#186; 123, de 10/06/2020, que deu origem ao&#160;Decreto n&#186; 10.427, de 17/07/2020.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:07.933Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:07.934Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:07.944Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:08.010Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:08.211Z"
+  },
+  {
+    "guid": "f2811aa8-a620-4d91-bb8f-8ed1481a9a94",
+    "name": "5º leilão de óleo e gás da PPSA",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:09.944Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:09.976Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:10.043Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:10.081Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:10.286Z"
+  },
+  {
+    "guid": "022ea245-c8f4-440a-9a1b-2aa0e2f523fd",
+    "name": "Apoio &#224; Visita&#231;&#227;o e &#224; Conserva&#231;&#227;o de &#225;rea de Fernando de Noronha/PE",
+    "description": "Parceria para presta&#231;&#227;o dos servi&#231;os p&#250;blicos de apoio &#224; visita&#231;&#227;o, com previs&#227;o do custeio de a&#231;&#245;es de apoio &#224; conserva&#231;&#227;o, &#224; prote&#231;&#227;o e &#224; gest&#227;o das unidades da &#193;rea de Prote&#231;&#227;o Ambiental e do Parque Nacional Marinho da ilha de Fernando de Noronha/PE",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:11.760Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:11.761Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:11.772Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:11.844Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:12.052Z"
+  },
+  {
+    "guid": "3d228904-a18a-4f94-b5ef-710a2df6bcc2",
+    "name": "Antigo Aeroporto de Vit&#243;ria da Conquista",
+    "description": "Estudos para alternativas de parcerias em empreendimentos de m&#250;ltiplos usos no antigo Aeroporto de Vit&#243;ria da Conquista, em Vit&#243;ria da Conquista, Bahia.",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:13.375Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:13.379Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:13.414Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:13.415Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:13.625Z"
+  },
+  {
+    "guid": "fbf64536-0ab5-49bd-8d69-d9d1dc145c7a",
+    "name": "Api test 1",
+    "description": "Api Test Description",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:14.879Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:14.916Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:14.921Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:14.925Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:15.132Z"
+  },
+  {
+    "guid": "7f98f52b-0417-4a84-a60b-23104b8352e1",
+    "name": "1º LEILÃO DE TRANSMISSÃO DE ENERGIA 2025",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:16.330Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:16.335Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:16.336Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:16.337Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:16.552Z"
+  },
+  {
+    "guid": "e2f2d536-8b26-4c34-ba6d-0d4e8993af3e",
+    "name": "Antigo Aeroporto Carlos Prates - Belo Horizonte/MG",
+    "description": "Estudos para alternativas de parcerias em empreendimentos de m&#250;ltiplos usos no antigo Aeroporto Carlos Prates, em Belo Horizonte, Minas Gerais.",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:17.772Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:17.810Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:17.812Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:17.813Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:18.027Z"
+  },
+  {
+    "guid": "33839d16-e8d5-4953-9106-6807bf9fb0f7",
+    "name": "Antiga Estação Ferroviária de Diamantina/MG",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:19.225Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:19.232Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:19.232Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:19.290Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:19.504Z"
+  },
+  {
+    "guid": "5731cec4-2028-4351-8f6c-23301ef6ba4b",
+    "name": "Aeroporto de Santos Dumont/RJ",
+    "description": "O Aeroporto de Santos Dumont, localizado pr&#243;ximo aos principais pontos tur&#237;sticos da cidade, &#233; um dos mais movimentados do pa&#237;s e atende a Ponte A&#233;rea Rio-S&#227;o Paulo.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:20.765Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:20.775Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:20.819Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:20.882Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:21.097Z"
+  },
+  {
+    "guid": "8d2bfbb1-1ab5-43ec-bcb4-8b45c530455d",
+    "name": "&#193;reas do Centro de Instru&#231;&#227;o de Guerra na Selva do Ex&#233;rcito Brasileiro",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:22.343Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:22.343Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:22.407Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:22.454Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:22.668Z"
+  },
+  {
+    "guid": "90f37771-7341-47d3-afa5-a9816ba34054",
+    "name": "Aeroporto do Galeão/RJ",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:23.926Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:23.954Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:23.968Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:23.987Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:24.190Z"
+  },
+  {
+    "guid": "354cb321-88dd-49bc-9fb6-6afb08ccb261",
+    "name": "5º Ciclo de Oferta Permanente no regime de concessão",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:25.447Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:25.457Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:25.473Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:25.473Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:30:25.681Z"
+  },
+  {
+    "guid": "bdd8bd47-218f-445f-a795-72eefc900b3c",
+    "name": "1º Leilão de Transmissão de Energia 2026",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:26.897Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:26.897Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:26.897Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:26.898Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:27.107Z"
+  },
+  {
+    "guid": "83410882-d8f2-4f75-a3ef-1d260041f508",
+    "name": "BR-116/BA/PE - Rota dos Sert&#245;es",
+    "description": "BR-116/BA/PE - Feira de Santana a Salgueiro&#10;Trecho com 502 km de extens&#227;o.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:28.348Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:28.349Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:28.406Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:28.410Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:28.624Z"
+  },
+  {
+    "guid": "a16279f3-1118-49bf-87ac-203e9d49d4fe",
+    "name": "Barragem do Po&#231;o do Magro (Codeasf)",
+    "description": "A definir",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:29.863Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:29.865Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:29.917Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:29.993Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:30.199Z"
+  },
+  {
+    "guid": "344d2b96-3348-41d9-a477-64ca11b44b2b",
+    "name": "Baixo Acara&#250;/CE",
+    "description": "O per&#237;metro de irriga&#231;&#227;o Baixo Acara&#250; &#233; abastecido pelas &#225;guas do rio Acara&#250;, perenizado no trecho pelas &#225;guas dos a&#231;udes de Araras e Serrote.",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:31.494Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:31.496Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:31.507Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:31.577Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:31.783Z"
+  },
+  {
+    "guid": "705bc6a1-682d-44ad-bfd2-3a8260687487",
+    "name": "BR-060/364/GO/MT - CN2 - Rota do Agro",
+    "description": "Trecho Rio Verde/GO - Rondon&#243;polis/MT&#10;&#10;O projeto est&#225; inserido nos estados de Mato Grosso e Goi&#225;s, contemplando a cidade de Rondon&#243;polis/MT, localizada na regi&#227;o Sudeste do estado, a 210km da capital Cuiab&#225;, com 245 mil habitantes e o segundo maior PIB do estado.&#10;&#10;Rondon&#243;polis se localiza no entroncamento das Rodovias BR-163 e BR-364, vias que transportam a produ&#231;&#227;o agr&#237;cola e industrial para os grandes centros metropolitanos e portos do Brasil.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:33.051Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:33.070Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:33.086Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:33.105Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:30:33.307Z"
+  },
+  {
+    "guid": "e7ea53ca-5a51-4387-9719-c02f84feafd2",
+    "name": "CODEBA e Portos Organizados de Salvador, Aratu-Candeias e Ilhéus",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:34.553Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:34.559Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:34.630Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:34.926Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:30:35.132Z"
+  },
+  {
+    "guid": "ad90c00e-f42d-4417-b3ee-eba9b77c326a",
+    "name": "Cons&#243;rcio CONSUD",
+    "description": "A concess&#227;o do servi&#231;o de manejo de RSU, no &#226;mbito do Cons&#243;rcio Intermunicipal de Sa&#250;de do Sudoeste - CONSUD/PR, representa um passo importante na busca dos 20 munic&#237;pios integrantes do projeto por melhorias significativas no manejo dos res&#237;duos s&#243;lidos urbanos produzidos pelos mais de 304 mil habitantes que ser&#227;o diretamente impactados pelo projeto.",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:36.359Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:36.366Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:36.367Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:36.396Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:36.603Z"
+  },
+  {
+    "guid": "56e91a40-09ed-4e76-84f8-6ad7119a3ba5",
+    "name": "BR-116/158/392/290/RS - Rota Integração do Sul",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:37.817Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:37.877Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:37.882Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:37.885Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:38.098Z"
+  },
+  {
+    "guid": "de84ed77-2133-411e-8a18-7c647c0e999d",
+    "name": "BR-060/153/040/DF/GO (relicitação)",
+    "description": "O trecho das rodovias BR-153/060 faz a liga&#231;&#227;o entre Bras&#237;lia e Goi&#226;nia, duas importantes capitais do Centro-Oeste e a BR-040, cujo trecho at&#233; Cristalina/GO faz parte desse projeto, interliga a capital do pa&#237;s a Belo Horizonte e &#224; cidade do Rio de Janeiro, consistindo em importante eixo de liga&#231;&#227;o das regi&#245;es Centro-Oeste e Sudeste. Al&#233;m disso, os dois trechos rodovi&#225;rios s&#227;o importantes vias de liga&#231;&#227;o entre as cidades do entorno do Distrito Federal e a capital do pa&#237;s, sendo caracterizados pelo tr&#225;fego elevado de ve&#237;culos.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:39.351Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:39.353Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:39.393Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:39.394Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:39.607Z"
+  },
+  {
+    "guid": "8d191d82-7d1e-47d9-9f25-a580984292ad",
+    "name": "BR-070/174/364/MT/RO - CN3 - Rota Agro Central",
+    "description": "Trecho Vilhena/RO - Cuiab&#225;/MT&#10;&#10;Integra lotes Centro-Oeste e Norte",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:41.002Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:41.026Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:41.045Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:41.053Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:41.263Z"
+  },
+  {
+    "guid": "95ba3705-8488-460a-a02a-7f408dba33a3",
+    "name": "BR-101/ES/BA (Otimização ECO101)",
+    "description": "Otimiza&#231;&#227;o do contrato da ECO101&#10;BR-101/ES/BA - 478,80 km",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:42.632Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:42.637Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:42.642Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:42.653Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:30:42.853Z"
+  },
+  {
+    "guid": "c9b9363d-d6c8-4e33-8d4b-3f27312a0f37",
+    "name": "CBTU - estudos de mobilidade das praças de Natal, João Pessoa e Maceió",
+    "description": "Os projetos dos sistemas de metr&#244; das regi&#245;es metropolitanas de Natal/RN, Macei&#243;/AL e Jo&#227;o Pessoa/PB tem por principal objetivo o estudo de mobilidade no qual essas opera&#231;&#245;es est&#227;o inseridas.&#10;&#10;Espera-se que os usu&#225;rios destas regi&#245;es metropolitanas que utilizam do sistema de transporte tenham mais qualidade de vida e menos tempo gasto nos seus deslocamentos, com maior seguran&#231;a e regularidade e manuten&#231;&#227;o da mesma estrutura tarif&#225;ria vigente.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:44.127Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:44.127Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:44.186Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:44.208Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:44.418Z"
+  },
+  {
+    "guid": "453744dc-0465-4c51-b331-1d441f71c87e",
+    "name": "Barragens da Codevasf",
+    "description": "A definir",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:45.674Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:45.676Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:45.682Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:45.855Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:46.071Z"
+  },
+  {
+    "guid": "7d8495bd-6f12-4ecd-bb15-eac57721af9f",
+    "name": "Barragem de Zabumb&#227;o (Codevasf)",
+    "description": "A definir",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:47.334Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:47.382Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:47.382Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:47.401Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:47.615Z"
+  },
+  {
+    "guid": "1244649e-5a92-4d13-b21f-cea81fc2a75f",
+    "name": "BR-158/155/MT/PA",
+    "description": "O trecho rodovi&#225;rio em quest&#227;o constitui importante rota de escoamento da produ&#231;&#227;o de gr&#227;os do nordeste de Mato Grosso, integrando a regi&#227;o &#224; ferrovia Caraj&#225;s e permitindo a exporta&#231;&#227;o da produ&#231;&#227;o pelo Porto de Itaqui/MA.",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:48.849Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:48.891Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:48.899Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:48.978Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:49.185Z"
+  },
+  {
+    "guid": "52941c04-f840-4517-934d-d12418bf4cd2",
+    "name": "Barragem de Riacho do Paulo (DNOCS)",
+    "description": "a definir",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:50.449Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:50.454Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:50.497Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:50.522Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:50.733Z"
+  },
+  {
+    "guid": "4ec9c8f4-6447-4d18-ac99-ff137740a60c",
+    "name": "Consórcio CEMMIL/SP",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:51.974Z"
+      },
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:52.010Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:52.012Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:52.064Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:52.270Z"
+  },
+  {
+    "guid": "01fb8247-91ec-4631-bf1f-3da9fa6822d6",
+    "name": "BR-116/324/BA - Rota 2 de julho",
+    "description": "A BR-116/324/BA consiste na moderniza&#231;&#227;o e amplia&#231;&#227;o da capacidade do trecho rodovi&#225;rio que conecta Salvador a Feira de Santana, Vit&#243;ria da Conquista e outros polos regionais. O projeto visa melhorar a infraestrutura, garantindo maior fluidez e seguran&#231;a para o tr&#225;fego de ve&#237;culos e cargas, al&#233;m de fortalecer a integra&#231;&#227;o econ&#244;mica entre as cidades envolvidas.",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:53.488Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:53.510Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:53.550Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:53.600Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:30:53.810Z"
+  },
+  {
+    "guid": "73cfd5fb-20f9-43a9-b39f-89be0ea9caa5",
+    "name": "Canal de Acesso Aquaviário aos Portos de Paranaguá e Antonina/PR",
+    "description": "O escopo da concess&#227;o abranger&#225; as fun&#231;&#245;es de administra&#231;&#227;o portu&#225;ria, no que tange &#224; gest&#227;o das infraestruturas de acesso aquavi&#225;rio, buscando-se a amplia&#231;&#227;o, manuten&#231;&#227;o e explora&#231;&#227;o do canal de acesso aos Portos de Paranagu&#225; e Antonina por meio da concess&#227;o.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:55.177Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:55.207Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:55.207Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:55.214Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:30:55.415Z"
+  },
+  {
+    "guid": "7a4da49f-e374-4f2a-b3e0-27af466e1cf9",
+    "name": "Barragem de Truvisco (DNOCS)",
+    "description": "A definir",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:56.658Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:56.661Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:56.670Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:56.810Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:57.024Z"
+  },
+  {
+    "guid": "17e819cb-1962-4905-8306-c57ba90b182a",
+    "name": "Barragem de Morrinhos (DNOCS)",
+    "description": "A definir",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:58.294Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:58.325Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:58.328Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:30:58.341Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:30:58.553Z"
+  },
+  {
+    "guid": "a7317046-c49d-4e61-835b-2f23dded1972",
+    "name": "BR-101/RJ (Otimização da Autopista Fluminense)",
+    "description": "Otimiza&#231;&#227;o do contrato da Autopista Fluminense&#10;BR-101/RJ - 321 km",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:30:59.812Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:59.816Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:30:59.831Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:30:59.849Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:31:00.052Z"
+  },
+  {
+    "guid": "743c3dec-0596-4049-972b-7ad1e0fb5850",
+    "name": "BR-116/251/MG - Rota das Gerais",
+    "description": "BR-116/251/MG - Rota Gerais&#10;Trecho com 734,90 km de extens&#227;o.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:01.320Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:01.356Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:01.363Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:01.405Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:31:01.617Z"
+  },
+  {
+    "guid": "55d8c9d7-c8ea-4140-8e03-0fb8486ca603",
+    "name": "BR-040/495/RJ/MG - Rio de Janeiro a Juiz de Fora",
+    "description": "Por meio da Portaria N&#186;531/2024, o Minist&#233;rio dos Transportes aprovou o Plano de Outorga da concess&#227;o para explora&#231;&#227;o da Rodovia BR-040/495/MG/RJ no trecho entre Juiz de Fora/MG e Rio de Janeiro/RJ.&#10;&#10;O projeto em an&#225;lise deriva da diretriz de pol&#237;tica p&#250;blica do Minist&#233;rio dos Transportes, que determinou a separa&#231;&#227;o dos estudos t&#233;cnicos para a concess&#227;o da BR-040/495/MG/RJ, no trecho entre Belo Horizonte e o Rio de Janeiro, em dois projetos distintos. Um abrange o trecho de Belo Horizonte (MG) a Juiz de Fora (MG), enquanto o outro engloba o trecho de Juiz de Fora (MG) ao Rio de Janeiro (RJ).&#10;&#10;O primeiro segmento foi leiloado em 11/04/2024&#160;e o outro, com o trecho entre Juiz de Fora (MG) e Rio de Janeiro (RJ), &#233; o objeto deste novo Plano de Outorga.&#10;&#10;*Fonte das informa&#231;&#245;es: Plano de Outorga MT/ANTT (05/06/2024).",
+    "details": {
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:02.930Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:02.991Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:02.993Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:03.109Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:31:03.310Z"
+  },
+  {
+    "guid": "03175202-1983-4ce9-9425-f8271bf2e138",
+    "name": "Canal de Acesso Aquaviário do Porto de Rio Grande/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:04.600Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:04.625Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:04.666Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:04.667Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:04.881Z"
+  },
+  {
+    "guid": "a93af4fb-d039-4fad-9454-cb0aabe6b5b8",
+    "name": "BR-135/316/MA",
+    "description": "A BR-135/316/MA interliga as cidades de S&#227;o Lu&#237;s/MA e Teresina/PI, servindo de rota de transporte para a regi&#227;o do Matopiba, considerada a grande fronteira agr&#237;cola nacional da atualidade, que apresenta crescimento expressivo na produ&#231;&#227;o agr&#237;cola principalmente de soja e milho, contribuindo para o desenvolvimento regional do Norte e Nordeste do pa&#237;s.",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:06.151Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:06.152Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:06.226Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:06.248Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:06.463Z"
+  },
+  {
+    "guid": "8b14d8de-328d-42a2-873c-3d40b1691fb8",
+    "name": "BR-163/MS (Otimização MSVIA)",
+    "description": "Otimiza&#231;&#227;o do contrato da MSVIA&#10;BR-163/MS - 845,90 km",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:07.791Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:07.832Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:07.841Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:07.953Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:31:08.156Z"
+  },
+  {
+    "guid": "e3ddb823-bab9-4a3d-92db-a9729c694a30",
+    "name": "BR-153/262/GO/MG - Rota Sertaneja",
+    "description": "O lote rodovi&#225;rio denominado &#8220;Rota Sertaneja&#8221; est&#225; localizado nas rodovias BR-153/262/GO/MG, inserido em Goi&#225;s e Minas Gerais, parte do trecho da atual concess&#227;o da BR060/153/262/DF/GO/MG.&#10;&#10;No lote, h&#225; a predomin&#226;ncia de atividades de servi&#231;o e agricultura, bem como de outras atividades econ&#244;micas como ind&#250;stria extrativista e de transforma&#231;&#227;o, eletricidade e g&#225;s, al&#233;m de com&#233;rcio e repara&#231;&#227;o de ve&#237;culos automotores.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:09.405Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:09.415Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:09.460Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:09.460Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:31:09.666Z"
+  },
+  {
+    "guid": "68cd547a-9395-4439-a85b-27e0e21c58c4",
+    "name": "CBTU-PE: Metrô da Região Metropolitana de Recife/PE",
+    "description": "Requalifica&#231;&#227;o e moderniza&#231;&#227;o do sistema de metr&#244; da regi&#227;o metropolitana de Recife/PE, operado pela empresa federal CBTU",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:10.926Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:10.937Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:10.956Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:10.985Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:11.200Z"
+  },
+  {
+    "guid": "b17b954e-52d0-4f06-8865-4f18855bac72",
+    "name": "BR-163/267/MS (Relicitação)",
+    "description": "Rota do Tuiui&#250;",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:12.416Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:12.464Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:12.515Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:12.528Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:31:12.741Z"
+  },
+  {
+    "guid": "8adf1926-f1f9-493a-b03b-378bd86f260f",
+    "name": "Barragens do DNOCS",
+    "description": "A definir",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:13.992Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:13.994Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:13.995Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:14.015Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:14.217Z"
+  },
+  {
+    "guid": "ab80c9e8-07f2-46ea-92d0-e32fda3ab48e",
+    "name": "Barragem de Tremedal (DNOCS)",
+    "description": "A definir",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:15.436Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:15.464Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:15.474Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:15.483Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:15.697Z"
+  },
+  {
+    "guid": "c33de432-98e8-415a-8920-c714218836cb",
+    "name": "Canal de Acesso Aquavi&#225;rio ao Porto de Santos",
+    "description": "O acesso aquavi&#225;rio &#233; realizado por canal com 25 km de extens&#227;o, capaz de receber navios de at&#233; 336 m de comprimento, 46 m de boca e 13,5 m de calado, cujas dimens&#245;es reduzem-se a medida que se adentra o continente.",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:16.924Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:16.961Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:16.972Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:16.997Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:17.203Z"
+  },
+  {
+    "guid": "715eae06-4ef0-488f-acc4-7e0ba1e1df67",
+    "name": "Barragem do Bico da Pedra (Codevasf)",
+    "description": "A definir",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:18.464Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:18.477Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:18.576Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:18.577Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:18.791Z"
+  },
+  {
+    "guid": "b3ee4629-b976-4d12-af02-593245102cf7",
+    "name": "Consórcio de Municípios do Centro Oeste Mineiro - CIAS",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:20.033Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:20.033Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:20.060Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:20.085Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:31:20.299Z"
+  },
+  {
+    "guid": "8587a771-a713-4b0d-bdaa-594649c26413",
+    "name": "Educação Infantil - Município de Caxias do Sul (RS)",
+    "description": "Projeto de estrutura&#231;&#227;o de concess&#227;o administrativa para constru&#231;&#227;o, manuten&#231;&#227;o, conserva&#231;&#227;o, gest&#227;o e opera&#231;&#227;o dos servi&#231;os n&#227;o-pedag&#243;gicos de 31 (trinta e uma) novas unidades educacionais da rede municipal de educa&#231;&#227;o infantil do munic&#237;pio de Caxias do Sul (RS).",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:21.505Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:21.526Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:21.618Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:21.643Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:31:21.848Z"
+  },
+  {
+    "guid": "14f610c7-8be2-4beb-859f-72b12789ca18",
+    "name": "Consórcio de Saúde do Vale do Ribeira e Litoral Sul - CONSAÚDE/SP",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:23.086Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:23.092Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:23.134Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:23.134Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:23.339Z"
+  },
+  {
+    "guid": "956ec97e-db52-4ce3-8af9-6a602bb16fdc",
+    "name": "Consórcio Público dos Municípios da Mata Sul - COMSUL/PE",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:24.560Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:24.566Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:24.646Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:24.676Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:24.879Z"
+  },
+  {
+    "guid": "dbfad300-3196-4119-8282-6cef42d22fae",
+    "name": "Consórcio Regional de Saneamento Básico Central de Minas - CORESAB",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:26.151Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:26.159Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:26.215Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:26.313Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:26.545Z"
+  },
+  {
+    "guid": "9261c511-63fa-40f2-a53b-3fa5bf650eab",
+    "name": "Corredor Ferroviário Leste-Oeste",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:27.817Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:27.830Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:27.867Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:27.879Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:28.085Z"
+  },
+  {
+    "guid": "43cd2f4b-7147-458d-be96-863ad3d35a00",
+    "name": "Consórcio Oeste Paulista",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:29.365Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:29.390Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:29.402Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:29.419Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:31:29.619Z"
+  },
+  {
+    "guid": "47f8bb42-bbe9-4f12-822d-713277736d71",
+    "name": "Consórcio Mogiana",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:30.898Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:30.936Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:30.945Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:31.010Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:31:31.224Z"
+  },
+  {
+    "guid": "758a265e-9adc-482b-a14a-f1a3bd882087",
+    "name": "Consórcio Sustentável do Território do São Francisco - CONSTESF/BA",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:32.487Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:32.493Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:32.497Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:32.498Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:32.704Z"
+  },
+  {
+    "guid": "be0f9e32-9781-4427-9cbf-4323e661ee13",
+    "name": "Consórcio Intermunicipal de Des. Sust. da Serra Gaúcha - CISGA",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:33.970Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:34.000Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:34.004Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:34.007Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:34.208Z"
+  },
+  {
+    "guid": "c5dc668b-99c8-4495-a40e-b95bc49448c1",
+    "name": "Consórcio CI Centro",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:35.408Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:35.409Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:35.507Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:35.513Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:35.729Z"
+  },
+  {
+    "guid": "f9a33179-1540-4b88-8282-837a0e2bdb4b",
+    "name": "Consórcio do Sertão do Araripe Pernambucano - CISAPE/PE",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:36.990Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:37.016Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:37.038Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:37.038Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:31:37.238Z"
+  },
+  {
+    "guid": "5b502d2f-fdc4-47ff-82ce-1787fa991606",
+    "name": "Consórcio de Saneamento da Bacia Hidrográfica do Rio dos Sinos/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:38.423Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:38.438Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:38.488Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:38.564Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:38.766Z"
+  },
+  {
+    "guid": "4d24370c-ef9f-4e88-9e39-28c490db2d05",
+    "name": "Direitos Minerários de Caulim em Rio Capim/PA",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:40.014Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:40.037Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:40.067Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:40.102Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:31:40.304Z"
+  },
+  {
+    "guid": "b4bc3470-79d3-410f-b838-aa5cf18f381a",
+    "name": "Consórcio do Agreste PE e Fronteiras - CONIAPE/PE",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:41.546Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:41.581Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:41.588Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:41.662Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:41.877Z"
+  },
+  {
+    "guid": "11627d9d-fafa-4874-b565-6b1a7a1c51d8",
+    "name": "Direitos Minerários de Carvão em Candiota/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:43.132Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:43.142Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:43.191Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:43.219Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:43.430Z"
+  },
+  {
+    "guid": "cf9dc634-599e-4050-96b7-7ecd8d07734b",
+    "name": "Distribuição de água e tratamento de esgotos-Arapiraca-Bloco D Alagoas",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:44.672Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:44.718Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:44.784Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:44.817Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:45.029Z"
+  },
+  {
+    "guid": "7f860e6a-2afa-4282-ad24-8df915d656ab",
+    "name": "Consórcio de Des. Sust. do Triângulo Mineiro e Alto Paranaíba-CIDES/MG",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:46.254Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:46.264Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:46.306Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:46.309Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:46.509Z"
+  },
+  {
+    "guid": "ca14fd28-c4c2-460e-8d2f-9db7d192565f",
+    "name": "Educação Infantil - Consórcio Intermunicipal CIM-AMFRI",
+    "description": "Projeto de estrutura&#231;&#227;o de PPP de unidades de educa&#231;&#227;o infantil em Munic&#237;pios do Cons&#243;rcio Intermunicipal Multifinalit&#225;rio da Associa&#231;&#227;o de Munic&#237;pios da Foz do Rio Itaja&#237; (CIM-AMFRI), de Santa Catarina.&#10;&#10;Os munic&#237;pios envolvidos no projeto s&#227;o: CAMBORI&#218; (Hab. 82.989), BALNE&#193;RIO CAMBORI&#218; (Hab. 142.295), LUIZ ALVES (Hab. 12.859), NAVEGANTES (Hab. 86.401), PORTO BELO (Hab. 27.688).",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:47.694Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:47.695Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:47.696Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:47.699Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:47.905Z"
+  },
+  {
+    "guid": "03476266-e9a1-4821-8179-8abd15903f7b",
+    "name": "EF-277 - Estrada de Ferro Paraná Oeste - Ferroeste",
+    "description": "O Projeto do Corredor Oeste de Exporta&#231;&#227;o &#8211; Nova Ferroeste, com extens&#227;o estimada de 1.567km",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:49.093Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:49.093Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:49.102Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:49.157Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:31:49.367Z"
+  },
+  {
+    "guid": "74c02f8a-2630-4d27-901a-3f097aa9fcc8",
+    "name": "Iluminação Pública - Consórcio CDS Litoral Sul (BA)",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:51.255Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:51.261Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:51.303Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:51.308Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:51.516Z"
+  },
+  {
+    "guid": "47fe6ece-74b6-4c8b-b835-43286ef737c0",
+    "name": "FTL - Ferrovia Transnordestina Logística S.A.",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:52.743Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:52.771Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:52.839Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:53.114Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:53.327Z"
+  },
+  {
+    "guid": "1b99e966-1b88-4bf6-a15a-087846ca2339",
+    "name": "Estudos para concessão de 1.600 km de rodovias",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:54.565Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:54.567Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:54.572Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:54.663Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:54.872Z"
+  },
+  {
+    "guid": "d0fe2313-19a2-4a22-be33-08e5166b4403",
+    "name": "Iluminação Pública - IP Joinville (SC)",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:56.073Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:56.091Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:56.109Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:56.136Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:56.345Z"
+  },
+  {
+    "guid": "b532914d-19ea-473b-bf11-e5ec436ac1f4",
+    "name": "Esgotamento Sanitário - Volta Redonda/RJ",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:57.552Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:57.580Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:57.613Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:31:57.616Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:31:57.821Z"
+  },
+  {
+    "guid": "6e5a93b6-154f-4c26-8a0d-1736a7795980",
+    "name": "Iluminação Pública - Camaçari (BA)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 299 mil habitantes que ser&#227;o diretamente impactados pelo projeto.",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:31:59.048Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:59.059Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:31:59.060Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:31:59.086Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:31:59.301Z"
+  },
+  {
+    "guid": "70cd0711-dd07-4560-9e0c-94e137aaf873",
+    "name": "Iluminação Pública - Consórcio Cimpajeú (PE)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 168 mil habitantes que ser&#227;o diretamente impactados pelo projeto. Em um arranjo regional organizado pelo Cons&#243;rcio Cimpaje&#250; contemplando 7 munic&#237;pios no Estado que buscam estruturar uma solu&#231;&#227;o conjunta para a melhoria dos servi&#231;os p&#250;blicos de ilumina&#231;&#227;o p&#250;blica de cada um de seus associados, sob a gest&#227;o do Cons&#243;rcio P&#250;blico.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP), conta com o assessoramento t&#233;cnico da CAIXA e as consultorias especializadas Accenture/Moys&#233;s &amp; Pires. A coordena&#231;&#227;o geral &#233; da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI), com o apoio do Minist&#233;rio das Cidades.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:00.511Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:00.515Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:00.519Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:00.525Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:00.727Z"
+  },
+  {
+    "guid": "9fd6f3dc-03f7-49df-b7f7-b5574d34b848",
+    "name": "Iluminação Pública - Consórcio CISAMAVI (SC)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 142 mil habitantes que ser&#227;o diretamente impactados pelo projeto. &#201; um arranjo regional organizado pelo Cons&#243;rcio CISAMAVI, contando com 14 munic&#237;pios que busca estruturar uma solu&#231;&#227;o conjunta para a melhoria dos servi&#231;os p&#250;blicos de ilumina&#231;&#227;o p&#250;blica de cada um de seus associados, sob a gest&#227;o do Cons&#243;rcio P&#250;blico.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP), conta com o assessoramento t&#233;cnico da CAIXA.&#160; A coordena&#231;&#227;o geral &#233; da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI), com o apoio do Minist&#233;rio das Cidades.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:01.978Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:01.983Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:01.984Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:01.987Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:02.201Z"
+  },
+  {
+    "guid": "c26d3a52-7554-4f45-93ab-721862bf9091",
+    "name": "Iluminação Pública - Porto Seguro (BA)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 167 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:03.426Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:03.437Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:03.446Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:03.500Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:03.711Z"
+  },
+  {
+    "guid": "83e93725-6e10-4b73-9d6f-f264d5e8d378",
+    "name": "Iluminação Pública - Valparaíso de Goiás (GO)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 198 mil habitantes que ser&#227;o diretamente impactados pelo projeto. &#10;O projeto est&#225; sendo estruturado pelo Cons&#243;rcio CDS Litoral Sul com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:04.902Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:04.913Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:04.931Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:04.939Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:05.143Z"
+  },
+  {
+    "guid": "e09fcf6f-2942-4621-b08b-4bde2021ff1a",
+    "name": "Iluminação Pública - Maranguape (CE)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 105 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:06.282Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:06.282Z"
+      },
+      "etapa13": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:06.284Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:06.341Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:32:06.552Z"
+  },
+  {
+    "guid": "ca3d8c8e-9551-47fd-9812-faf4a83b663a",
+    "name": "Iluminação Pública - Timon (MA)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 174 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:07.734Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:07.739Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:07.743Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:07.787Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:08.001Z"
+  },
+  {
+    "guid": "d5dd73b3-ddbb-4ece-a8e9-24c7a08cc5c1",
+    "name": "Iluminação Pública - São José dos Pinhais (PR)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 329 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:09.448Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:09.496Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:09.504Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:09.527Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:09.742Z"
+  },
+  {
+    "guid": "c2862786-45eb-4a2c-8e6d-3ad78ef15a8d",
+    "name": "Iluminação Pública - Santo Antônio de Jesus (BA)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 103 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:10.909Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:10.909Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:10.921Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:10.923Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:32:11.130Z"
+  },
+  {
+    "guid": "171582bb-1a48-4a92-afe3-8b885af237e8",
+    "name": "Iluminação Pública - Gravataí (RS)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 265 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:12.328Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:12.330Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:12.330Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:12.397Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:12.603Z"
+  },
+  {
+    "guid": "8c14418c-98ab-45d4-919f-24dddc0be03a",
+    "name": "Iluminação Pública - Colatina (ES)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 119 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:13.766Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:13.767Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:13.778Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:13.825Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:14.034Z"
+  },
+  {
+    "guid": "3cc782fb-74a8-4ff2-8c65-64a6c28c739a",
+    "name": "Hidrovia do Rio Madeira",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:15.197Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:15.198Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:15.207Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:15.210Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:15.421Z"
+  },
+  {
+    "guid": "6e4fe371-5274-402f-bc51-4cb35f898060",
+    "name": "ITG03 - Terminal  de granéis minerais sólidos no Porto de Itaguaí/RJ",
+    "description": "Arrendamento de terminal portu&#225;rio com &#225;rea de 22.564 m&#178; dedicado &#224; movimenta&#231;&#227;o e armazenagem de gran&#233;is s&#243;lidos. H&#225; a expectativa que o novo terminal alcance ao final do contrato a capacidade de armazenagem de 30.630t.",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:16.605Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:16.615Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:16.641Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:16.647Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:32:16.857Z"
+  },
+  {
+    "guid": "18aa7747-5c68-4d1d-9ffb-8883b23ac5f5",
+    "name": "ILH01 - Terminal múltiplo uso no Porto de Ilhéus/BA",
+    "description": "Terminal destinado &#224; movimenta&#231;&#227;o e armazenagem de gran&#233;is s&#243;lidos vegetais, gran&#233;is s&#243;lidos minerais, carga geral e a Terminal de Passageiros. O arrendamento tem a premissa de permitir ao terminal flexibilidade nas opera&#231;&#245;es com o intuito de trazer agilidade ao Porto, no que diz respeito &#224; presta&#231;&#227;o de servi&#231;os e atendimento &#224;s mais diversas cargas que possam ser movimentadas.",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:18.001Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:18.001Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:18.001Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:18.004Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:18.208Z"
+  },
+  {
+    "guid": "6ffaa27b-41f1-49cd-acba-4ade7bbe9f90",
+    "name": "Hospital Universitário de Canoas/RS",
+    "description": "Estudos de alternativas de parcerias para o Hospital Universit&#225;rio de Canoas/RS, Hospital Escola de Alta Complexidade, que atende aos mun&#237;cipes de Canoas, bem como a mais de 150 cidades do Estado do RS.",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:19.409Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:19.409Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:19.417Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:19.427Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:19.638Z"
+  },
+  {
+    "guid": "7e46d891-720e-48ff-bb15-c2ca910ae463",
+    "name": "Habitação para Locação Social - Recife/PE",
+    "description": "Projeto de estrutura&#231;&#227;o de PPP no setor de habita&#231;&#227;o para loca&#231;&#227;o social no Munic&#237;pio do Recife/PE.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:20.826Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:20.838Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:20.857Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:20.857Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:21.061Z"
+  },
+  {
+    "guid": "61765de5-03d1-44dd-b783-da346bd30963",
+    "name": "Fortaleza de Santa Cruz (Forte Orange), no Estado de Pernambuco",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:22.316Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:22.327Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:22.364Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:22.364Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:22.574Z"
+  },
+  {
+    "guid": "d5b67959-aa00-4ac7-97bd-b0d3c01ace0b",
+    "name": "Ferrovia EF-170/MT/PA (Ferrogrão)",
+    "description": "A EF-170, tamb&#233;m chamada de Ferrogr&#227;o, visa consolidar o novo corredor ferrovi&#225;rio de exporta&#231;&#227;o do Brasil pelo Arco Norte. A ferrovia conta com uma extens&#227;o de 933 km, conectando a regi&#227;o produtora de gr&#227;os do Centro-Oeste ao Estado do Par&#225;, desembocando no Porto de Miritituba/PA.",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:23.748Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:23.748Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:23.751Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:23.754Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:23.966Z"
+  },
+  {
+    "guid": "7aa3c61e-ff19-4804-ad09-7515d969c1f4",
+    "name": "IQI14 - Terminal de Combustíveis no Porto de Itaqui/MA",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:25.118Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:25.118Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:25.121Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:25.125Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:25.334Z"
+  },
+  {
+    "guid": "fe42f0b2-f4b9-4518-94ce-bb1f73434379",
+    "name": "Fazenda Pau D\\'Alho, localizada no estado de São Paulo",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:26.487Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:26.487Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:26.487Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:26.493Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:26.704Z"
+  },
+  {
+    "guid": "5834280d-f76d-45c3-9d4b-c223179d9c9e",
+    "name": "Floresta Nacional de Brasília/DF",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:27.859Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:27.861Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:27.867Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:27.919Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:28.133Z"
+  },
+  {
+    "guid": "edd8e91e-71c1-4658-8cb9-9de6cae06522",
+    "name": "Educação Infantil - Município do Recife/PE",
+    "description": "Projeto de estrutura&#231;&#227;o de PPP de unidades de educa&#231;&#227;o infantil no Munic&#237;pio do Recife/PE.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:29.287Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:29.287Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:29.293Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:29.299Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:29.502Z"
+  },
+  {
+    "guid": "21d6e900-f6d0-4984-9856-1ae601d3b0ad",
+    "name": "Eficientiza&#231;ao Energ&#233;tica - Pal&#225;cios do Governo Federal",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:30.661Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:30.663Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:30.669Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:30.720Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:30.920Z"
+  },
+  {
+    "guid": "dd8b3b0e-6b00-4245-9578-70c4ae356d45",
+    "name": "Iluminação Pública - São Pedro da Aldeia (RJ)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 104 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:32.110Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:32.113Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:32.114Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:32.118Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:32.333Z"
+  },
+  {
+    "guid": "6b39afed-0f54-4394-9f9e-9f035c18d4b4",
+    "name": "Iluminação Pública - Saquarema (RJ)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 89 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:33.494Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:33.500Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:33.502Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:33.547Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:33.748Z"
+  },
+  {
+    "guid": "a87b1857-97e6-48b8-9ee7-72061e7b5b3c",
+    "name": "Iluminação Pública - Francisco Beltrão (PR)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 96 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:34.902Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:34.903Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:34.903Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:34.995Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:35.200Z"
+  },
+  {
+    "guid": "42887213-1969-471b-8f23-b3fcfb382fd5",
+    "name": "IQI16 – Terminal de granel sólido mineral no Porto de Itaqui/MA",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:36.375Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:36.375Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:36.377Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:36.381Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:36.585Z"
+  },
+  {
+    "guid": "54506e95-c2d9-4a74-b70c-99f379c6b432",
+    "name": "Hidrovia de Lagoa Mirim e do Canal de São Gonçalo/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:37.779Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:37.785Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:37.798Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:37.799Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:38.002Z"
+  },
+  {
+    "guid": "7fa72dfe-7f6b-4e1a-bd47-3b525725246a",
+    "name": "Hidrovia do Tocantins",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:39.162Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:39.167Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:39.213Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:39.221Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:39.436Z"
+  },
+  {
+    "guid": "3bfaea01-7c1e-400c-9fe2-df6f406edce8",
+    "name": "Ferrovia Centro Atlântico S.A. - FCA",
+    "description": "Trata-se de uma prorroga&#231;&#227;o antecipada do contrato.  Os benef&#237;cios esperados a partir da prorroga&#231;&#227;o do contrato atual, por mais 30 anos, ser&#227;o a obrigatoriedade de investimentos em seguran&#231;a e o aumento de capacidade, que ser&#227;o pactuados pela Ag&#234;ncia Nacional de Transportes Terrestres (ANTT).",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:40.592Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:40.601Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:40.648Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:40.682Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:40.893Z"
+  },
+  {
+    "guid": "4c2b7f32-e418-4926-8bf0-d91e3f81bfcb",
+    "name": "FTC - Ferrovia Tereza Cristina S.A.",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:42.075Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:42.075Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:42.082Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:42.186Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:42.389Z"
+  },
+  {
+    "guid": "85f471ce-4876-403e-a401-9e0eedd5f358",
+    "name": "Habitação para Locação Social - Campo Grande/MS",
+    "description": "Projeto de estrutura&#231;&#227;o de PPP no setor de habita&#231;&#227;o para loca&#231;&#227;o social no Munic&#237;pio de Campo Grande/MS",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:43.561Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:43.562Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:43.562Z"
+      },
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:43.580Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:43.792Z"
+  },
+  {
+    "guid": "c696a4bf-f8eb-486f-9cb5-673629bbbf95",
+    "name": "Etapas 3 e 4 do Projeto de Irrigação Jaíba/MG",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:44.954Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:44.956Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:45.023Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:45.050Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:45.253Z"
+  },
+  {
+    "guid": "350f8fce-2b7c-457d-831a-d005c3a6764d",
+    "name": "Iluminação Pública - São Félix do Xingu (PA)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 65 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:46.396Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:46.400Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:46.405Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:46.405Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:46.605Z"
+  },
+  {
+    "guid": "a6bbd1ae-29cd-4fcb-9408-e1f3f99a6c60",
+    "name": "Fortaleza de Santa Catarina, localizada no Estado da Paraíba",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:47.784Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:47.788Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:47.793Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:47.821Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:48.031Z"
+  },
+  {
+    "guid": "bf3ca782-808c-4976-8571-669b139f6eb2",
+    "name": "Floresta Nacional de Ipanema/SP",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:49.181Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:49.187Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:49.276Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:49.278Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:49.488Z"
+  },
+  {
+    "guid": "1665c3f7-da9e-414c-b03a-4230d321cde9",
+    "name": "Iluminação Pública - Nova Friburgo (RJ)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 189 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos da CAIXA. Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento de consultoria externa e da CAIXA, em coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:50.673Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:50.682Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:50.732Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:50.744Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:50.953Z"
+  },
+  {
+    "guid": "ee900869-0557-47a0-8fb4-cfe20c03b738",
+    "name": "Manejo Sustent&#225;vel na Flona de Mulata/PA",
+    "description": "Concess&#227;o florestal para a pr&#225;tica de manejo florestal sustent&#225;vel voltado &#224; explora&#231;&#227;o econ&#244;mica de produtos florestais madeireiros e n&#227;o madeireiros em Unidades de Manejo Florestal (UMF) na Floresta Nacional de Mulata/PA.",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:52.118Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:52.126Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:52.153Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:52.173Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:52.376Z"
+  },
+  {
+    "guid": "afa5c377-0d31-492c-8ca4-54df7f73c284",
+    "name": "Iluminação Pública - Vitória de Santo Antão (PE)",
+    "description": "A PPP de Ilumina&#231;&#227;o P&#250;blica representa um passo importante na busca cont&#237;nua das administra&#231;&#245;es municipais por melhorias significativas na qualidade de vida dos mais de 134 mil habitantes que ser&#227;o diretamente impactados pelo projeto.&#10;O projeto est&#225; sendo estruturado com recursos do Fundo de Estrutura&#231;&#227;o de Projetos (FEP/CAIXA). Al&#233;m disso, a estrutura&#231;&#227;o tamb&#233;m conta com o assessoramento da CAIXA e coordena&#231;&#227;o da Secretaria Especial do Programa de Parcerias e Investimentos (SEPPI).",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:53.564Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:53.576Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:32:53.587Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:53.624Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:53.826Z"
+  },
+  {
+    "guid": "98b53504-4b6a-4df5-ae4b-1482a73804c2",
+    "name": "PPP Novo Hospital do GHC",
+    "description": "Estudos de alternativas de parcerias para adequa&#231;&#245;es das estruturas atuais, constru&#231;&#227;o, reforma, amplia&#231;&#227;o das instala&#231;&#245;es e melhorias da gest&#227;o dos servi&#231;os n&#227;o assistenciais de unidades hospitalares do Grupo Hospitalar Concei&#231;&#227;o - GHC em Porto Alegre/RS.",
+    "details": {
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:55.009Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:55.016Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:55.032Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:55.066Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:55.276Z"
+  },
+  {
+    "guid": "9ad5d137-101e-40ec-8413-3f5cbfd3bf01",
+    "name": "Leil&#227;o de Reserva de Capacidade, na forma de Pot&#234;ncia, de 2026",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:56.468Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:56.468Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:56.468Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:56.470Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:32:56.680Z"
+  },
+  {
+    "guid": "4b423463-877c-4867-b94b-2083d8972cc6",
+    "name": "Leilão de Energia Nova \\\\",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:57.872Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:57.873Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:32:57.881Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:57.933Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:32:58.134Z"
+  },
+  {
+    "guid": "decb098a-6db6-434e-9590-f2439f6994b7",
+    "name": "PISF - Projeto de Integração do Rio São Francisco",
+    "description": "O Projeto de Integra&#231;&#227;o do Rio S&#227;o Francisco com Bacias Hidrogr&#225;ficas do Nordeste Setentrional - PISF &#233; um projeto de infraestrutura h&#237;drica que capta &#225;gua no Rio S&#227;o Francisco aduzindo-a para bacias hidrogr&#225;ficas do nordeste setentrional nos estados do Cear&#225;, Para&#237;ba, Pernambuco e Rio Grande do Norte.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:59.316Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:59.327Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:32:59.363Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:32:59.364Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:32:59.566Z"
+  },
+  {
+    "guid": "858076ed-4fba-44fc-8b6d-055c2a8011cd",
+    "name": "MAC14 - Terminal para toras e cavaco de madeira no Porto de Maceió/AL",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:00.744Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:00.749Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:00.796Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:00.796Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:01.004Z"
+  },
+  {
+    "guid": "a70d583a-fe42-44f1-8637-1ab219889a70",
+    "name": "Museu Marítimo do Brasil",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:02.177Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:02.209Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:02.209Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:02.213Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:02.420Z"
+  },
+  {
+    "guid": "96f67bdb-0e8c-4e40-ae00-cf717da5e633",
+    "name": "Manejo Sustent&#225;vel na Flona de Anau&#225;",
+    "description": "Concess&#227;o florestal para a pr&#225;tica de manejo florestal sustent&#225;vel voltado &#224; explora&#231;&#227;o econ&#244;mica de produtos florestais madeireiros e n&#227;o madeireiros em Unidades de Manejo Florestal (UMF) na Floresta Nacional de Anau&#225;/RR.",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:03.610Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:03.611Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:03.611Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:03.638Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:03.840Z"
+  },
+  {
+    "guid": "913ebfc5-dbff-4617-98b7-f2123d80cd6f",
+    "name": "PAR15 - Terminal de granel vegetal no Porto de Paranaguá/PR",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:05.010Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:05.015Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:05.017Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:05.080Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:05.287Z"
+  },
+  {
+    "guid": "07fb13d8-0616-41f8-ab50-99c1c6669fd7",
+    "name": "POA26 - Terminal de cargas multipropósito no Porto de Porto Alegre/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:06.448Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:06.500Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:06.502Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:06.528Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:06.735Z"
+  },
+  {
+    "guid": "4a9e98e6-ec2e-4131-bd7f-e25a3530c678",
+    "name": "Operação de Voos Panorâmicos - Parque Nacional do Iguaçu/PR",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:07.898Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:07.908Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:07.927Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:07.936Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:08.138Z"
+  },
+  {
+    "guid": "74d5752e-fd5d-4962-a848-b13a8b56bece",
+    "name": "PAR03 - granéis sólidos minerais Porto de Paranaguá/PR",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:09.354Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:09.376Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:09.380Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:09.446Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:09.657Z"
+  },
+  {
+    "guid": "a6643220-971e-4868-be0f-cecc6b79cef3",
+    "name": "Malha Oeste (relicitação)",
+    "description": "Relicita&#231;&#227;o do contrato de concess&#227;o da Rumo Malha Oeste.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:10.832Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:10.842Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:10.858Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:10.895Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:11.101Z"
+  },
+  {
+    "guid": "e7878efe-a724-4965-928d-d0ffbea1929f",
+    "name": "Lotes Nordeste",
+    "description": "NE1: BR-101/235/BA/SE Feira de Santana-Aracaju-Itabaiana - 339 km&#10;NE2: BR-101/SE/AL/PE Aracaju-Recife - 482 km&#10;NE3: BR-232/PE Recife-Salgueiro - 508 km&#10;NE4: BR-101/230/PE/PB Recife-Jo&#227;o Pessoa-Patos - 410 km&#10;NE5: BR-101/304/116/PB/RN/CE Jo&#227;o Pessoa-Natal-Fortaleza - 732 km",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:12.343Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:12.343Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:12.345Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:12.348Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:12.557Z"
+  },
+  {
+    "guid": "22044c07-aa2f-42ee-9331-2628dc64fc6a",
+    "name": "NAT01 - terminal de graneis s&#243;lidos minerais no porto de Natal",
+    "description": "A &#225;rea de arrendamento denominada NAT01 poosui a finalidade de movimentar e de armazenar gran&#233;is s&#243;lidos minerais de exporta&#231;&#227;o, notadamente min&#233;rio de ferro, a &#225;rea NAT01 tem dimens&#227;o de 20.251,32 m2.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:13.739Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:13.753Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:13.787Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:13.790Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:14.002Z"
+  },
+  {
+    "guid": "32062dec-f6dd-4728-a751-33d810db8921",
+    "name": "POA01 - Terminal de granel sólido vegetal no Porto de Porto Alegre/RS",
+    "description": "Trata-se de &#225;rea brownfield, localizada no Porto de Porto Alegre/RS, para explora&#231;&#227;o de empreendimento voltado &#224; movimenta&#231;&#227;o e armazenagem de gran&#233;is s&#243;lidos vegetais.",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:15.228Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:15.262Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:15.275Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:15.280Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:15.481Z"
+  },
+  {
+    "guid": "2cad717e-cba2-4998-8eda-2b0a0af28641",
+    "name": "MUC03 - Terminal de Granel Sólido do Porto do Mucuripe/CE",
+    "description": "O projeto conceitual prev&#234; a recep&#231;&#227;o e estocagem de coque de petr&#243;leo e movimenta&#231;&#227;o de enxofre e de fertilizantes.",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:16.685Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:16.685Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:16.686Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:16.797Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:17.010Z"
+  },
+  {
+    "guid": "714677e9-777b-42d2-99a1-a25823a6c556",
+    "name": "Imóveis não operacionais da CEASAMINAS",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:18.251Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:18.254Z"
+      },
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:18.290Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:18.295Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:18.507Z"
+  },
+  {
+    "guid": "5cf20be4-cb5b-457d-9f2f-16f08041dbac",
+    "name": "Leilão de Reserva de Capacidade de Potencia – Armazenamento   Baterias",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:19.704Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:19.704Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:19.720Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:19.763Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:19.977Z"
+  },
+  {
+    "guid": "8c70887b-fd2d-4d28-8fb0-eb2d61a78c8a",
+    "name": "Palacete Carvalho Motta - Fortaleza/CE",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:21.156Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:21.159Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:21.174Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:21.206Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:21.417Z"
+  },
+  {
+    "guid": "4226a865-eb3a-458a-8d9e-5325c4e72954",
+    "name": "Manejo Sustent&#225;vel na Flona do Tapirap&#233;-Aquiri/PA",
+    "description": "Concess&#227;o florestal para a pr&#225;tica de manejo florestal sustent&#225;vel voltado &#224; explora&#231;&#227;o econ&#244;mica de produtos florestais madeireiros e n&#227;o madeireiros em Unidades de Manejo Florestal (UMF) na Floresta Nacional do Tapirap&#233;-Aquiri/PA.",
+    "details": {
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:22.581Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:22.581Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:22.582Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:22.588Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:22.800Z"
+  },
+  {
+    "guid": "7779bcee-3fe1-41f6-9b4b-5b1fd84b2989",
+    "name": "MUC59 - Terminal de granel líquido no Porto de Mucuripe/CE",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:23.945Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:23.952Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:23.963Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:24.000Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:24.201Z"
+  },
+  {
+    "guid": "27e366d0-bbce-4b04-9d0d-bc66d0f3482c",
+    "name": "PAR14 - Terminal de granel vegetal no Porto de Paranaguá/PR",
+    "description": "Arrendamento de terminal portu&#225;rio com &#225;rea de 82.436 m&#178; dedicado &#224; movimenta&#231;&#227;o e armazenagem de soja, farelo de soja, milho, a&#231;&#250;car, trigo, malte e cevada, principalmente.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:25.392Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:25.398Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:25.435Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:25.439Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:33:25.642Z"
+  },
+  {
+    "guid": "55bc53d9-5f86-4b59-9e82-fdd2c110faf0",
+    "name": "MUC04 - Terminal de contêineres no Porto de Fortaleza/CE",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:26.810Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:26.810Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:26.818Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:26.818Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:27.022Z"
+  },
+  {
+    "guid": "4a6169ec-387d-48e7-a14a-451e59b97f31",
+    "name": "MCP01 - Terminal para cavaco de madeira no Porto de Santana/AP",
+    "description": "A &#225;rea objeto do arrendamento &#233; atualmente um brownfield com estruturas existentes e est&#225; localizada dentro do Porto Organizado de Santana, possuindo uma superf&#237;cie total de 30.546,00 m&#178;. O empreendimento disp&#245;e de um p&#225;tio amplo onde os cavacos de madeira s&#227;o empilhados e armazenados com capacidade est&#225;tica total de 70.000 toneladas, segundo o Plano Mestre do Porto de Santana (2017).",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:28.180Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:28.181Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:28.191Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:28.194Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:28.404Z"
+  },
+  {
+    "guid": "eb6eb6bd-cdaf-445d-8a4d-2736f7cef193",
+    "name": "Instituto Nacional do Câncer - INCA",
+    "description": "Estudos de alternativas de parcerias para adequa&#231;&#245;es das&#160; estruturas atuais, constru&#231;&#227;o, reforma, amplia&#231;&#227;o das instala&#231;&#245;es e melhorias da gest&#227;o dos servi&#231;os do Campus Instituto Nacional de C&#226;ncer (INCA/MS), vinculado ao Minist&#233;rio da Sa&#250;de.",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:29.594Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:29.597Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:29.605Z"
+      },
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:29.659Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:29.865Z"
+  },
+  {
+    "guid": "2256fe19-a38f-4050-851c-23ab4d8f8dad",
+    "name": "Irrigação da Zona de Influência do Canal Adutor do Sertão Alagoano",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:31.073Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:31.074Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:31.080Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:31.081Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:31.287Z"
+  },
+  {
+    "guid": "e7eaec7b-30b7-4f7c-9334-6b4b6ea5df70",
+    "name": "Leilão de Suprimento aos sistemas Isolados",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:32.502Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:32.506Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:32.507Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:32.583Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:33:32.794Z"
+  },
+  {
+    "guid": "59ea1432-1bd8-4574-870e-5b183a174340",
+    "name": "Museu Histórico do Exército Brasileiro e Forte de Copacabana",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:33.954Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:33.955Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:33.969Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:34.015Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:34.222Z"
+  },
+  {
+    "guid": "1acf47a4-2d59-47a6-b2ac-390b33984d2f",
+    "name": "Parque Nacional da Serra da Bodoquena /MS",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:35.535Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:35.574Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:35.581Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:35.635Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:35.843Z"
+  },
+  {
+    "guid": "44cd4078-42b0-4a83-8955-efa31cdb2130",
+    "name": "Platôs de Guadalupe/PI",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:37.148Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:37.148Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:37.148Z"
+      },
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:37.152Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:33:37.362Z"
+  },
+  {
+    "guid": "464b9e5c-896c-4b9b-a33f-c07e26209911",
+    "name": "Parque Nacional do Caparaó/MG/ES",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:38.595Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:38.599Z"
+      },
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:38.638Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:38.994Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:39.199Z"
+  },
+  {
+    "guid": "75b94094-15f2-4631-b2e5-6c922d59e162",
+    "name": "RDJ10 -Terminal de cargas gerais  no Porto do Rio de Janeiro/RJ",
+    "description": "O Terminal RDJ10 &#233; uma instala&#231;&#227;o portu&#225;ria destinada &#224; movimenta&#231;&#227;o e armazenagem de cargas gerais n&#227;o-conteinerizadas, especialmente produtos sider&#250;rgicos, localizada no Porto Organizado do Rio de Janeiro (RJ).",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:40.423Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:40.426Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:40.435Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:40.455Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:40.667Z"
+  },
+  {
+    "guid": "aff145d8-d9d6-4a40-87a9-0e75318cadf0",
+    "name": "Porto Organizado de Itajaí/SC",
+    "description": "Conces&#227;o do canal de acesso.",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:41.954Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:41.954Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:42.008Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:42.019Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:33:42.222Z"
+  },
+  {
+    "guid": "6c193c44-0387-4409-88f7-7434ce1ee7c2",
+    "name": "Res&#237;duos S&#243;lidos Urbano - Estado do Amap&#225;",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:43.419Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:43.420Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:43.458Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:43.458Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:43.663Z"
+  },
+  {
+    "guid": "7c320630-e604-473f-8bdc-9dd3c60a0a98",
+    "name": "REC04 - Terminal de granel sólido e carga geral no Porto de Recife/PE",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:44.827Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:44.829Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:44.849Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:44.875Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:33:45.087Z"
+  },
+  {
+    "guid": "84527695-dd24-42bc-a8db-a5e8830a4eaf",
+    "name": "Restaura&#231;&#227;o Florestal na Rebio Nascentes da Serra do Cachimbo/PA",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 342,2 mil hectares, dos quais 36.647,91 hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:46.302Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:46.345Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:46.365Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:46.413Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:46.624Z"
+  },
+  {
+    "guid": "651a153a-1a68-46dd-b985-27d4e7a14fe6",
+    "name": "Presídio - Estado de Santa Catarina",
+    "description": "Projeto de estrutura&#231;&#227;o de PPP administrativa dos servi&#231;os de apoio &#224; opera&#231;&#227;o, incluindo a constru&#231;&#227;o, equipagem, manuten&#231;&#227;o e servi&#231;os de apoio &#224; opera&#231;&#227;o do complexo prisional de Blumenau/SC.&#10;&#10;Constru&#231;&#245;es: Retrofit da Unidade Existente, 02 novas unidades de regime fechado, 1 nova unidade de regime semi-aberto.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:47.896Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:47.897Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:47.900Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:47.913Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:48.115Z"
+  },
+  {
+    "guid": "90a36e6f-baa2-4773-ab9d-0118b97f7ccb",
+    "name": "Rodovias Integradas do Paraná - lote 4",
+    "description": "BR-272/369/376 e PR-182/272/317/323/444/862/897/986",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:49.329Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:49.342Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:49.384Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:49.388Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:33:49.594Z"
+  },
+  {
+    "guid": "b09ae85e-186a-4bf9-9fa6-1767ae6f582b",
+    "name": "RDJ07 - Terminal de apoio offshore no Porto do Rio de Janeiro/RJ",
+    "description": "A &#225;rea de arrendamento denominada RDJ07 est&#225; localizada dentro da poligonal do Porto Organizado do Rio de Janeiro e ser&#225; destinada ao apoio log&#237;stico offshore.",
+    "details": {
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:50.795Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:50.817Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:50.845Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:50.847Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:33:51.054Z"
+  },
+  {
+    "guid": "153a704a-193b-4275-be55-14e7f5dfc7f3",
+    "name": "Restaura&#231;&#227;o Florestal na Flona de Itaituba II/PA",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 412 mil hectares, dos quais 15.330,85 hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:52.267Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:52.268Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:52.273Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:52.287Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:52.487Z"
+  },
+  {
+    "guid": "5a877046-b488-496a-870d-60bc12c7a02d",
+    "name": "Restaura&#231;&#227;o Florestal no Parna da Serra do Pardo/PA",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 445,4 mil hectares, dos quais 26.706,93 hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:53.679Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:53.689Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:53.697Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:53.761Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:53.964Z"
+  },
+  {
+    "guid": "30669a87-2299-40d5-8d0a-3dbc127720e1",
+    "name": "Rumo - Malha Sul",
+    "description": "Prorroga&#231;&#227;o antecipada do contrato de concess&#227;o",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:55.119Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:55.120Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:55.175Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:55.232Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:55.442Z"
+  },
+  {
+    "guid": "191a04ea-53d0-48ae-a139-b4b94bc569f1",
+    "name": "Projeto Poço Transparente",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:56.633Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:56.649Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:33:56.692Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:56.701Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:33:56.901Z"
+  },
+  {
+    "guid": "d98588a1-06ee-4424-998a-47280cfdcb17",
+    "name": "RIG25 – Terminal de granel líquido no Porto de Rio Grande/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:58.144Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:33:58.158Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:58.179Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:33:58.185Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:58.395Z"
+  },
+  {
+    "guid": "4211d891-42fc-4146-8380-ffb95a60eb7e",
+    "name": "Restaura&#231;&#227;o Florestal no Parna dos Campos Amaz&#244;nicos/AM/MT/RO",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 961,3 mil hectares, dos quais 6.948,34 hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:59.599Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:59.600Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:59.602Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:33:59.605Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:33:59.811Z"
+  },
+  {
+    "guid": "0d1dbb0e-ba78-45d3-87b0-2b27bf0708aa",
+    "name": "RDJ06A - Terminal de granel líquido no Porto do Rio de Janeiro/RJ",
+    "description": "Dedicado &#224; movimenta&#231;&#227;o e armazenagem de granel l&#237;quido, em acordo com o Plano de Desenvolvimento e Zoneamento - PDZ do Porto Organizado do Rio de Janeiro/RJ. O terminal possui uma &#225;rea de 13.700 m&#178; e uma capacidade est&#225;tica de 22.000 t.&#10;&#10;A &#225;rea de arrendamento ser&#225; utilizada para a explora&#231;&#227;o de empreendimento voltado ao apoio retro portu&#225;rio &#224;s navega&#231;&#245;es de longo curso e cabotagem, com recebimento e entrega por via rodovi&#225;ria e a armazenagem de gran&#233;is l&#237;quidos, especialmente &#243;leos b&#225;sicos.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:01.048Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:01.102Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:01.102Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:01.108Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:01.319Z"
+  },
+  {
+    "guid": "f064cc2f-470e-4bfa-bdb8-9ec3e1ee88db",
+    "name": "Projeto Santa Brígida",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:02.629Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:02.629Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:02.638Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:02.675Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:02.880Z"
+  },
+  {
+    "guid": "734bc6af-77a2-4447-a967-ce5143be0e6c",
+    "name": "Rodovias de Santa Catarina",
+    "description": "As rodovias federais e estaduais de SC fazem a interliga&#231;&#227;o entre v&#225;rios estados e pa&#237;ses do Mercosul. Pelas Rodovias integrantes do estudo circulam produtos destinados aos principais portos da regi&#227;o, Paranagu&#225;/PR, Itaja&#237;/SC, Imbituba/SC, Navegantes/SC, S&#227;o Francisco do Sul/SC e Santos/SP, al&#233;m de abastecer com produtos cidades importantes dos estados de Santa Catarina, Paran&#225;, Rio Grande do Sul e pa&#237;ses membros do Mercosul. Tamb&#233;m se destaca o fluxo destinado ao turismo, tanto interno quanto do exterior, com destino &#224;s praias catarinenses.",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:04.151Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:04.191Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:04.234Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:04.236Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:04.451Z"
+  },
+  {
+    "guid": "c2c9e296-6790-49b0-bc64-8d22e51de904",
+    "name": "Restaura&#231;&#227;o Florestal na Flona de Altamira/PA",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 327,1 mil hectares, dos quais 32.587,72 hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:05.679Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:05.692Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:05.754Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:05.755Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:05.967Z"
+  },
+  {
+    "guid": "d71f7fad-3824-411b-9747-35cdb603747e",
+    "name": "Parque Nacional de Brasília/DF",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:07.146Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:07.154Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:07.192Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:07.203Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:07.416Z"
+  },
+  {
+    "guid": "9010ae8c-9060-43b2-8c93-7ef86e02b192",
+    "name": "Parque Nacional da Serra dos Órgãos/RJ",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:08.771Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:08.887Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:08.919Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:08.942Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:09.145Z"
+  },
+  {
+    "guid": "9e65bed1-a689-4502-be7a-d9478e64cc21",
+    "name": "Parque Nacional de Anavilhanas/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:10.412Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:10.447Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:10.447Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:10.469Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:10.684Z"
+  },
+  {
+    "guid": "218fbb22-0e18-43df-bf17-5450bdd3c0dc",
+    "name": "Projeto Pontal - Mancha 20",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:11.939Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:11.952Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:11.980Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:11.987Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:12.201Z"
+  },
+  {
+    "guid": "b86af630-941d-43a4-9f77-8968311982da",
+    "name": "Parque Nacional do Jaú/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:13.379Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:13.381Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:13.442Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:13.514Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:13.716Z"
+  },
+  {
+    "guid": "8467bf36-e121-463f-b997-0a39002e6498",
+    "name": "Rodovias Integradas do Paraná - lote 5",
+    "description": "BR-158/163/369/467 e PR-317",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:14.897Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:14.904Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:14.966Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:14.981Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:34:15.185Z"
+  },
+  {
+    "guid": "97d471b7-9648-49ab-ac1f-ea1710e084fe",
+    "name": "RDJ11 - Terminal de carga geral no Porto do Rio de Janeiro/RJ",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:16.338Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:16.347Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:16.386Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:16.447Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:34:16.652Z"
+  },
+  {
+    "guid": "390087b5-b5cc-48f9-b29e-be23cd49df47",
+    "name": "Unidades de Manejo na Flona de Pau-Rosa/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:17.821Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:17.828Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:17.846Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:17.914Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:18.127Z"
+  },
+  {
+    "guid": "c22453be-53b3-42e8-993c-044445988e3b",
+    "name": "Saneamento básico - Estado de Minas Gerais",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:20.728Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:20.737Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:20.773Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:20.774Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:20.980Z"
+  },
+  {
+    "guid": "7f935c06-6680-4853-8f8a-ca142c7a2e93",
+    "name": "SSB01 - Terminal de carga geral no Porto de São Sebastião/SP",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:22.199Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:22.214Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:22.269Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:22.306Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:22.508Z"
+  },
+  {
+    "guid": "dde7ec88-7ae3-48b0-81ae-4f84c82653ab",
+    "name": "Tabuleiros de São Bernardo/MA",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:23.707Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:23.713Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:23.763Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:23.817Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:24.023Z"
+  },
+  {
+    "guid": "d9a3e730-68e0-4064-b6f0-437ccb2bd32a",
+    "name": "SFS201 - Terminal de carga geral no Porto de São Francisco do Sul/SC",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:25.222Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:25.222Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:25.230Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:25.290Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:25.503Z"
+  },
+  {
+    "guid": "c147867e-e4e5-4f88-82f7-2465578ba171",
+    "name": "Tabuleiros Litorâneos/PI",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:26.686Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:26.700Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:26.729Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:26.792Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:26.998Z"
+  },
+  {
+    "guid": "71ba7c56-3e8e-47e8-bbf6-c5e8b7cc6b6b",
+    "name": "Unidades de Manejo na Flona de Balata-Tufari/AM",
+    "description": "A Definir, teste source 7- treinamento",
+    "details": {
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:28.222Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:28.226Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:28.234Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:28.265Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:28.473Z"
+  },
+  {
+    "guid": "bb99829c-ee0f-4be9-850e-e6c8a8b9ac3c",
+    "name": "Saneamento básico - Município de Porto Alegre/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:29.638Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:29.642Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:29.647Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:29.714Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:29.925Z"
+  },
+  {
+    "guid": "130c9dbb-4dc6-4069-857f-cf310e08b519",
+    "name": "Socioeducativo - Estado de Minas Gerais",
+    "description": "Projeto de estrutura&#231;&#227;o de parceria p&#250;blico-privada para constru&#231;&#227;o, implanta&#231;&#227;o, opera&#231;&#227;o e manuten&#231;&#227;o de 2 (duas) unidades de atendimento socioeducativo no Estado de Minas Gerais, sendo uma unidade localizada no Munic&#237;pio de Betim e outra localizada no Munic&#237;pio de Santana do Para&#237;so.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:31.120Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:31.121Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:31.123Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:31.137Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:34:31.349Z"
+  },
+  {
+    "guid": "6bc82e39-143a-417c-90fa-23b31dbb7bdb",
+    "name": "STS53 - Armazenagem de granéis minerais no Porto de Santos/SP",
+    "description": "A &#225;rea de arrendamento STS53 ser&#225; utilizada para armazenagem e movimenta&#231;&#227;o portu&#225;ria de cargas gran&#233;is, pelos tipos de navega&#231;&#227;o longo curso e cabotagem, no sentido de desembarque",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:32.493Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:32.496Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:32.506Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:32.605Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:32.816Z"
+  },
+  {
+    "guid": "a06011b4-bc21-4fa7-a9e8-48674a98e57a",
+    "name": "STS33 - Terminal de carga geral no Porto de Santos/SP",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:33.952Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:33.958Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:33.973Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:34.012Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:34.220Z"
+  },
+  {
+    "guid": "b84d54bb-9558-4e1a-8c8a-689ba18b82b8",
+    "name": "TRENSURB: Metrô da Região Metropolitana de Porto Alegre/RS",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:35.390Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:35.404Z"
+      },
+      "etapa2": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:35.432Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:35.469Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:35.680Z"
+  },
+  {
+    "guid": "0a54a5c1-e5bc-442c-bec5-0d1b02e70852",
+    "name": "TGSFS-  Terminal de granel vegetal no Porto de São Francisco do Sul/SC",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:36.820Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:36.822Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:36.828Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:36.880Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:37.084Z"
+  },
+  {
+    "guid": "6aae4b5e-e0b6-42ac-ab48-d989bed57039",
+    "name": "Saneamento básico - São Gonçalo do Amarante/RN",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:38.241Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:38.297Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:38.309Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:38.352Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:38.559Z"
+  },
+  {
+    "guid": "5bab5aaf-029c-4f53-aeb9-dd613c18341e",
+    "name": "Terminal Pesqueiro de Natal/RN",
+    "description": "Atualmente, o TPP de Natal n&#227;o se encontra em opera&#231;&#227;o, e parte de seu cais &#233; utilizado, de forma prec&#225;ria, como local de reparo de embarca&#231;&#245;es. O terminal n&#227;o possui entrada independente, utilizando as instala&#231;&#245;es da CBTU para acesso. No &#226;mbito da estrutura&#231;&#227;o da concess&#227;o do TPP Natal, foi concebida junto &#224; CBTU solu&#231;&#227;o adequada a ser implantada pelo futuro concession&#225;rio.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:39.722Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:39.738Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:39.778Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:39.787Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:34:39.999Z"
+  },
+  {
+    "guid": "1dc2fb2a-5acf-4492-9b58-0f22eed0256e",
+    "name": "Socioeducativo - Estado de Santa Catarina",
+    "description": "Projeto de estrutura&#231;&#227;o de parceria p&#250;blico-privada para constru&#231;&#227;o, implanta&#231;&#227;o e opera&#231;&#227;o de unidade de atendimento socioeducativo no Estado de Santa Catarina.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:41.194Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:41.196Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:41.213Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:41.262Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:34:41.470Z"
+  },
+  {
+    "guid": "6b5a70d0-8239-4e4a-9a82-282c5b5b5b6f",
+    "name": "Terminal Pesqueiro de Santos/SP",
+    "description": "Santos e Guaruj&#225; s&#227;o os principais destinos da pesca extrativa da pesca de S&#227;o Paulo e no per&#237;odo de 2017 a 2019 o PMAP registrou o descarregamento de, aproximadamente, 10 mil toneladas anuais, das quais a pesca industrial foi respons&#225;vel por 85% da captura.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:42.768Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:42.773Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:42.791Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:42.826Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:34:43.030Z"
+  },
+  {
+    "guid": "2b2ceaa5-4d64-4e4b-bd66-2e6eb7004be9",
+    "name": "Saneamento Básico - Estado de Pernambuco",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:44.184Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:44.225Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:44.256Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:44.293Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:34:44.500Z"
+  },
+  {
+    "guid": "6e20e506-c99a-4bee-9575-1ca7a0b35c5c",
+    "name": "Saneamento básico - Estado de Rondônia",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:45.680Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:45.683Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:45.702Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:45.750Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:45.955Z"
+  },
+  {
+    "guid": "510de519-01fb-4129-ae7f-88e05fb446fe",
+    "name": "Santa Cruz do Apodi/RN",
+    "description": "O per&#237;metro de irriga&#231;&#227;o Santa Cruz do Apodi, localizado nos munic&#237;pios de Apodi e Felipe Guerra, na regi&#227;o oeste do Rio Grande do Norte, a 76 km de Mossor&#243;, 354 km de Natal e 321 km de Fortaleza.&#10;O projeto &#233; abastecido pelas &#225;guas do rio Apodi, sendo a capta&#231;&#227;o a jusante da barragem de Santa Cruz. O per&#237;metro tem uma &#225;rea irrig&#225;vel de 9.236 hectares, sendo 5.200 hectares correspondentes &#224; 1&#170; Etapa e 4.036 &#224; 2&#170; Etapa.&#10;Trata-se de um per&#237;metros de irriga&#231;&#227;o do DNOCS.",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:47.196Z"
+      },
+      "etapa9": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:47.197Z"
+      },
+      "etapa5": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:47.201Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:34:47.247Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:47.448Z"
+  },
+  {
+    "guid": "76945b95-8813-44c8-9920-f3c0d115665f",
+    "name": "Trilha do Macuco - Parque Nacional do Iguaçu/PR",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:48.595Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:48.598Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:48.604Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:48.657Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:48.867Z"
+  },
+  {
+    "guid": "3c254b01-3cf2-4e08-b2c3-5b6efa81dfcd",
+    "name": "STS08 - Terminal de Granéis Líquidos e Gasosos no Porto de Santos",
+    "description": "O empreendimento STS 08 &#8211; Terminal de Gran&#233;is L&#237;quidos no Porto de SANTOS/SP possui 139.319m&#178; e &#233; destinada &#224; armazenagem e distribui&#231;&#227;o de gran&#233;is l&#237;quidos, especialmente combust&#237;veis. O prazo contratual ser&#225; de 25 anos e os investimentos previstos totalizam R$ 265,5 milh&#245;es. A receita bruta total para o STS08 &#233; de R$ 2,842 bilh&#245;es. Os futuros arrendat&#225;rios do terminal pagar&#227;o &#224; autoridade portu&#225;ria pelo uso da &#225;rea o valor mensal de R$ 1.516.139,05 e mais R$ 9,35 por tonelada movimentada.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:50.080Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:50.081Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:50.122Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:50.122Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:50.328Z"
+  },
+  {
+    "guid": "5a209758-6bbb-49ad-87dc-e26e718aeb98",
+    "name": "Terminal Pesqueiro de Cananéia/SP",
+    "description": "De acordo com o PMAP, Cananeia &#233; uma cidade relevante para a pesca no Estado de S&#227;o Paulo, sendo a segunda localidade que mais recebe pescados da pesca extrativa (atr&#225;s apenas de Santos/Guaruj&#225;).&#160; Entre 2017 e 2019 foram descarregados, aproximadamente, 2 mil toneladas anuais de pescados em Cananeia. A atividade pesqueira na cidade contempla tanto o setor industrial quando o artesanal, e &#233; diversificada em termos de tipos de embarca&#231;&#227;o e de presen&#231;a em diversos ambientes (fluvial, estuarino, marinho costeiro e marinho de alto-mar).&#10;&#10;Na cidade, n&#227;o h&#225; entreposto que forne&#231;a combust&#237;vel (existe apenas um posto na regi&#227;o). O fornecimento de combust&#237;vel pelo TPP foi mapeado como um atendimento relevante para a pesca na regi&#227;o, reunindo em um &#250;nico entreposto um rol de atendimentos e insumos m&#237;nimos necess&#225;rios &#224; atividade.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:51.579Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:51.612Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:51.637Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:51.646Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:34:51.851Z"
+  },
+  {
+    "guid": "ec44ceb9-823b-427f-bf0e-62f951bd2f83",
+    "name": "Saneamento básico - Estado da Paraíba",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:53.107Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:53.107Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:53.141Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:53.204Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:34:53.412Z"
+  },
+  {
+    "guid": "65f14f47-1411-44b6-80fc-fbfd2e693561",
+    "name": "TMP - teminal de passageiros no porto de Macei&#243;/AL",
+    "description": "A &#225;rea denominada TMP Macei&#243;, ser&#225; destinada a embarque e desembarque de passageiros que transitam pelo Porto de Macei&#243; propiciando mais conforto e seguran&#231;a aos turistas.",
+    "details": {
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:54.615Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:54.621Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:54.639Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:54.667Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:34:54.877Z"
+  },
+  {
+    "guid": "80d11795-e92e-4666-95f3-6b92c2a35cb9",
+    "name": "Terminal Pesqueiro de Aracaju/SE",
+    "description": "O litoral do Estado de Sergipe possui ao longo dos seus parcos 163 km de costa cinco grandes estu&#225;rios: S&#227;o Francisco, Japaratuba, Sergipe, Vaza-Barris e Piau&#237;/Real, caracterizando dessa forma uma biodiversidade aqu&#225;tica relevante e potencial pesqueiro. A produ&#231;&#227;o pesqueira do Estado foi de 5.600 toneladas no ano de 2014.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:56.117Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:56.140Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:34:56.158Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:56.158Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:34:56.369Z"
+  },
+  {
+    "guid": "f857e215-6ed4-4a7c-937e-aca06cdffc43",
+    "name": "Unidades de Manejo da Flona de Iquiri/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:57.557Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:57.563Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:57.571Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:57.628Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:57.832Z"
+  },
+  {
+    "guid": "ffb78704-9433-40d1-9d61-af917924f5a1",
+    "name": "Saneamento Básico - Estado de Goiás",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:59.017Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:59.017Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:34:59.020Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:34:59.024Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:34:59.227Z"
+  },
+  {
+    "guid": "b4515555-143a-46d4-b04b-737132ae83fa",
+    "name": "SSD04 - Terminal de contêiner e carga geral no Porto de Salvador/BA",
+    "description": "O Terminal possui conex&#227;o rodovi&#225;ria com capacidade para incremento de fluxo. O empreendimento ser&#225; executado sobre terreno com estruturas existentes, podendo essas serem demolidas ou renovadas.",
+    "details": {
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:00.387Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:00.387Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:00.388Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:00.392Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:00.592Z"
+  },
+  {
+    "guid": "98f1c849-bd13-454b-b956-4940de5ae1c3",
+    "name": "Saneamento B&#225;sico - Estado do Par&#225; - Bloco C",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:01.841Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:01.841Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:01.844Z"
+      },
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:01.845Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:35:02.049Z"
+  },
+  {
+    "guid": "d75ad856-f5cf-495f-9c77-69298bf32699",
+    "name": "Unidades de Manejo na Flona do Bom Futuro/RO",
+    "description": "Concess&#227;o para manejo florestal sustent&#225;vel de 90 mil hectares, dos quais aproximadamente 12,4 mil hectares degradados da floresta s&#227;o destinados para restaura&#231;&#227;o florestal, recupera&#231;&#227;o de seus servi&#231;os ecossist&#234;micos e gera&#231;&#227;o de emprego e renda para a comunidade local.",
+    "details": {
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:03.210Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:03.211Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:03.214Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:03.263Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:35:03.472Z"
+  },
+  {
+    "guid": "229a579a-bfc2-41e0-aa23-e95744f505a3",
+    "name": "Saneamento Básico - Estado do Rio Grande do Norte",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:04.653Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:04.656Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:04.670Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:04.715Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:04.920Z"
+  },
+  {
+    "guid": "63f8f489-8110-45ad-b75d-54b941245c7e",
+    "name": "Saneamento Básico - Estado do Maranhão",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:06.208Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:06.383Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:06.383Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:06.446Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:06.649Z"
+  },
+  {
+    "guid": "24a702fd-12e4-4b5e-924e-38f52b3fb788",
+    "name": "Unidades de Manejo na Flona do Jatuarana/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:07.827Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:07.828Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:07.829Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:07.832Z"
+      }
+    },
+    "status": "Contrato Assinado",
+    "lastUpdated": "2025-11-27T14:35:08.036Z"
+  },
+  {
+    "guid": "29e5668e-73a3-4d34-b673-8f0787e5774b",
+    "name": "Unidades de Manejo na Flona do Trairão/PA",
+    "description": "A Definir",
+    "details": {
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:09.255Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:09.256Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:09.266Z"
+      },
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:35:09.318Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:09.533Z"
+  },
+  {
+    "guid": "870432be-2fa4-4b58-bc96-df5357403831",
+    "name": "Vale do Iuiú/BA",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:10.719Z"
+      },
+      "etapa2": {
+        "status": "In progress\r",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:10.725Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:10.733Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:10.782Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:10.990Z"
+  },
+  {
+    "guid": "6537d77d-b6d2-4d8a-9987-b57fb53f2d2d",
+    "name": "Unidades de Manejo na Gleba Castanho/AM",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:12.257Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:12.257Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:12.263Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:12.318Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:35:12.530Z"
+  },
+  {
+    "guid": "95e9734f-c26a-40eb-b298-6082143b96ca",
+    "name": "VDC10 - Terminal de granél líquido/sólido no Porto de Vila de Conde/PA",
+    "description": "As atividades a serem desenvolvidas na &#225;rea de arrendamento VDC10 envolvem recep&#231;&#227;o, armazenagem e expedi&#231;&#227;o de gran&#233;is minerais.",
+    "details": {
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:13.705Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:13.716Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:13.722Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:13.815Z"
+      }
+    },
+    "status": "Em Estudos",
+    "lastUpdated": "2025-11-27T14:35:14.028Z"
+  },
+  {
+    "guid": "980f56b8-ee2a-4357-9039-d04f62fb0fb7",
+    "name": "VDC10A - Terminal para granéis líquidos - Porto de Vila do Conde/PA",
+    "description": "A Definir",
+    "details": {
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:15.214Z"
+      },
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:15.217Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:15.220Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:15.222Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:35:15.430Z"
+  },
+  {
+    "guid": "bd82ecda-dbb7-486d-8953-2d56651aa0ef",
+    "name": "VDC04 - Terminal de granel sólido mineral no Porto de Vila do Conde/PA",
+    "description": "A &#225;rea VDC04 encontra-se com ocupa&#231;&#227;o n&#227;o operacional, sem contrato vigente, por&#233;m, tem sido utilizada pela CDP como estacionamento, cobertura para armazenagem de materiais, atendimento de demandas da RFB, al&#233;m de &#225;rea de descarte de materiais. A proje&#231;&#227;o &#233; que a &#225;rea se torne operacional movimentando mangan&#234;s e fertilizantes, cargas operadas no Porto de Vila do Conde, que carecem de &#225;reas para armazenagem.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:16.630Z"
+      },
+      "etapa9": {
+        "status": "Completed",
+        "key": 2,
+        "lastUpdated": "2025-11-27T14:35:16.650Z"
+      },
+      "etapa13": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:35:16.693Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:16.732Z"
+      }
+    },
+    "status": "Em Licitação",
+    "lastUpdated": "2025-11-27T14:35:16.940Z"
+  },
+  {
+    "guid": "8f4f887b-17b2-4624-8026-b795ea62d805",
+    "name": "VDC29 -Terminal de granel sólido vegetal no Porto de Vila do Conde/PA",
+    "description": "Trata-se de projeto greenfield, localizado dentro da poligonal do Porto Organizado de Vila do Conde (PA), destinada &#224; movimenta&#231;&#227;o e armazenagem de gran&#233;is s&#243;lidos vegetais. A &#225;rea de arrendamento denominada VDC29 possui 67.448 m&#178;, composta por &#225;rea onshore de 56.850 m&#178; e offshore de 10.598 m&#178;.",
+    "details": {
+      "etapa2": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:18.129Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:18.131Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:18.179Z"
+      },
+      "etapa5": {
+        "status": "Completed",
+        "key": 3,
+        "lastUpdated": "2025-11-27T14:35:18.203Z"
+      }
+    },
+    "status": "Em Análise",
+    "lastUpdated": "2025-11-27T14:35:18.419Z"
+  },
+  {
+    "guid": "8320414a-6b8f-40c5-b3d6-c6240c948458",
+    "name": "Unidades de Manejo na Flona do Jamanxim/PA",
+    "description": "A Definir",
+    "details": {
+      "etapa2": {
+        "status": "Not Available",
+        "lastUpdated": "2025-11-27T14:35:19.618Z"
+      },
+      "etapa13": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:19.618Z"
+      },
+      "etapa9": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:19.618Z"
+      },
+      "etapa5": {
+        "status": "Not started\r",
+        "key": 1,
+        "lastUpdated": "2025-11-27T14:35:19.654Z"
+      }
+    },
+    "status": "Em Planejamento",
+    "lastUpdated": "2025-11-27T14:35:19.861Z"
+  },
+  
