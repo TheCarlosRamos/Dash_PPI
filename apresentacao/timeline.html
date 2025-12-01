@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Timeline de Etapas</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        padding: 40px;
+    }
+
+    .card {
+        background: white;
+        border: 1px solid #e1e4e8;
+        border-radius: 12px;
+        padding: 30px 40px;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 20px;
+    }
+
+    .timeline {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    /* Linha da timeline */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #dcdfe4;
+        z-index: 0;
+    }
+
+    .step {
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 3px solid #cbd5e1;
+        background: #fff;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    /* Etapa concluída (bolinha cheia e azul) */
+    .dot.active {
+        border-color: #3b82f6;
+        background: #3b82f6;
+        box-shadow: 0 0 0 4px rgba(59,130,246,0.3);
+    }
+
+    .step span {
+        font-size: 14px;
+        color: #475569;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="title">ETAPA:</div>
+
+    <div class="timeline" id="timeline"></div>
+</div>
+
+<script>
+/* -------------------------------
+   🔵 STATUS VINDO DO SEU CSV
+   Você pode substituir esses valores
+   pelo JSON real do backend.
+----------------------------------*/
+const projeto = {
+    guid: "c5dd423a-0cfd-4e36-8fd9-03bb18dc250e",
+    name: "Aeroporto Internacional de Viracopos",
+    status: {
+        "Estudos": "Completed",
+        "Consulta Pública": "Completed",
+        "TCU": "Not started",
+        "Edital": "Not started",
+        "Leilão": "N/A",
+        "Assinatura do Contrato": "N/A"
+    }
+};
+
+/* Etapas fixas */
+const etapas = [
+    "Estudos",
+    "Consulta Pública",
+    "TCU",
+    "Edital",
+    "Leilão",
+    "Assinatura do Contrato"
+];
+
+/* Regra para bolinha cheia */
+function etapaConcluida(status) {
+    if (!status) return false;
+    return ["completed", "concluido", "concluído"]
+        .includes(status.toLowerCase());
+}
+
+/* Renderização da timeline */
+const container = document.getElementById("timeline");
+container.innerHTML = etapas.map(etapa => {
+    const concluida = etapaConcluida(projeto.status[etapa]);
+    return `
+        <div class="step">
+            <div class="dot ${concluida ? "active" : ""}"></div>
+            <span>${etapa}</span>
+        </div>
+    `;
+}).join("");
+</script>
+
+</body>
+</html>

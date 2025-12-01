@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Timeline dos Projetos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        margin: 0;
+        padding: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1e293b;
+        margin-bottom: 40px;
+    }
+
+    .project-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px 30px;
+        margin-bottom: 20px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .project-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 15px;
+    }
+
+    .timeline {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    /* Linha da timeline */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #d1d5db;
+        z-index: 0;
+    }
+
+    .step {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 3px solid #94a3b8;
+        background: #fff;
+        margin: 0 auto 8px;
+    }
+
+    .dot.active {
+        background: #2563eb;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 4px rgba(37,99,235,0.3);
+    }
+
+    .step-label {
+        font-size: 14px;
+        color: #475569;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Timeline dos Projetos</h1>
+
+<div id="projects"></div>
+
+<script>
+const ETAPAS = ["Estudos", "Consulta Pública", "TCU", "Edital"];
+
+// Status que contam como “concluído”
+function isCompleted(status) {
+    if (!status) return false;
+    return ["completed", "concluido", "concluído", "done"]
+        .includes(status.toLowerCase());
+}
+
+// Carregar JSON
+fetch("projetos_status.json")
+    .then(res => res.json())
+    .then(projetos => renderProjetos(projetos))
+    .catch(err => {
+        document.getElementById("projects").innerHTML =
+            "<p style='color:red'>Erro ao carregar projetos_status.json</p>";
+        console.error(err);
+    });
+
+function renderProjetos(projetos) {
+    const container = document.getElementById("projects");
+
+    projetos.forEach(proj => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+
+        const title = document.createElement("div");
+        title.className = "project-title";
+        title.textContent = proj.name ? proj.name : proj.guid;
+
+        const timeline = document.createElement("div");
+        timeline.className = "timeline";
+
+        ETAPAS.forEach(etapa => {
+            const step = document.createElement("div");
+            step.className = "step";
+
+            const dot = document.createElement("div");
+            dot.className = "dot";
+            if (isCompleted(proj[etapa])) dot.classList.add("active");
+
+            const label = document.createElement("div");
+            label.className = "step-label";
+            label.textContent = etapa;
+
+            step.appendChild(dot);
+            step.appendChild(label);
+            timeline.appendChild(step);
+        });
+
+        card.appendChild(title);
+        card.appendChild(timeline);
+
+        container.appendChild(card);
+    });
+}
+</script>
+
+</body>
+</html>

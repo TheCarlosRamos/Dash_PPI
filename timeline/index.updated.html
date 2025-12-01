@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Timeline dos Projetos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        margin: 0;
+        padding: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1e293b;
+        margin-bottom: 20px;
+    }
+
+    .controls { display:flex;align-items:center;gap:12px;margin-bottom:16px; }
+
+    .project-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin-bottom: 12px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .project-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 10px;
+    }
+
+    .timeline {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+        padding-bottom: 6px;
+    }
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #d1d5db;
+        z-index: 0;
+    }
+
+    .step { text-align:center; width:100%; z-index:1; }
+
+    .dot { width:18px; height:18px; border-radius:50%; border:3px solid #94a3b8; background:#fff; margin:0 auto 8px; }
+    .dot.active { background:#2563eb; border-color:#2563eb; box-shadow:0 0 0 4px rgba(37,99,235,0.3); }
+    .dot.error { border-color:#ef4444; box-shadow:0 0 0 4px rgba(239,68,68,0.12); background:#fff6f6; }
+    .dot.nodata { border-color:#94a3b8; background:#ffffff; opacity:0.9; }
+
+    .step-label { font-size:13px; color:#475569; }
+    .step-status { font-size:12px; color:#667085; margin-top:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:120px; margin-left:auto; margin-right:auto; }
+
+    .badge { display:inline-block;padding:4px 8px;border-radius:999px;background:#eef2ff;color:#2563eb;font-weight:600;font-size:12px }
+</style>
+
+</head>
+<body>
+
+<h1>Timeline dos Projetos</h1>
+
+<div class="controls" id="controls">
+    <label for="filter">Filtro:</label>
+    <select id="filter">
+        <option value="all">Todos</option>
+        <option value="errors">Com Erro</option>
+        <option value="nodata">Sem Dados (todas etapas)</option>
+    </select>
+
+    <label for="search">Pesquisar GUID:</label>
+    <input id="search" placeholder="digite guid ou parte dele" style="width:260px;padding:6px;border:1px solid #d1d5db;border-radius:6px;" />
+
+    <div id="counts" style="margin-left:auto;color:#334155;font-size:14px"></div>
+</div>
+
+<div id="projects"></div>
+
+<script>
+const ETAPAS = ["Estudos", "Consulta Pública", "TCU", "Edital"];
+
+function isCompleted(status) {
+    if (!status) return false;
+    return ["completed", "concluido", "concluído", "done"]
+        .includes(status.toLowerCase());
+}
+
+function statusClassFor(status) {
+    if (!status) return 'nodata';
+    const s = status.toLowerCase();
+    if (s.includes('erro') || s.includes('http')) return 'error';
+    if (isCompleted(status)) return 'active';
+    if (s.includes('sem') && s.includes('dados')) return 'nodata';
+    return 'nodata';
+}
+
+let PROJECTS = [];
+
+function summarize(projs) {
+    const total = projs.length;
+    let withError = 0;
+    let allNoData = 0;
+    projs.forEach(p => {
+        const statuses = ETAPAS.map(e => statusClassFor(p[e]));
+        if (statuses.some(s => s === 'error')) withError++;
+        if (statuses.every(s => s === 'nodata')) allNoData++;
+    });
+    return { total, withError, allNoData };
+}
+
+function updateCounts() {
+    const c = summarize(PROJECTS);
+    document.getElementById('counts').textContent = `Total: ${c.total} — Com erro: ${c.withError} — Sem dados (todas): ${c.allNoData}`;
+}
+
+function renderProjectCard(proj) {
+    const card = document.createElement("div");
+    card.className = "project-card";
+
+    const title = document.createElement("div");
+    title.className = "project-title";
+    title.textContent = proj.name ? proj.name : proj.guid;
+
+    const timeline = document.createElement("div");
+    timeline.className = "timeline";
+
+    ETAPAS.forEach(etapa => {
+        const step = document.createElement("div");
+        step.className = "step";
+
+        const dot = document.createElement("div");
+        dot.className = "dot";
+        const status = proj[etapa];
+        const cls = statusClassFor(status);
+        if (cls) dot.classList.add(cls);
+
+        const label = document.createElement("div");
+        label.className = "step-label";
+        label.textContent = etapa;
+
+        const statusDiv = document.createElement('div');
+        statusDiv.className = 'step-status';
+        statusDiv.textContent = status ? status : '';
+
+        step.appendChild(dot);
+        step.appendChild(label);
+        step.appendChild(statusDiv);
+        timeline.appendChild(step);
+    });
+
+    card.appendChild(title);
+    card.appendChild(timeline);
+    return card;
+}
+
+function applyFilters() {
+    const filter = document.getElementById('filter').value;
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    const container = document.getElementById('projects');
+    container.innerHTML = '';
+
+    const filtered = PROJECTS.filter(p => {
+        if (q && !(p.guid && p.guid.toLowerCase().includes(q))) return false;
+        if (filter === 'all') return true;
+        const statuses = ETAPAS.map(e => statusClassFor(p[e]));
+        if (filter === 'errors') return statuses.some(s => s === 'error');
+        if (filter === 'nodata') return statuses.every(s => s === 'nodata');
+        return true;
+    });
+
+    filtered.forEach(p => container.appendChild(renderProjectCard(p)));
+}
+
+// Carregar JSON
+fetch("projetos_status.json")
+    .then(res => res.json())
+    .then(projetos => {
+        PROJECTS = projetos;
+        updateCounts();
+        applyFilters();
+    })
+    .catch(err => {
+        document.getElementById("projects").innerHTML =
+            "<p style='color:red'>Erro ao carregar projetos_status.json</p>";
+        console.error(err);
+    });
+
+document.getElementById('filter').addEventListener('change', () => applyFilters());
+document.getElementById('search').addEventListener('input', () => applyFilters());
+
+</script>
+
+</body>
+</html>
