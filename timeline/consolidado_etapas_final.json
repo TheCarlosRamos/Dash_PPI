@@ -1,0 +1,2096 @@
+{
+  "ecd74fa2-d64d-42ca-bb9a-a6dbe4dbfef5": {
+    "guid": "ecd74fa2-d64d-42ca-bb9a-a6dbe4dbfef5",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "2º Leilão de Transmissão de Energia 2026"
+  },
+  "d9463ed7-caf9-44cf-812f-f9be35dfa3d2": {
+    "guid": "d9463ed7-caf9-44cf-812f-f9be35dfa3d2",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "3º Ciclo de Oferta Permanente no regime de partilha"
+  },
+  "c5dd423a-0cfd-4e36-8fd9-03bb18dc250e": {
+    "guid": "c5dd423a-0cfd-4e36-8fd9-03bb18dc250e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Aeroporto Internacional de Viracopos, em Campinas/SP (relicitação)"
+  },
+  "f2811aa8-a620-4d91-bb8f-8ed1481a9a94": {
+    "guid": "f2811aa8-a620-4d91-bb8f-8ed1481a9a94",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "5º leilão de óleo e gás da PPSA"
+  },
+  "022ea245-c8f4-440a-9a1b-2aa0e2f523fd": {
+    "guid": "022ea245-c8f4-440a-9a1b-2aa0e2f523fd",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Apoio &#224; Visita&#231;&#227;o e &#224; Conserva&#231;&#227;o de &#225;rea de Fernando de Noronha/PE"
+  },
+  "3d228904-a18a-4f94-b5ef-710a2df6bcc2": {
+    "guid": "3d228904-a18a-4f94-b5ef-710a2df6bcc2",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Antigo Aeroporto de Vit&#243;ria da Conquista"
+  },
+  "fbf64536-0ab5-49bd-8d69-d9d1dc145c7a": {
+    "guid": "fbf64536-0ab5-49bd-8d69-d9d1dc145c7a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Api test 1"
+  },
+  "7f98f52b-0417-4a84-a60b-23104b8352e1": {
+    "guid": "7f98f52b-0417-4a84-a60b-23104b8352e1",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "1º LEILÃO DE TRANSMISSÃO DE ENERGIA 2025"
+  },
+  "e2f2d536-8b26-4c34-ba6d-0d4e8993af3e": {
+    "guid": "e2f2d536-8b26-4c34-ba6d-0d4e8993af3e",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Antigo Aeroporto Carlos Prates - Belo Horizonte/MG"
+  },
+  "33839d16-e8d5-4953-9106-6807bf9fb0f7": {
+    "guid": "33839d16-e8d5-4953-9106-6807bf9fb0f7",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Antiga Estação Ferroviária de Diamantina/MG"
+  },
+  "5731cec4-2028-4351-8f6c-23301ef6ba4b": {
+    "guid": "5731cec4-2028-4351-8f6c-23301ef6ba4b",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Aeroporto de Santos Dumont/RJ"
+  },
+  "8d2bfbb1-1ab5-43ec-bcb4-8b45c530455d": {
+    "guid": "8d2bfbb1-1ab5-43ec-bcb4-8b45c530455d",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "&#193;reas do Centro de Instru&#231;&#227;o de Guerra na Selva do Ex&#233;rcito Brasileiro"
+  },
+  "90f37771-7341-47d3-afa5-a9816ba34054": {
+    "guid": "90f37771-7341-47d3-afa5-a9816ba34054",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Aeroporto do Galeão/RJ"
+  },
+  "354cb321-88dd-49bc-9fb6-6afb08ccb261": {
+    "guid": "354cb321-88dd-49bc-9fb6-6afb08ccb261",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "5º Ciclo de Oferta Permanente no regime de concessão"
+  },
+  "bdd8bd47-218f-445f-a795-72eefc900b3c": {
+    "guid": "bdd8bd47-218f-445f-a795-72eefc900b3c",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "1º Leilão de Transmissão de Energia 2026"
+  },
+  "83410882-d8f2-4f75-a3ef-1d260041f508": {
+    "guid": "83410882-d8f2-4f75-a3ef-1d260041f508",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-116/BA/PE - Rota dos Sert&#245;es"
+  },
+  "a16279f3-1118-49bf-87ac-203e9d49d4fe": {
+    "guid": "a16279f3-1118-49bf-87ac-203e9d49d4fe",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem do Po&#231;o do Magro (Codeasf)"
+  },
+  "344d2b96-3348-41d9-a477-64ca11b44b2b": {
+    "guid": "344d2b96-3348-41d9-a477-64ca11b44b2b",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Baixo Acara&#250;/CE"
+  },
+  "705bc6a1-682d-44ad-bfd2-3a8260687487": {
+    "guid": "705bc6a1-682d-44ad-bfd2-3a8260687487",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-060/364/GO/MT - CN2 - Rota do Agro"
+  },
+  "e7ea53ca-5a51-4387-9719-c02f84feafd2": {
+    "guid": "e7ea53ca-5a51-4387-9719-c02f84feafd2",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "CODEBA e Portos Organizados de Salvador, Aratu-Candeias e Ilhéus"
+  },
+  "ad90c00e-f42d-4417-b3ee-eba9b77c326a": {
+    "guid": "ad90c00e-f42d-4417-b3ee-eba9b77c326a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "nome_projeto": "Cons&#243;rcio CONSUD"
+  },
+  "56e91a40-09ed-4e76-84f8-6ad7119a3ba5": {
+    "guid": "56e91a40-09ed-4e76-84f8-6ad7119a3ba5",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-116/158/392/290/RS - Rota Integração do Sul"
+  },
+  "de84ed77-2133-411e-8a18-7c647c0e999d": {
+    "guid": "de84ed77-2133-411e-8a18-7c647c0e999d",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "BR-060/153/040/DF/GO (relicitação)"
+  },
+  "8d191d82-7d1e-47d9-9f25-a580984292ad": {
+    "guid": "8d191d82-7d1e-47d9-9f25-a580984292ad",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-070/174/364/MT/RO - CN3 - Rota Agro Central"
+  },
+  "95ba3705-8488-460a-a02a-7f408dba33a3": {
+    "guid": "95ba3705-8488-460a-a02a-7f408dba33a3",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-101/ES/BA (Otimização ECO101)"
+  },
+  "c9b9363d-d6c8-4e33-8d4b-3f27312a0f37": {
+    "guid": "c9b9363d-d6c8-4e33-8d4b-3f27312a0f37",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "CBTU - estudos de mobilidade das praças de Natal, João Pessoa e Maceió"
+  },
+  "453744dc-0465-4c51-b331-1d441f71c87e": {
+    "guid": "453744dc-0465-4c51-b331-1d441f71c87e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragens da Codevasf"
+  },
+  "7d8495bd-6f12-4ecd-bb15-eac57721af9f": {
+    "guid": "7d8495bd-6f12-4ecd-bb15-eac57721af9f",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem de Zabumb&#227;o (Codevasf)"
+  },
+  "1244649e-5a92-4d13-b21f-cea81fc2a75f": {
+    "guid": "1244649e-5a92-4d13-b21f-cea81fc2a75f",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "BR-158/155/MT/PA"
+  },
+  "52941c04-f840-4517-934d-d12418bf4cd2": {
+    "guid": "52941c04-f840-4517-934d-d12418bf4cd2",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem de Riacho do Paulo (DNOCS)"
+  },
+  "4ec9c8f4-6447-4d18-ac99-ff137740a60c": {
+    "guid": "4ec9c8f4-6447-4d18-ac99-ff137740a60c",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio CEMMIL/SP"
+  },
+  "01fb8247-91ec-4631-bf1f-3da9fa6822d6": {
+    "guid": "01fb8247-91ec-4631-bf1f-3da9fa6822d6",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-116/324/BA - Rota 2 de julho"
+  },
+  "73cfd5fb-20f9-43a9-b39f-89be0ea9caa5": {
+    "guid": "73cfd5fb-20f9-43a9-b39f-89be0ea9caa5",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Canal de Acesso Aquaviário aos Portos de Paranaguá e Antonina/PR"
+  },
+  "7a4da49f-e374-4f2a-b3e0-27af466e1cf9": {
+    "guid": "7a4da49f-e374-4f2a-b3e0-27af466e1cf9",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem de Truvisco (DNOCS)"
+  },
+  "17e819cb-1962-4905-8306-c57ba90b182a": {
+    "guid": "17e819cb-1962-4905-8306-c57ba90b182a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem de Morrinhos (DNOCS)"
+  },
+  "a7317046-c49d-4e61-835b-2f23dded1972": {
+    "guid": "a7317046-c49d-4e61-835b-2f23dded1972",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-101/RJ (Otimização da Autopista Fluminense)"
+  },
+  "743c3dec-0596-4049-972b-7ad1e0fb5850": {
+    "guid": "743c3dec-0596-4049-972b-7ad1e0fb5850",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-116/251/MG - Rota das Gerais"
+  },
+  "55d8c9d7-c8ea-4140-8e03-0fb8486ca603": {
+    "guid": "55d8c9d7-c8ea-4140-8e03-0fb8486ca603",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-040/495/RJ/MG - Rio de Janeiro a Juiz de Fora"
+  },
+  "03175202-1983-4ce9-9425-f8271bf2e138": {
+    "guid": "03175202-1983-4ce9-9425-f8271bf2e138",
+    "estudos_situacao": 1,
+    "contrato_situacao": 1,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Canal de Acesso Aquaviário do Porto de Rio Grande/RS"
+  },
+  "a93af4fb-d039-4fad-9454-cb0aabe6b5b8": {
+    "guid": "a93af4fb-d039-4fad-9454-cb0aabe6b5b8",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "BR-135/316/MA"
+  },
+  "8b14d8de-328d-42a2-873c-3d40b1691fb8": {
+    "guid": "8b14d8de-328d-42a2-873c-3d40b1691fb8",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-163/MS (Otimização MSVIA)"
+  },
+  "e3ddb823-bab9-4a3d-92db-a9729c694a30": {
+    "guid": "e3ddb823-bab9-4a3d-92db-a9729c694a30",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-153/262/GO/MG - Rota Sertaneja"
+  },
+  "68cd547a-9395-4439-a85b-27e0e21c58c4": {
+    "guid": "68cd547a-9395-4439-a85b-27e0e21c58c4",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "CBTU-PE: Metrô da Região Metropolitana de Recife/PE"
+  },
+  "b17b954e-52d0-4f06-8865-4f18855bac72": {
+    "guid": "b17b954e-52d0-4f06-8865-4f18855bac72",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "BR-163/267/MS (Relicitação)"
+  },
+  "8adf1926-f1f9-493a-b03b-378bd86f260f": {
+    "guid": "8adf1926-f1f9-493a-b03b-378bd86f260f",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragens do DNOCS"
+  },
+  "ab80c9e8-07f2-46ea-92d0-e32fda3ab48e": {
+    "guid": "ab80c9e8-07f2-46ea-92d0-e32fda3ab48e",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem de Tremedal (DNOCS)"
+  },
+  "c33de432-98e8-415a-8920-c714218836cb": {
+    "guid": "c33de432-98e8-415a-8920-c714218836cb",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Canal de Acesso Aquavi&#225;rio ao Porto de Santos"
+  },
+  "715eae06-4ef0-488f-acc4-7e0ba1e1df67": {
+    "guid": "715eae06-4ef0-488f-acc4-7e0ba1e1df67",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Barragem do Bico da Pedra (Codevasf)"
+  },
+  "b3ee4629-b976-4d12-af02-593245102cf7": {
+    "guid": "b3ee4629-b976-4d12-af02-593245102cf7",
+    "estudos_situacao": 0,
+    "contrato_situacao": 1,
+    "licitacao_situacao": 0,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Consórcio de Municípios do Centro Oeste Mineiro - CIAS"
+  },
+  "8587a771-a713-4b0d-bdaa-594649c26413": {
+    "guid": "8587a771-a713-4b0d-bdaa-594649c26413",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Educação Infantil - Município de Caxias do Sul (RS)"
+  },
+  "14f610c7-8be2-4beb-859f-72b12789ca18": {
+    "guid": "14f610c7-8be2-4beb-859f-72b12789ca18",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio de Saúde do Vale do Ribeira e Litoral Sul - CONSAÚDE/SP"
+  },
+  "956ec97e-db52-4ce3-8af9-6a602bb16fdc": {
+    "guid": "956ec97e-db52-4ce3-8af9-6a602bb16fdc",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio Público dos Municípios da Mata Sul - COMSUL/PE"
+  },
+  "dbfad300-3196-4119-8282-6cef42d22fae": {
+    "guid": "dbfad300-3196-4119-8282-6cef42d22fae",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio Regional de Saneamento Básico Central de Minas - CORESAB"
+  },
+  "9261c511-63fa-40f2-a53b-3fa5bf650eab": {
+    "guid": "9261c511-63fa-40f2-a53b-3fa5bf650eab",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Corredor Ferroviário Leste-Oeste"
+  },
+  "43cd2f4b-7147-458d-be96-863ad3d35a00": {
+    "guid": "43cd2f4b-7147-458d-be96-863ad3d35a00",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Consórcio Oeste Paulista"
+  },
+  "47f8bb42-bbe9-4f12-822d-713277736d71": {
+    "guid": "47f8bb42-bbe9-4f12-822d-713277736d71",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Consórcio Mogiana"
+  },
+  "758a265e-9adc-482b-a14a-f1a3bd882087": {
+    "guid": "758a265e-9adc-482b-a14a-f1a3bd882087",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio Sustentável do Território do São Francisco - CONSTESF/BA"
+  },
+  "be0f9e32-9781-4427-9cbf-4323e661ee13": {
+    "guid": "be0f9e32-9781-4427-9cbf-4323e661ee13",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio Intermunicipal de Des. Sust. da Serra Gaúcha - CISGA"
+  },
+  "c5dc668b-99c8-4495-a40e-b95bc49448c1": {
+    "guid": "c5dc668b-99c8-4495-a40e-b95bc49448c1",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Consórcio CI Centro"
+  },
+  "f9a33179-1540-4b88-8282-837a0e2bdb4b": {
+    "guid": "f9a33179-1540-4b88-8282-837a0e2bdb4b",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio do Sertão do Araripe Pernambucano - CISAPE/PE"
+  },
+  "5b502d2f-fdc4-47ff-82ce-1787fa991606": {
+    "guid": "5b502d2f-fdc4-47ff-82ce-1787fa991606",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio de Saneamento da Bacia Hidrográfica do Rio dos Sinos/RS"
+  },
+  "4d24370c-ef9f-4e88-9e39-28c490db2d05": {
+    "guid": "4d24370c-ef9f-4e88-9e39-28c490db2d05",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Direitos Minerários de Caulim em Rio Capim/PA"
+  },
+  "b4bc3470-79d3-410f-b838-aa5cf18f381a": {
+    "guid": "b4bc3470-79d3-410f-b838-aa5cf18f381a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio do Agreste PE e Fronteiras - CONIAPE/PE"
+  },
+  "11627d9d-fafa-4874-b565-6b1a7a1c51d8": {
+    "guid": "11627d9d-fafa-4874-b565-6b1a7a1c51d8",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Direitos Minerários de Carvão em Candiota/RS"
+  },
+  "cf9dc634-599e-4050-96b7-7ecd8d07734b": {
+    "guid": "cf9dc634-599e-4050-96b7-7ecd8d07734b",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Distribuição de água e tratamento de esgotos-Arapiraca-Bloco D Alagoas"
+  },
+  "7f860e6a-2afa-4282-ad24-8df915d656ab": {
+    "guid": "7f860e6a-2afa-4282-ad24-8df915d656ab",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Consórcio de Des. Sust. do Triângulo Mineiro e Alto Paranaíba-CIDES/MG"
+  },
+  "ca14fd28-c4c2-460e-8d2f-9db7d192565f": {
+    "guid": "ca14fd28-c4c2-460e-8d2f-9db7d192565f",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Educação Infantil - Consórcio Intermunicipal CIM-AMFRI"
+  },
+  "03476266-e9a1-4821-8179-8abd15903f7b": {
+    "guid": "03476266-e9a1-4821-8179-8abd15903f7b",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "EF-277 - Estrada de Ferro Paraná Oeste - Ferroeste"
+  },
+  "74c02f8a-2630-4d27-901a-3f097aa9fcc8": {
+    "guid": "74c02f8a-2630-4d27-901a-3f097aa9fcc8",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Consórcio CDS Litoral Sul (BA)"
+  },
+  "47fe6ece-74b6-4c8b-b835-43286ef737c0": {
+    "guid": "47fe6ece-74b6-4c8b-b835-43286ef737c0",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "FTL - Ferrovia Transnordestina Logística S.A."
+  },
+  "1b99e966-1b88-4bf6-a15a-087846ca2339": {
+    "guid": "1b99e966-1b88-4bf6-a15a-087846ca2339",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Estudos para concessão de 1.600 km de rodovias"
+  },
+  "d0fe2313-19a2-4a22-be33-08e5166b4403": {
+    "guid": "d0fe2313-19a2-4a22-be33-08e5166b4403",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - IP Joinville (SC)"
+  },
+  "b532914d-19ea-473b-bf11-e5ec436ac1f4": {
+    "guid": "b532914d-19ea-473b-bf11-e5ec436ac1f4",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Esgotamento Sanitário - Volta Redonda/RJ"
+  },
+  "6e5a93b6-154f-4c26-8a0d-1736a7795980": {
+    "guid": "6e5a93b6-154f-4c26-8a0d-1736a7795980",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Camaçari (BA)"
+  },
+  "70cd0711-dd07-4560-9e0c-94e137aaf873": {
+    "guid": "70cd0711-dd07-4560-9e0c-94e137aaf873",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Consórcio Cimpajeú (PE)"
+  },
+  "9fd6f3dc-03f7-49df-b7f7-b5574d34b848": {
+    "guid": "9fd6f3dc-03f7-49df-b7f7-b5574d34b848",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Consórcio CISAMAVI (SC)"
+  },
+  "c26d3a52-7554-4f45-93ab-721862bf9091": {
+    "guid": "c26d3a52-7554-4f45-93ab-721862bf9091",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Porto Seguro (BA)"
+  },
+  "83e93725-6e10-4b73-9d6f-f264d5e8d378": {
+    "guid": "83e93725-6e10-4b73-9d6f-f264d5e8d378",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Valparaíso de Goiás (GO)"
+  },
+  "e09fcf6f-2942-4621-b08b-4bde2021ff1a": {
+    "guid": "e09fcf6f-2942-4621-b08b-4bde2021ff1a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Maranguape (CE)"
+  },
+  "ca3d8c8e-9551-47fd-9812-faf4a83b663a": {
+    "guid": "ca3d8c8e-9551-47fd-9812-faf4a83b663a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Timon (MA)"
+  },
+  "d5dd73b3-ddbb-4ece-a8e9-24c7a08cc5c1": {
+    "guid": "d5dd73b3-ddbb-4ece-a8e9-24c7a08cc5c1",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - São José dos Pinhais (PR)"
+  },
+  "c2862786-45eb-4a2c-8e6d-3ad78ef15a8d": {
+    "guid": "c2862786-45eb-4a2c-8e6d-3ad78ef15a8d",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Santo Antônio de Jesus (BA)"
+  },
+  "171582bb-1a48-4a92-afe3-8b885af237e8": {
+    "guid": "171582bb-1a48-4a92-afe3-8b885af237e8",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Gravataí (RS)"
+  },
+  "8c14418c-98ab-45d4-919f-24dddc0be03a": {
+    "guid": "8c14418c-98ab-45d4-919f-24dddc0be03a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Colatina (ES)"
+  },
+  "3cc782fb-74a8-4ff2-8c65-64a6c28c739a": {
+    "guid": "3cc782fb-74a8-4ff2-8c65-64a6c28c739a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Hidrovia do Rio Madeira"
+  },
+  "6e4fe371-5274-402f-bc51-4cb35f898060": {
+    "guid": "6e4fe371-5274-402f-bc51-4cb35f898060",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "ITG03 - Terminal  de granéis minerais sólidos no Porto de Itaguaí/RJ"
+  },
+  "18aa7747-5c68-4d1d-9ffb-8883b23ac5f5": {
+    "guid": "18aa7747-5c68-4d1d-9ffb-8883b23ac5f5",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "ILH01 - Terminal múltiplo uso no Porto de Ilhéus/BA"
+  },
+  "6ffaa27b-41f1-49cd-acba-4ade7bbe9f90": {
+    "guid": "6ffaa27b-41f1-49cd-acba-4ade7bbe9f90",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Hospital Universitário de Canoas/RS"
+  },
+  "7e46d891-720e-48ff-bb15-c2ca910ae463": {
+    "guid": "7e46d891-720e-48ff-bb15-c2ca910ae463",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Habitação para Locação Social - Recife/PE"
+  },
+  "61765de5-03d1-44dd-b783-da346bd30963": {
+    "guid": "61765de5-03d1-44dd-b783-da346bd30963",
+    "estudos_situacao": 0,
+    "contrato_situacao": 1,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Fortaleza de Santa Cruz (Forte Orange), no Estado de Pernambuco"
+  },
+  "d5b67959-aa00-4ac7-97bd-b0d3c01ace0b": {
+    "guid": "d5b67959-aa00-4ac7-97bd-b0d3c01ace0b",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Ferrovia EF-170/MT/PA (Ferrogrão)"
+  },
+  "7aa3c61e-ff19-4804-ad09-7515d969c1f4": {
+    "guid": "7aa3c61e-ff19-4804-ad09-7515d969c1f4",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "IQI14 - Terminal de Combustíveis no Porto de Itaqui/MA"
+  },
+  "fe42f0b2-f4b9-4518-94ce-bb1f73434379": {
+    "guid": "fe42f0b2-f4b9-4518-94ce-bb1f73434379",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Fazenda Pau D\\'Alho, localizada no estado de São Paulo"
+  },
+  "5834280d-f76d-45c3-9d4b-c223179d9c9e": {
+    "guid": "5834280d-f76d-45c3-9d4b-c223179d9c9e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Floresta Nacional de Brasília/DF"
+  },
+  "edd8e91e-71c1-4658-8cb9-9de6cae06522": {
+    "guid": "edd8e91e-71c1-4658-8cb9-9de6cae06522",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Educação Infantil - Município do Recife/PE"
+  },
+  "21d6e900-f6d0-4984-9856-1ae601d3b0ad": {
+    "guid": "21d6e900-f6d0-4984-9856-1ae601d3b0ad",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Eficientiza&#231;ao Energ&#233;tica - Pal&#225;cios do Governo Federal"
+  },
+  "dd8b3b0e-6b00-4245-9578-70c4ae356d45": {
+    "guid": "dd8b3b0e-6b00-4245-9578-70c4ae356d45",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - São Pedro da Aldeia (RJ)"
+  },
+  "6b39afed-0f54-4394-9f9e-9f035c18d4b4": {
+    "guid": "6b39afed-0f54-4394-9f9e-9f035c18d4b4",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Saquarema (RJ)"
+  },
+  "a87b1857-97e6-48b8-9ee7-72061e7b5b3c": {
+    "guid": "a87b1857-97e6-48b8-9ee7-72061e7b5b3c",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Iluminação Pública - Francisco Beltrão (PR)"
+  },
+  "42887213-1969-471b-8f23-b3fcfb382fd5": {
+    "guid": "42887213-1969-471b-8f23-b3fcfb382fd5",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "IQI16 – Terminal de granel sólido mineral no Porto de Itaqui/MA"
+  },
+  "54506e95-c2d9-4a74-b70c-99f379c6b432": {
+    "guid": "54506e95-c2d9-4a74-b70c-99f379c6b432",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Hidrovia de Lagoa Mirim e do Canal de São Gonçalo/RS"
+  },
+  "7fa72dfe-7f6b-4e1a-bd47-3b525725246a": {
+    "guid": "7fa72dfe-7f6b-4e1a-bd47-3b525725246a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Hidrovia do Tocantins"
+  },
+  "3bfaea01-7c1e-400c-9fe2-df6f406edce8": {
+    "guid": "3bfaea01-7c1e-400c-9fe2-df6f406edce8",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Ferrovia Centro Atlântico S.A. - FCA"
+  },
+  "4c2b7f32-e418-4926-8bf0-d91e3f81bfcb": {
+    "guid": "4c2b7f32-e418-4926-8bf0-d91e3f81bfcb",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "FTC - Ferrovia Tereza Cristina S.A."
+  },
+  "85f471ce-4876-403e-a401-9e0eedd5f358": {
+    "guid": "85f471ce-4876-403e-a401-9e0eedd5f358",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Habitação para Locação Social - Campo Grande/MS"
+  },
+  "c696a4bf-f8eb-486f-9cb5-673629bbbf95": {
+    "guid": "c696a4bf-f8eb-486f-9cb5-673629bbbf95",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Etapas 3 e 4 do Projeto de Irrigação Jaíba/MG"
+  },
+  "350f8fce-2b7c-457d-831a-d005c3a6764d": {
+    "guid": "350f8fce-2b7c-457d-831a-d005c3a6764d",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - São Félix do Xingu (PA)"
+  },
+  "a6bbd1ae-29cd-4fcb-9408-e1f3f99a6c60": {
+    "guid": "a6bbd1ae-29cd-4fcb-9408-e1f3f99a6c60",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Fortaleza de Santa Catarina, localizada no Estado da Paraíba"
+  },
+  "bf3ca782-808c-4976-8571-669b139f6eb2": {
+    "guid": "bf3ca782-808c-4976-8571-669b139f6eb2",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Floresta Nacional de Ipanema/SP"
+  },
+  "1665c3f7-da9e-414c-b03a-4230d321cde9": {
+    "guid": "1665c3f7-da9e-414c-b03a-4230d321cde9",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Nova Friburgo (RJ)"
+  },
+  "ee900869-0557-47a0-8fb4-cfe20c03b738": {
+    "guid": "ee900869-0557-47a0-8fb4-cfe20c03b738",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "nome_projeto": "Manejo Sustent&#225;vel na Flona de Mulata/PA"
+  },
+  "afa5c377-0d31-492c-8ca4-54df7f73c284": {
+    "guid": "afa5c377-0d31-492c-8ca4-54df7f73c284",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Iluminação Pública - Vitória de Santo Antão (PE)"
+  },
+  "98b53504-4b6a-4df5-ae4b-1482a73804c2": {
+    "guid": "98b53504-4b6a-4df5-ae4b-1482a73804c2",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "PPP Novo Hospital do GHC"
+  },
+  "9ad5d137-101e-40ec-8413-3f5cbfd3bf01": {
+    "guid": "9ad5d137-101e-40ec-8413-3f5cbfd3bf01",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Leil&#227;o de Reserva de Capacidade, na forma de Pot&#234;ncia, de 2026"
+  },
+  "4b423463-877c-4867-b94b-2083d8972cc6": {
+    "guid": "4b423463-877c-4867-b94b-2083d8972cc6",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Leilão de Energia Nova \\\\"
+  },
+  "decb098a-6db6-434e-9590-f2439f6994b7": {
+    "guid": "decb098a-6db6-434e-9590-f2439f6994b7",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "PISF - Projeto de Integração do Rio São Francisco"
+  },
+  "858076ed-4fba-44fc-8b6d-055c2a8011cd": {
+    "guid": "858076ed-4fba-44fc-8b6d-055c2a8011cd",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "MAC14 - Terminal para toras e cavaco de madeira no Porto de Maceió/AL"
+  },
+  "a70d583a-fe42-44f1-8637-1ab219889a70": {
+    "guid": "a70d583a-fe42-44f1-8637-1ab219889a70",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Museu Marítimo do Brasil"
+  },
+  "96f67bdb-0e8c-4e40-ae00-cf717da5e633": {
+    "guid": "96f67bdb-0e8c-4e40-ae00-cf717da5e633",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Manejo Sustent&#225;vel na Flona de Anau&#225;"
+  },
+  "913ebfc5-dbff-4617-98b7-f2123d80cd6f": {
+    "guid": "913ebfc5-dbff-4617-98b7-f2123d80cd6f",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "PAR15 - Terminal de granel vegetal no Porto de Paranaguá/PR"
+  },
+  "07fb13d8-0616-41f8-ab50-99c1c6669fd7": {
+    "guid": "07fb13d8-0616-41f8-ab50-99c1c6669fd7",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "POA26 - Terminal de cargas multipropósito no Porto de Porto Alegre/RS"
+  },
+  "4a9e98e6-ec2e-4131-bd7f-e25a3530c678": {
+    "guid": "4a9e98e6-ec2e-4131-bd7f-e25a3530c678",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Operação de Voos Panorâmicos - Parque Nacional do Iguaçu/PR"
+  },
+  "74d5752e-fd5d-4962-a848-b13a8b56bece": {
+    "guid": "74d5752e-fd5d-4962-a848-b13a8b56bece",
+    "estudos_situacao": 0,
+    "contrato_situacao": 1,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "PAR03 - granéis sólidos minerais Porto de Paranaguá/PR"
+  },
+  "a6643220-971e-4868-be0f-cecc6b79cef3": {
+    "guid": "a6643220-971e-4868-be0f-cecc6b79cef3",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Malha Oeste (relicitação)"
+  },
+  "e7878efe-a724-4965-928d-d0ffbea1929f": {
+    "guid": "e7878efe-a724-4965-928d-d0ffbea1929f",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Lotes Nordeste"
+  },
+  "22044c07-aa2f-42ee-9331-2628dc64fc6a": {
+    "guid": "22044c07-aa2f-42ee-9331-2628dc64fc6a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "NAT01 - terminal de graneis s&#243;lidos minerais no porto de Natal"
+  },
+  "32062dec-f6dd-4728-a751-33d810db8921": {
+    "guid": "32062dec-f6dd-4728-a751-33d810db8921",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "POA01 - Terminal de granel sólido vegetal no Porto de Porto Alegre/RS"
+  },
+  "2cad717e-cba2-4998-8eda-2b0a0af28641": {
+    "guid": "2cad717e-cba2-4998-8eda-2b0a0af28641",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "MUC03 - Terminal de Granel Sólido do Porto do Mucuripe/CE"
+  },
+  "714677e9-777b-42d2-99a1-a25823a6c556": {
+    "guid": "714677e9-777b-42d2-99a1-a25823a6c556",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Imóveis não operacionais da CEASAMINAS"
+  },
+  "5cf20be4-cb5b-457d-9f2f-16f08041dbac": {
+    "guid": "5cf20be4-cb5b-457d-9f2f-16f08041dbac",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Leilão de Reserva de Capacidade de Potencia – Armazenamento   Baterias"
+  },
+  "8c70887b-fd2d-4d28-8fb0-eb2d61a78c8a": {
+    "guid": "8c70887b-fd2d-4d28-8fb0-eb2d61a78c8a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Palacete Carvalho Motta - Fortaleza/CE"
+  },
+  "4226a865-eb3a-458a-8d9e-5325c4e72954": {
+    "guid": "4226a865-eb3a-458a-8d9e-5325c4e72954",
+    "estudos_situacao": 1,
+    "contrato_situacao": 1,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Manejo Sustent&#225;vel na Flona do Tapirap&#233;-Aquiri/PA"
+  },
+  "7779bcee-3fe1-41f6-9b4b-5b1fd84b2989": {
+    "guid": "7779bcee-3fe1-41f6-9b4b-5b1fd84b2989",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "MUC59 - Terminal de granel líquido no Porto de Mucuripe/CE"
+  },
+  "27e366d0-bbce-4b04-9d0d-bc66d0f3482c": {
+    "guid": "27e366d0-bbce-4b04-9d0d-bc66d0f3482c",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "PAR14 - Terminal de granel vegetal no Porto de Paranaguá/PR"
+  },
+  "55bc53d9-5f86-4b59-9e82-fdd2c110faf0": {
+    "guid": "55bc53d9-5f86-4b59-9e82-fdd2c110faf0",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "MUC04 - Terminal de contêineres no Porto de Fortaleza/CE"
+  },
+  "4a6169ec-387d-48e7-a14a-451e59b97f31": {
+    "guid": "4a6169ec-387d-48e7-a14a-451e59b97f31",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "MCP01 - Terminal para cavaco de madeira no Porto de Santana/AP"
+  },
+  "eb6eb6bd-cdaf-445d-8a4d-2736f7cef193": {
+    "guid": "eb6eb6bd-cdaf-445d-8a4d-2736f7cef193",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Instituto Nacional do Câncer - INCA"
+  },
+  "2256fe19-a38f-4050-851c-23ab4d8f8dad": {
+    "guid": "2256fe19-a38f-4050-851c-23ab4d8f8dad",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Irrigação da Zona de Influência do Canal Adutor do Sertão Alagoano"
+  },
+  "e7eaec7b-30b7-4f7c-9334-6b4b6ea5df70": {
+    "guid": "e7eaec7b-30b7-4f7c-9334-6b4b6ea5df70",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Leilão de Suprimento aos sistemas Isolados"
+  },
+  "59ea1432-1bd8-4574-870e-5b183a174340": {
+    "guid": "59ea1432-1bd8-4574-870e-5b183a174340",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Museu Histórico do Exército Brasileiro e Forte de Copacabana"
+  },
+  "1acf47a4-2d59-47a6-b2ac-390b33984d2f": {
+    "guid": "1acf47a4-2d59-47a6-b2ac-390b33984d2f",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Parque Nacional da Serra da Bodoquena /MS"
+  },
+  "44cd4078-42b0-4a83-8955-efa31cdb2130": {
+    "guid": "44cd4078-42b0-4a83-8955-efa31cdb2130",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Platôs de Guadalupe/PI"
+  },
+  "464b9e5c-896c-4b9b-a33f-c07e26209911": {
+    "guid": "464b9e5c-896c-4b9b-a33f-c07e26209911",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Parque Nacional do Caparaó/MG/ES"
+  },
+  "75b94094-15f2-4631-b2e5-6c922d59e162": {
+    "guid": "75b94094-15f2-4631-b2e5-6c922d59e162",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "RDJ10 -Terminal de cargas gerais  no Porto do Rio de Janeiro/RJ"
+  },
+  "aff145d8-d9d6-4a40-87a9-0e75318cadf0": {
+    "guid": "aff145d8-d9d6-4a40-87a9-0e75318cadf0",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Porto Organizado de Itajaí/SC"
+  },
+  "6c193c44-0387-4409-88f7-7434ce1ee7c2": {
+    "guid": "6c193c44-0387-4409-88f7-7434ce1ee7c2",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Res&#237;duos S&#243;lidos Urbano - Estado do Amap&#225;"
+  },
+  "7c320630-e604-473f-8bdc-9dd3c60a0a98": {
+    "guid": "7c320630-e604-473f-8bdc-9dd3c60a0a98",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "REC04 - Terminal de granel sólido e carga geral no Porto de Recife/PE"
+  },
+  "84527695-dd24-42bc-a8db-a5e8830a4eaf": {
+    "guid": "84527695-dd24-42bc-a8db-a5e8830a4eaf",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Restaura&#231;&#227;o Florestal na Rebio Nascentes da Serra do Cachimbo/PA"
+  },
+  "651a153a-1a68-46dd-b985-27d4e7a14fe6": {
+    "guid": "651a153a-1a68-46dd-b985-27d4e7a14fe6",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Presídio - Estado de Santa Catarina"
+  },
+  "90a36e6f-baa2-4773-ab9d-0118b97f7ccb": {
+    "guid": "90a36e6f-baa2-4773-ab9d-0118b97f7ccb",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Rodovias Integradas do Paraná - lote 4"
+  },
+  "b09ae85e-186a-4bf9-9fa6-1767ae6f582b": {
+    "guid": "b09ae85e-186a-4bf9-9fa6-1767ae6f582b",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "RDJ07 - Terminal de apoio offshore no Porto do Rio de Janeiro/RJ"
+  },
+  "153a704a-193b-4275-be55-14e7f5dfc7f3": {
+    "guid": "153a704a-193b-4275-be55-14e7f5dfc7f3",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Restaura&#231;&#227;o Florestal na Flona de Itaituba II/PA"
+  },
+  "5a877046-b488-496a-870d-60bc12c7a02d": {
+    "guid": "5a877046-b488-496a-870d-60bc12c7a02d",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Restaura&#231;&#227;o Florestal no Parna da Serra do Pardo/PA"
+  },
+  "30669a87-2299-40d5-8d0a-3dbc127720e1": {
+    "guid": "30669a87-2299-40d5-8d0a-3dbc127720e1",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Rumo - Malha Sul"
+  },
+  "191a04ea-53d0-48ae-a139-b4b94bc569f1": {
+    "guid": "191a04ea-53d0-48ae-a139-b4b94bc569f1",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Projeto Poço Transparente"
+  },
+  "d98588a1-06ee-4424-998a-47280cfdcb17": {
+    "guid": "d98588a1-06ee-4424-998a-47280cfdcb17",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "RIG25 – Terminal de granel líquido no Porto de Rio Grande/RS"
+  },
+  "4211d891-42fc-4146-8380-ffb95a60eb7e": {
+    "guid": "4211d891-42fc-4146-8380-ffb95a60eb7e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Restaura&#231;&#227;o Florestal no Parna dos Campos Amaz&#244;nicos/AM/MT/RO"
+  },
+  "0d1dbb0e-ba78-45d3-87b0-2b27bf0708aa": {
+    "guid": "0d1dbb0e-ba78-45d3-87b0-2b27bf0708aa",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "RDJ06A - Terminal de granel líquido no Porto do Rio de Janeiro/RJ"
+  },
+  "f064cc2f-470e-4bfa-bdb8-9ec3e1ee88db": {
+    "guid": "f064cc2f-470e-4bfa-bdb8-9ec3e1ee88db",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Projeto Santa Brígida"
+  },
+  "734bc6af-77a2-4447-a967-ce5143be0e6c": {
+    "guid": "734bc6af-77a2-4447-a967-ce5143be0e6c",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Rodovias de Santa Catarina"
+  },
+  "c2c9e296-6790-49b0-bc64-8d22e51de904": {
+    "guid": "c2c9e296-6790-49b0-bc64-8d22e51de904",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "nome_projeto": "Restaura&#231;&#227;o Florestal na Flona de Altamira/PA"
+  },
+  "d71f7fad-3824-411b-9747-35cdb603747e": {
+    "guid": "d71f7fad-3824-411b-9747-35cdb603747e",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Parque Nacional de Brasília/DF"
+  },
+  "9010ae8c-9060-43b2-8c93-7ef86e02b192": {
+    "guid": "9010ae8c-9060-43b2-8c93-7ef86e02b192",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Parque Nacional da Serra dos Órgãos/RJ"
+  },
+  "9e65bed1-a689-4502-be7a-d9478e64cc21": {
+    "guid": "9e65bed1-a689-4502-be7a-d9478e64cc21",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Parque Nacional de Anavilhanas/AM"
+  },
+  "218fbb22-0e18-43df-bf17-5450bdd3c0dc": {
+    "guid": "218fbb22-0e18-43df-bf17-5450bdd3c0dc",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Projeto Pontal - Mancha 20"
+  },
+  "b86af630-941d-43a4-9f77-8968311982da": {
+    "guid": "b86af630-941d-43a4-9f77-8968311982da",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Parque Nacional do Jaú/AM"
+  },
+  "8467bf36-e121-463f-b997-0a39002e6498": {
+    "guid": "8467bf36-e121-463f-b997-0a39002e6498",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Rodovias Integradas do Paraná - lote 5"
+  },
+  "97d471b7-9648-49ab-ac1f-ea1710e084fe": {
+    "guid": "97d471b7-9648-49ab-ac1f-ea1710e084fe",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "RDJ11 - Terminal de carga geral no Porto do Rio de Janeiro/RJ"
+  },
+  "390087b5-b5cc-48f9-b29e-be23cd49df47": {
+    "guid": "390087b5-b5cc-48f9-b29e-be23cd49df47",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo na Flona de Pau-Rosa/AM"
+  },
+  "3cde796c-7233-4bb0-aab4-c4a1dc3b178a": {
+    "guid": "3cde796c-7233-4bb0-aab4-c4a1dc3b178a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1
+  },
+  "c22453be-53b3-42e8-993c-044445988e3b": {
+    "guid": "c22453be-53b3-42e8-993c-044445988e3b",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Saneamento básico - Estado de Minas Gerais"
+  },
+  "7f935c06-6680-4853-8f8a-ca142c7a2e93": {
+    "guid": "7f935c06-6680-4853-8f8a-ca142c7a2e93",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "SSB01 - Terminal de carga geral no Porto de São Sebastião/SP"
+  },
+  "dde7ec88-7ae3-48b0-81ae-4f84c82653ab": {
+    "guid": "dde7ec88-7ae3-48b0-81ae-4f84c82653ab",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Tabuleiros de São Bernardo/MA"
+  },
+  "d9a3e730-68e0-4064-b6f0-437ccb2bd32a": {
+    "guid": "d9a3e730-68e0-4064-b6f0-437ccb2bd32a",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "SFS201 - Terminal de carga geral no Porto de São Francisco do Sul/SC"
+  },
+  "c147867e-e4e5-4f88-82f7-2465578ba171": {
+    "guid": "c147867e-e4e5-4f88-82f7-2465578ba171",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Tabuleiros Litorâneos/PI"
+  },
+  "71ba7c56-3e8e-47e8-bbf6-c5e8b7cc6b6b": {
+    "guid": "71ba7c56-3e8e-47e8-bbf6-c5e8b7cc6b6b",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo na Flona de Balata-Tufari/AM"
+  },
+  "bb99829c-ee0f-4be9-850e-e6c8a8b9ac3c": {
+    "guid": "bb99829c-ee0f-4be9-850e-e6c8a8b9ac3c",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Saneamento básico - Município de Porto Alegre/RS"
+  },
+  "130c9dbb-4dc6-4069-857f-cf310e08b519": {
+    "guid": "130c9dbb-4dc6-4069-857f-cf310e08b519",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Socioeducativo - Estado de Minas Gerais"
+  },
+  "6bc82e39-143a-417c-90fa-23b31dbb7bdb": {
+    "guid": "6bc82e39-143a-417c-90fa-23b31dbb7bdb",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "STS53 - Armazenagem de granéis minerais no Porto de Santos/SP"
+  },
+  "a06011b4-bc21-4fa7-a9e8-48674a98e57a": {
+    "guid": "a06011b4-bc21-4fa7-a9e8-48674a98e57a",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "STS33 - Terminal de carga geral no Porto de Santos/SP"
+  },
+  "b84d54bb-9558-4e1a-8c8a-689ba18b82b8": {
+    "guid": "b84d54bb-9558-4e1a-8c8a-689ba18b82b8",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "TRENSURB: Metrô da Região Metropolitana de Porto Alegre/RS"
+  },
+  "0a54a5c1-e5bc-442c-bec5-0d1b02e70852": {
+    "guid": "0a54a5c1-e5bc-442c-bec5-0d1b02e70852",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "TGSFS-  Terminal de granel vegetal no Porto de São Francisco do Sul/SC"
+  },
+  "6aae4b5e-e0b6-42ac-ab48-d989bed57039": {
+    "guid": "6aae4b5e-e0b6-42ac-ab48-d989bed57039",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Saneamento básico - São Gonçalo do Amarante/RN"
+  },
+  "5bab5aaf-029c-4f53-aeb9-dd613c18341e": {
+    "guid": "5bab5aaf-029c-4f53-aeb9-dd613c18341e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Terminal Pesqueiro de Natal/RN"
+  },
+  "1dc2fb2a-5acf-4492-9b58-0f22eed0256e": {
+    "guid": "1dc2fb2a-5acf-4492-9b58-0f22eed0256e",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Socioeducativo - Estado de Santa Catarina"
+  },
+  "6b5a70d0-8239-4e4a-9a82-282c5b5b5b6f": {
+    "guid": "6b5a70d0-8239-4e4a-9a82-282c5b5b5b6f",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Terminal Pesqueiro de Santos/SP"
+  },
+  "2b2ceaa5-4d64-4e4b-bd66-2e6eb7004be9": {
+    "guid": "2b2ceaa5-4d64-4e4b-bd66-2e6eb7004be9",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Saneamento Básico - Estado de Pernambuco"
+  },
+  "6e20e506-c99a-4bee-9575-1ca7a0b35c5c": {
+    "guid": "6e20e506-c99a-4bee-9575-1ca7a0b35c5c",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Saneamento básico - Estado de Rondônia"
+  },
+  "510de519-01fb-4129-ae7f-88e05fb446fe": {
+    "guid": "510de519-01fb-4129-ae7f-88e05fb446fe",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Santa Cruz do Apodi/RN"
+  },
+  "76945b95-8813-44c8-9920-f3c0d115665f": {
+    "guid": "76945b95-8813-44c8-9920-f3c0d115665f",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 1,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Trilha do Macuco - Parque Nacional do Iguaçu/PR"
+  },
+  "3c254b01-3cf2-4e08-b2c3-5b6efa81dfcd": {
+    "guid": "3c254b01-3cf2-4e08-b2c3-5b6efa81dfcd",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "STS08 - Terminal de Granéis Líquidos e Gasosos no Porto de Santos"
+  },
+  "5a209758-6bbb-49ad-87dc-e26e718aeb98": {
+    "guid": "5a209758-6bbb-49ad-87dc-e26e718aeb98",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 1,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Terminal Pesqueiro de Cananéia/SP"
+  },
+  "ec44ceb9-823b-427f-bf0e-62f951bd2f83": {
+    "guid": "ec44ceb9-823b-427f-bf0e-62f951bd2f83",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Saneamento básico - Estado da Paraíba"
+  },
+  "65f14f47-1411-44b6-80fc-fbfd2e693561": {
+    "guid": "65f14f47-1411-44b6-80fc-fbfd2e693561",
+    "estudos_situacao": 1,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "TMP - teminal de passageiros no porto de Macei&#243;/AL"
+  },
+  "80d11795-e92e-4666-95f3-6b92c2a35cb9": {
+    "guid": "80d11795-e92e-4666-95f3-6b92c2a35cb9",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Terminal Pesqueiro de Aracaju/SE"
+  },
+  "f857e215-6ed4-4a7c-937e-aca06cdffc43": {
+    "guid": "f857e215-6ed4-4a7c-937e-aca06cdffc43",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo da Flona de Iquiri/AM"
+  },
+  "ffb78704-9433-40d1-9d61-af917924f5a1": {
+    "guid": "ffb78704-9433-40d1-9d61-af917924f5a1",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Saneamento Básico - Estado de Goiás"
+  },
+  "b4515555-143a-46d4-b04b-737132ae83fa": {
+    "guid": "b4515555-143a-46d4-b04b-737132ae83fa",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "SSD04 - Terminal de contêiner e carga geral no Porto de Salvador/BA"
+  },
+  "98f1c849-bd13-454b-b956-4940de5ae1c3": {
+    "guid": "98f1c849-bd13-454b-b956-4940de5ae1c3",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Saneamento B&#225;sico - Estado do Par&#225; - Bloco C"
+  },
+  "d75ad856-f5cf-495f-9c77-69298bf32699": {
+    "guid": "d75ad856-f5cf-495f-9c77-69298bf32699",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo na Flona do Bom Futuro/RO"
+  },
+  "229a579a-bfc2-41e0-aa23-e95744f505a3": {
+    "guid": "229a579a-bfc2-41e0-aa23-e95744f505a3",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Saneamento Básico - Estado do Rio Grande do Norte"
+  },
+  "63f8f489-8110-45ad-b75d-54b941245c7e": {
+    "guid": "63f8f489-8110-45ad-b75d-54b941245c7e",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Saneamento Básico - Estado do Maranhão"
+  },
+  "24a702fd-12e4-4b5e-924e-38f52b3fb788": {
+    "guid": "24a702fd-12e4-4b5e-924e-38f52b3fb788",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo na Flona do Jatuarana/AM"
+  },
+  "29e5668e-73a3-4d34-b673-8f0787e5774b": {
+    "guid": "29e5668e-73a3-4d34-b673-8f0787e5774b",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Unidades de Manejo na Flona do Trairão/PA"
+  },
+  "870432be-2fa4-4b58-bc96-df5357403831": {
+    "guid": "870432be-2fa4-4b58-bc96-df5357403831",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Vale do Iuiú/BA"
+  },
+  "6537d77d-b6d2-4d8a-9987-b57fb53f2d2d": {
+    "guid": "6537d77d-b6d2-4d8a-9987-b57fb53f2d2d",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "Unidades de Manejo na Gleba Castanho/AM"
+  },
+  "95e9734f-c26a-40eb-b298-6082143b96ca": {
+    "guid": "95e9734f-c26a-40eb-b298-6082143b96ca",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "VDC10 - Terminal de granél líquido/sólido no Porto de Vila de Conde/PA"
+  },
+  "980f56b8-ee2a-4357-9039-d04f62fb0fb7": {
+    "guid": "980f56b8-ee2a-4357-9039-d04f62fb0fb7",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "VDC10A - Terminal para granéis líquidos - Porto de Vila do Conde/PA"
+  },
+  "bd82ecda-dbb7-486d-8953-2d56651aa0ef": {
+    "guid": "bd82ecda-dbb7-486d-8953-2d56651aa0ef",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "VDC04 - Terminal de granel sólido mineral no Porto de Vila do Conde/PA"
+  },
+  "8f4f887b-17b2-4624-8026-b795ea62d805": {
+    "guid": "8f4f887b-17b2-4624-8026-b795ea62d805",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 1,
+    "nome_projeto": "VDC29 -Terminal de granel sólido vegetal no Porto de Vila do Conde/PA"
+  },
+  "8320414a-6b8f-40c5-b3d6-c6240c948458": {
+    "guid": "8320414a-6b8f-40c5-b3d6-c6240c948458",
+    "estudos_situacao": 0,
+    "contrato_situacao": 0,
+    "licitacao_situacao": 0,
+    "edital_situacao": 0,
+    "tcu_situacao": 0,
+    "consulta_situacao": 0,
+    "nome_projeto": "Unidades de Manejo na Flona do Jamanxim/PA"
+  }
+}
