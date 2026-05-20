@@ -1,20 +1,151 @@
-# Dashboard de Acompanhamento de Projetos – PPI
+# Painel-Projetos
 
-Aplicação estática para acompanhamento de projetos do PPI com cards por setor, modal de detalhes, linha do tempo horizontal fixa por fases e espaço para mapa do projeto.
+##  Descrição
 
-## Principais recursos
-- **Cards por projeto** com setor, nome e status.
-- **Modal de detalhes** com layout padronizado (posições fixas):
-  - Descrição do Projeto, Situação Atual, Próximos Passos, Deliberação, Pontos de Atenção, Avanço Físico, Mapa do Projeto (direita).
-- **Linha do tempo horizontal** fixa com 6 fases, círculos igualmente espaçados:
-  - Estudos, Consulta Pública, TCU, Edital, Leilão, Assinatura do Contrato.
-  - Pendente: preto e branco; Concluída: verde.
-- **Grade responsiva** de projetos: até 6 colunas em telas muito largas.
+Painel de visualização de projetos do Programa de Parcerias e Investimentos (PPI) do Governo Federal. Este projeto consiste em uma aplicação web para exibir informações detalhadas sobre projetos de infraestrutura em andamento no Brasil.
 
-## Stack
-- HTML + Tailwind (CDN) para layout/estilo.
-- Chart.js (CDN) para gráfico de visão geral.
-- JavaScript vanilla para renderização e interações (sem build).
+##  Estrutura do Projeto
 
+```
+Painel-Projetos/
+├── page/                           # Aplicação web principal
+│   ├── ppi_landing_site_v2/       # Site de visualização
+│   │   ├── data/                  # Dados dos projetos
+│   │   │   └── projects_full.json # Base de dados principal
+│   │   ├── index.html             # Página principal
+│   │   └── assets/                # CSS, JS e imagens
+│   └── ppi_landing_site_v2.pdf    # Versão PDF
+├── scripts/                        # Scripts de processamento de dados
+│   ├── api_automation_urls.py     # Script de referência da API
+│   ├── project_info_api.py        # Coleta de informações básicas
+│   ├── consolidate_project_data.py # Consolidação de dados
+│   ├── update_all_complete.py     # Script unificado principal
+│   ├── projects.csv               # Lista de todos os projetos (278 GUIDs)
+│   ├── project_guids.csv          # Lista reduzida (3 GUIDs)
+│   └── project_info_responses/    # Respostas da API
+├── mapas/                         # Arquivos de mapas
+├── Qcode/                         # Notebooks e análises
+└── README.md                      # Este arquivo
+```
+
+##  Funcionalidades
+
+### Aplicação Web
+- **Visualização interativa** de projetos de infraestrutura
+- **Filtros** por setor, subsetor, organização e status
+- **Mapas interativos** com localização dos projetos
+- **Timeline** de status dos projetos
+- **Cards detalhados** com informações completas
+
+### Scripts de Processamento
+- **Coleta automática** de dados da API SIF-Source
+- **Processamento paralelo** para otimização de performance
+- **Consolidação** de múltiplas fontes de dados
+- **Atualização automática** do `projects_full.json`
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- **HTML5** e **CSS3**
+- **JavaScript** vanilla
+- **Bootstrap** para UI responsiva
+- **Chart.js** para gráficos
+- **Leaflet** para mapas interativos
+
+### Backend/Scripts
+- **Python 3.8+**
+- **Requests** para chamadas HTTP
+- **Pandas** para manipulação de dados
+- **JSON** para armazenamento de dados
+
+##  Instalação e Configuração
+
+### Pré-requisitos
+```bash
+# Python 3.8+
+python --version
+
+# Instalar dependências
+pip install requests pandas
+```
+
+##  Como Usar
+
+### 1. Atualizar Dados dos Projetos
+
+Para atualizar todos os projetos (278 projetos):
+```bash
+cd scripts
+python update_all_complete.py
+```
+
+Este script:
+- Lê todos os GUIDs do `projects.csv`
+- Faz chamadas à API em paralelo
+- Consolida os dados
+- Atualiza o `projects_full.json`
+
+### 2. Executar Aplicação Web Local
+
+```bash
+# Servir os arquivos estáticos
+cd page/ppi_landing_site_v2
+python -m http.server 8000
+```
+
+Acesse: `http://localhost:8000`
+
+### 3. Deploy
+
+O projeto está configurado para deploy na Vercel através do `vercel.json`.
+
+##  Fonte de Dados
+
+### API Principal
+- **URL Base**: `https://api.sif-source.org`
+- **Endpoint Projects**: `/projects`
+- **Endpoint Questions**: `/projects/{guid}/questions/{question_id}`
+
+### Estrutura dos Dados
+```json
+{
+  "guid": "uuid",
+  "nome_projeto": "string",
+  "descricao_curta": "string",
+  "setor": "string",
+  "subsetor": "string",
+  "organizacao": "string",
+  "localizacoes": "string",
+  "latitude": number,
+  "longitude": number,
+  "status_atual_do_projeto": "string",
+  "questoes_chaves": "string",
+  "status_dos_estudos": "string",
+  "status_consulta_publica": "string",
+  "status_do_tcu": "string",
+  "status_do_edital": "string",
+  "status_do_leilao": "string",
+  "status_do_contrato": "string"
+}
+```
+
+##  Considerações Importantes
+
+### Segurança
+- As credenciais da API estão hardcoded nos scripts
+- Recomenda-se mover para variáveis de ambiente
+- Considerar uso de `.env` file
+
+### Performance
+- Processamento paralelo com `ThreadPoolExecutor`
+- Timeout configurado para chamadas API
+- Tratamento de erros 500 da API
+
+
+##  Estatísticas Atuais
+
+- **Setores**: Transport, Energy, Urban Services, Water & Waste
+- **Organizações**: SEPPI, SIEC, SIPE
+- **Status**: Multiple (Completed, Not Started, Scheduled, etc.)
 
 
